@@ -1,0 +1,26 @@
+"Phrases"
+{
+	"Name changed"
+	{
+		"en"			"An admin has changed your name"
+	}
+	"Slay player"
+	{
+		"en"			"Slay player"
+	}
+		
+	"Slayed target"
+	{
+		"#format"		"{1:t}"
+		"en"			"Slayed {1}."
+	}
+	"NoClip player"
+	{
+		"en"			"NoClip player"
+	}
+	"Toggled noclip on target"
+	{
+		"#format"		"{1:t}"
+		"en"			"toggled noclip."
+	}
+}

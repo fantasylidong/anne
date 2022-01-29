@@ -1,0 +1,39 @@
+"MatchModes"
+{
+	"AnneHappy药役"
+	{
+		"AnneHappy"
+		{
+			"name" "AnneHappy药役"
+		}
+	}
+	"1vHunters模式"
+	{
+		"AnneHanpy"
+		{
+			"name" "1vHunters模式"
+		}
+	}
+	"单人装B模式"
+	{
+		"Alone"
+		{
+			"name" "单人装B模式"
+		}
+	}
+	"WitchParty模式"
+	{
+		"WitchParty"
+		{
+			"name" "WitchParty模式"
+		}
+	}
+	"内鬼药役模式"
+	{
+		"AnneNeiGui"
+		{
+			"name" "内鬼模式[22-1-25]"
+		}
+	}
+	
+}

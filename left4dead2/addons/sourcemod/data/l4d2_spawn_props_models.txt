@@ -1,0 +1,615 @@
+﻿//Category Vehicles
+models/props_vehicles/airport_baggage_cart2.mdl TAG- 机场行李柜
+models/props_vehicles/airport_baggage_tractor.mdl TAG- 机场行李车
+models/props_vehicles/airport_catering_truck.mdl TAG- 机场餐饮卡车
+models/props_vehicles/airport_fuel_truck.mdl TAG- 机场加油车
+models/props_vehicles/ambulance.mdl TAG- 救护车
+models/props_vehicles/army_truck.mdl TAG- 军队卡车
+models/props_vehicles/boat_fishing.mdl TAG- 小船
+models/props_urban/boat002.mdl TAG- 一个小船
+models/props_vehicles/boat_fishing02.mdl TAG- 大船
+models/props_vehicles/boat_rescue_tug_sunshine.mdl TAG- 很大的船
+models/props_vehicles/boat_rescue_tug.mdl TAG- 救援船
+models/props_vehicles/bus01.mdl TAG- 公共汽车 1
+models/props_vehicles/bus01_2.mdl TAG- 公共汽车 2
+models/props_waterfront/tour_bus.mdl TAG- 明星公共汽车
+models/props_vehicles/c130.mdl TAG- 飞机 
+models/props_vehicles/cara_69sedan.mdl TAG- 69轿车
+models/props_vehicles/cara_82hatchback.mdl TAG- 82掀背车
+models/props_vehicles/cara_82hatchback_wrecked.mdl TAG- 被撞坏的82掀背车
+models/props_vehicles/cara_84sedan.mdl TAG- 84轿车
+models/props_vehicles/cara_95sedan.mdl TAG- 98轿车
+models/props_vehicles/cara_95sedan_wrecked.mdl TAG- 被撞坏的95轿车
+models/props_vehicles/ceda_trailer_closed.mdl TAG- 拖车
+models/props_vehicles/cement_truck01.mdl TAG- 水泥汽车
+models/props_vehicles/church_bus01.mdl TAG- 教堂巴士
+models/props_vehicles/deliveryvan.mdl TAG- 送贷汽车
+models/props_vehicles/deliveryvan_armored.mdl TAG- 装甲救援车
+models/props_vehicles/flatnose_truck.mdl TAG- 平头卡车
+models/props_vehicles/flatnose_truck_wrecked.mdl TAG- 被撞坏的平头卡车
+models/props_vehicles/floodlight_generator_nolight_static.mdl TAG- 发电机
+models/props_vehicles/floodlight_generator_pose01_static.mdl TAG- 发电机和光
+models/props/cs_assault/forklift.mdl TAG- 叉式升降机
+models/props/cs_assault/handtruck.mdl TAG- 手推车
+models/props_vehicles/helicopter_news_downed.mdl TAG- 已坠毁的直升机
+models/props_vehicles/helicopter_rescue.mdl TAG- 救援点直升机
+models/props_vehicles/helicopter_rescue_smashed.mdl TAG- 已坠毁的救援点直升机
+models/props_vehicles/hmmwv.mdl TAG- 180军用汽车
+models/props_vehicles/hmmwv_supply.mdl TAG- 打开的180军用汽车
+models/props_vehicles/humvee.mdl TAG- 军用悍马
+models/props_vehicles/longnose_truck.mdl TAG- 长头卡车
+models/props_vehicles/m119howitzer_01.mdl TAG- 大炮
+models/props_vehicles/news_van.mdl TAG- 新闻车
+models/props_vehicles/pickup_dually.mdl TAG- 逆向货车
+models/props_vehicles/pickup_truck_2004.mdl TAG- 小型货车 2004
+models/props_vehicles/pickup_truck_78.mdl TAG- 小型货车 '78
+models/props_vehicles/police_car_city.mdl TAG- 警车1702
+models/props_vehicles/police_car_rural.mdl TAG- 警车1702
+models/props_vehicles/racecar.mdl TAG- 赛车 
+models/props_vehicles/racecar_damaged.mdl TAG- 已损坏的赛车
+models/props_vehicles/semi_trailer.mdl TAG- 半挂车
+models/props_vehicles/semi_trailer_freestanding.mdl TAG- 半拖车站
+models/props_unique/subwaycar_all_onetexture.mdl TAG- 地铁车辆
+models/props_vehicles/suv_2001.mdl TAG- 多功能汽车 2001
+models/props_vehicles/tanker001a.mdl TAG- 油罐车 (已爆炸)
+models/props_vehicles/taxi_city.mdl TAG- 出租车173
+models/props_vehicles/taxi_rural.mdl TAG- 出租车
+models/props_vehicles/tractor01.mdl TAG- 拖拉机
+models/props_vehicles/train_box.mdl TAG- 火车箱
+models/props_vehicles/train_box_open.mdl TAG- 已打开的火车箱
+models/props_vehicles/train_box_small.mdl TAG- 火车厢
+models/props_vehicles/train_boxwreck.mdl TAG- 失事了的货车箱
+models/props_vehicles/train_enginecar.mdl TAG- 火车引擎车
+models/props_vehicles/train_flatcar.mdl TAG- 白色的货车装货的一头
+models/props_vehicles/train_flatcar_small.mdl TAG- 黑色的货车装货的一头
+models/props_vehicles/train_orecar.mdl TAG- 矿石车
+models/props_vehicles/train_tank.mdl TAG- 列车水箱
+models/props_vehicles/train_tank_small.mdl TAG- 小型货车
+
+//Category Foliage
+models/props_foliage/cedar01.mdl TAG- 雪松
+models/props_foliage/cedar_large01.mdl TAG- 大型雪松
+models/props_foliage/cedar_medium01.mdl TAG- 中型雪松
+models/props_foliage/fallentree_dry01.mdl TAG- 倒下了的树干 1
+models/props_foliage/fallentree_dry02.mdl TAG- 倒下了的树干 2
+models/props_foliage/old_tree01.mdl TAG- (大枯樹-倒的)
+models/props_foliage/tree_trunk_fallen.mdl TAG- (倒下的枯木)
+models/props_foliage/flower_barrel.mdl TAG- 一盆花
+models/props_foliage/hedge_128.mdl TAG- 树篱 (128 单位)
+models/props_foliage/hedge_256_128high.mdl TAG- 树篱 (256 单位)
+models/props_foliage/mall_big_plant01.mdl TAG- 种植花草 
+models/props_foliage/mall_big_plant01_dirt.mdl TAG- 种植花草 02
+models/props_foliage/mall_bigleaves_plant01.mdl TAG- 种植花草 03
+models/props_foliage/mall_bigleaves_plant01_medium.mdl TAG- 种植花草 04
+models/props_foliage/mall_bigleaves_plant02.mdl TAG- 种植花草 05
+models/props_foliage/mall_bigleaves_plant02_medium.mdl TAG- 种植花草 06
+models/props_foliage/mall_bigleaves_plant03.mdl TAG- 种植花草 07
+models/props_foliage/mall_bigleaves_plant03_dirt.mdl TAG- 种植花草 08
+models/props_foliage/mall_bigleaves_plant03_medium.mdl TAG- 种植花草 09
+models/props_foliage/mall_bush01.mdl TAG- 种植花草 10
+models/props_foliage/mall_bush02.mdl TAG- 种植花草 11
+models/props_foliage/mall_fern01.mdl TAG- 种植花草 12
+models/props_foliage/mall_grass_bush01.mdl TAG- 种植花草 13
+models/props_foliage/mall_grass_bush01_dirt.mdl TAG- 种植花草 14
+models/props_foliage/mall_palm01.mdl TAG- 商场棕榈 1
+models/props_foliage/mall_palm01_medium.mdl TAG- 商场棕榈 2
+models/props_foliage/mall_palmplant02.mdl TAG- 商场棕榈植物 2
+models/props_foliage/mall_pot_large01.mdl TAG- 盆土 1
+models/props_foliage/mall_pot_square01.mdl TAG- 盆土 2
+models/props_foliage/mall_small_palm01.mdl TAG- 购物中心花草 1
+models/props_foliage/mall_small_palm01_cluster.mdl TAG- 购物中心花草 2
+models/props_foliage/mall_small_palm01_cluster_medium.mdl TAG- 购物中心花草 3
+models/props_foliage/mall_small_palm01_medium.mdl TAG- 购物中心花草 4
+models/props_foliage/mall_tree_large01.mdl TAG- 一个树 1
+models/props_foliage/mall_tree_medium01.mdl TAG- 一个树 2
+models/props_foliage/oak_tree01.mdl TAG- 老橡树
+models/props_foliage/old_tree01.mdl TAG- 老龄树
+models/props_foliage/shrub_small.mdl TAG- 灌木丛
+models/props_foliage/swamp_cluster01.mdl TAG- 沼泽树木 1
+models/props_foliage/swamp_cluster_water.mdl TAG- 沼泽树木 2
+models/props_foliage/swamp_cypress_dry01.mdl TAG- 沼泽树木 3
+models/props_foliage/swamp_cypress_knee02.mdl TAG- 沼泽树木 4
+models/props_foliage/swamp_cypress_large01_grnd.mdl TAG- 沼泽树木 5
+models/props_foliage/swamp_cypress_medium_grnd01.mdl TAG- 沼泽树木 6
+models/props_foliage/swamp_cypress_small01.mdl TAG- 沼泽树木 7
+models/props_foliage/swamp_rock02.mdl TAG- 沼泽石头
+models/props_foliage/swamp_shrubwall_256_deep.mdl TAG- 沼泽灌木墙 1 (256 单位)
+models/props_foliage/swamp_shrubwall_256a.mdl TAG- 沼泽灌木墙 2 (256 单位)
+models/props_foliage/swamp_shrubwall_512_deep.mdl TAG- 沼泽灌木墙 3(512 单位)
+models/props_foliage/swamp_shrubwall_block_512.mdl TAG- 沼泽灌木墙 4 (512 单位)
+models/props_foliage/swamp_shrubwall_block_512_deep.mdl TAG- 沼泽灌木墙 (512 单位)
+models/props_foliage/tree_city01.mdl TAG- 树 1
+models/props_foliage/tree_deciduous_01a.mdl TAG- 树 2
+models/props_foliage/tree_dry02.mdl TAG- 树 3
+models/props_foliage/trees_cluster01.mdl TAG- 树 4
+models/props_foliage/trees_cluster02.mdl TAG- 树 5
+models/props_foliage/urban_bush01.mdl TAG- 蕨类植物 1
+models/props_foliage/urban_bush02.mdl TAG- 蕨类植物 2
+models/props_foliage/urban_fern01.mdl TAG- 蕨类植物 3
+models/props_foliage/urban_hedge_256_128_high.mdl TAG- 腾墙 256 [64 高度]
+models/props_foliage/urban_hedge_128_64_high.mdl TAG- 腾墙 128 [64 高度]
+models/props_foliage/urban_palm01_medium.mdl TAG- 棕榈
+models/props_foliage/urban_pot_bigplant01.mdl TAG- 一盆子花草 1
+models/props_foliage/urban_pot_clay01.mdl TAG- 一盆子花草 2
+models/props_foliage/urban_pot_clay02.mdl TAG- 一盆子花草 3
+models/props_foliage/urban_pot_clay03.mdl TAG- 一盆子花草 4
+models/props_foliage/urban_pot_fancy01.mdl TAG- 一盆子花草 5
+models/props_foliage/urban_pot_square01.mdl TAG- 一盆子土
+models/props_foliage/urban_streetpalm01_small.mdl TAG- 街道树 1
+models/props_foliage/urban_streettree01_medium.mdl TAG- 街道树 2
+models/props_foliage/urban_tree_giant01_medium.mdl TAG- 苍天大树
+
+//Category Interior
+models/w_models/weapons/w_minigun.mdl TAG- 机枪
+models/props_unique/airport/atlas_break_ball.mdl TAG- 波
+models/props_doors/checkpoint_door_-01.mdl TAG- 安全門
+models/props_unique/escalatortall.mdl TAG- 航空公司 電扶梯
+models/props_unique/rope_bridge.mdl TAG- 吊橋
+models/props_cemetery/grave_01.mdl TAG- 墓碑1
+models/props_wasteland/rockcliff_cluster02c.mdl TAG- 巨大型岩石
+models/props_cemetery/grave_07.mdl TAG- 一个十字架
+models/props_doors/doorfreezer01.mdl TAG- 無敵門
+models/props_swamp/ferry.mdl TAG- 一个棚子
+models/props_debris/dead_cow_smallpile.mdl TAG- 一堆死牛
+models/props_unique/subwaycar_all_onetexture.mdl TAG- 火車車廂 
+models/props_vehicles/racecar_stage_floor.mdl TAG- 地板
+models/props_unique/subwaytracks01_a.mdl TAG- 鐵軌1
+models/props_unique/subwaytracks01_b.mdl TAG- 鐵軌2
+models/props_unique/airport_greenhouse.mdl TAG- 溫室骨架
+models/props_furniture/desk1.mdl TAG- (辦公桌)
+models/props_furniture/drawer1.mdl TAG- (桌子)
+models/props_furniture/dresser1.mdl TAG- (桌子-高)
+models/props_furniture/heavy_table.mdl TAG- (長桌子)
+models/props_furniture/it_mkt_table2.mdl TAG- (正統桌子)
+models/props_wasteland/controlroom_desk001b.mdl TAG- (鐵桌-4)
+models/props_interiors/coffee_table_oval.mdl TAG- (圓桌子)
+models/props_interiors/coffee_table_rectangular.mdl TAG- (長方形桌子)
+models/props_interiors/desk_executive.mdl TAG- (辦公桌)
+models/props_interiors/desk_metal.mdl TAG- (鐵的辦公桌)
+models/props_interiors/dining_table_round.mdl TAG- (圓木桌)
+models/props_interiors/dinning_table_oval.mdl TAG- (橢圓木桌)
+models/props_interiors/furniture_desk01a.mdl TAG- (桌子-會破)
+models/props_interiors/side_table_square.mdl TAG- (小桌子)
+models/props_interiors/table_bedside.mdl TAG- (小桌子2)
+models/props_interiors/table_cafeteria.mdl TAG- (一腳桌子)
+models/props_interiors/table_end.mdl TAG- (四方小圓桌)
+models/props_interiors/table_folding.mdl TAG- (桌子4)
+models/props_interiors/table_folding_folded.mdl TAG- (倒的桌子)
+models/props_interiors/table_kitchen.mdl TAG- (木桌)
+models/props_interiors/table_motel.mdl TAG- (一腳桌子-圓)
+models/props_interiors/table_motel.mdl TAG- 可动的木头桌子
+models/props_urban/round_table001.mdl TAG- 一个桌子（白色）
+models/props_interiors/industrial_table01.mdl TAG- (鐵長桌)
+models/props_furniture/hotel_chair.mdl TAG- 酒店椅子
+models/props_furniture/hotel_chair.mdl TAG- 酒店椅子 (可动)
+models/props_interiors/bench01a.mdl TAG- (木頭長椅)
+models/props_interiors/bench_subway.mdl TAG- (石椅-長)
+models/props_interiors/boothfastfood01.mdl TAG- (長座位)
+models/props_furniture/chair2.mdl TAG- (椅子)
+models/props_furniture/cafe_barstool1.mdl TAG- (木椅)
+models/props_interiors/ottoman01.mdl TAG- (椅墊)
+models/props_interiors/patio_chair2_white.mdl TAG- (歐式風-椅子)
+models/props_interiors/picnic_bench_toddler.mdl TAG- (戶外桌椅)
+models/props_interiors/sawhorse.mdl TAG- (板凳)
+models/props_urban/plastic_chair001.mdl TAG- 一个凳子 （白色）
+models/props_interiors/sawhorse.mdl TAG- 加长型木头凳子
+models/props_interiors/bookcase_48_96.mdl TAG- (長書櫃1)
+models/props_interiors/bookcasehutch01.mdl TAG- (長書櫃2)
+models/props_interiors/bookcase_small01.mdl TAG- (書櫃-含書)
+models/props_interiors/bookcase_64_96.mdl TAG- (大長書櫃)
+models/props_furniture/cafe_cabinet1.mdl TAG- (大櫃子)
+models/props_furniture/cupboard1.mdl TAG- (鞋櫃)
+models/props_furniture/inn_mailbox1.mdl TAG- (大書架)
+models/props_furniture/kitchen_cabinet1.mdl TAG- (雙層櫃子)
+models/props_furniture/kitchen_countertop1.mdl TAG- (櫃子+桌子)
+models/props_furniture/kitchen_shelf1.mdl TAG- (低書架)
+models/props_furniture/shelf1.mdl TAG- (小櫃子)
+models/props_interiors/dresser_short.mdl TAG- (抽屜櫃)
+models/props_interiors/dresser_tall.mdl TAG- (抽屜櫃-多一層)
+models/props_interiors/file_cabinet1_group.mdl TAG- (鐵抽屜櫃)*****
+models/props_interiors/shelf1_clutter01d.mdl TAG- (家具)
+models/props_interiors/shelvinggrocery01.mdl TAG- (多層-架子)
+models/props_interiors/shelvingstore01.mdl TAG- (架子)
+models/props_interiors/table_console.mdl TAG- (橫櫃子)
+models/props_interiors/couch.mdl TAG- (沙發)
+models/props_interiors/sofa.mdl TAG- (沙發-2)
+models/props_interiors/sofa01.mdl TAG- (沙發)
+models/props_interiors/sofa02.mdl TAG- (沙發-4)
+models/props_interiors/sofa_chair.mdl TAG- (單人-沙發)
+models/props_interiors/sofa_chair01.mdl TAG- (單人-沙發-1)
+models/props_interiors/sofa_chair02.mdl TAG- (單人-沙發-2)
+models/props_interiors/couch.mdl TAG- 沙发
+models/props_interiors/bed.mdl TAG- (床1)
+models/props_interiors/bed_houseboat.mdl TAG- (床-2)
+models/props_interiors/bed_motel.mdl TAG- (床-3)
+models/props_interiors/baby_crib.mdl TAG- (嬰兒床)
+models/props_interiors/kids_bed.mdl TAG- (單人床)
+models/props_junk/furnituremattress001a.mdl TAG- 床垫
+models/props_interiors/refrigerator02_freezerdoor.mdl TAG- (冰箱-上門)
+models/props_interiors/refrigerator02_lowerdoor.mdl TAG- (冰箱-下門)
+models/props_interiors/refrigerator02_main.mdl TAG- (冰箱-沒門)
+models/props_interiors/refrigerator03.mdl TAG- (冰箱)
+models/props_interiors/stove04_industrial.mdl TAG- (大型冷凍庫)
+models/props_furniture/bathtub1.mdl TAG- (浴缸)
+models/props_interiors/bathtub01.mdl TAG- (浴缸-2)
+models/props_interiors/bathroomsink01.mdl TAG- (洗水槽)
+models/props_interiors/drinking_fountain.mdl TAG- (洗水槽-2)
+models/props_c17/furnituresink001a.mdl TAG- (洗水槽)
+models/props_interiors/sink_industrial01.mdl TAG- (鐵-洗水槽)
+models/props_interiors/dryer.mdl TAG- (洗衣機)
+models/props_interiors/washer.mdl TAG- (洗衣機-2)
+models/props_urban/hotel_lamp001.mdl TAG- 台灯
+models/props_interiors/lamp_floor.mdl TAG- 加长型台灯
+models/props_furniture/lamp1.mdl TAG- (檯燈)
+models/props_interiors/furniture_lamp01a.mdl TAG- (檯燈-2)
+models/props_interiors/lamp_floor_arch.mdl TAG- (檯燈-彎的)
+models/props_interiors/lamp_floor_gib1.mdl TAG- (檯燈-沒燈)
+models/props_interiors/lamp_floor_gib2.mdl TAG- (檯燈只有燈1)
+models/props_interiors/lamp_table01_gib2.mdl TAG- (檯燈只有燈2)
+models/props_interiors/lamp_table01.mdl TAG- (檯燈-3)
+models/props_interiors/lamp_table02.mdl TAG- (小檯燈)***
+models/props_interiors/lamp_table02_gib1.mdl TAG- (檯燈-4-沒燈)
+models/props_interiors/lamp_table02_gib2.mdl TAG- (檯燈-4-只有燈)
+models/props_urban/light_fixture01.mdl TAG- (吊燈)
+models/props_wasteland/light_spotlight01_lamp.mdl TAG- (躺平燈具)
+models/props_interiors/stove02.mdl TAG- (爐子)
+models/props_furniture/fireplace2.mdl TAG- (爐子)
+models/props_interiors/stove03_industrial.mdl TAG- (爐子+烤箱)
+models/props_interiors/table_picnic.mdl TAG- (板凳+桌子-可打破)
+models/props_interiors/table_picnic_break01.mdl TAG- (板凳+桌子-破碎)
+models/props_interiors/table_picnic_break02.mdl TAG- (板凳+桌子-破碎)
+models/props_interiors/table_picnic_break03.mdl TAG- (板凳+桌子-破碎)
+models/props_interiors/table_picnic_break04.mdl TAG- (板凳+桌子-破碎)
+models/props_interiors/table_picnic_break05.mdl TAG- (板凳+桌子-破碎)
+models/props_interiors/table_picnic_break06.mdl TAG- (板凳+桌子-破碎)
+models/props_interiors/table_picnic_break07.mdl TAG- (板凳+桌子-破碎)
+models/props_interiors/table_picnic_break08.mdl TAG- (板凳+桌子-破碎)
+models/props_interiors/table_picnic_break09.mdl TAG- (板凳+桌子-破碎)
+models/props_interiors/table_picnic_break10.mdl TAG- (板凳+桌子-破碎)
+models/props_interiors/table_picnic_break11.mdl TAG- (板凳+桌子-破碎)
+models/props_interiors/toilet.mdl TAG- (馬桶)
+models/props_interiors/toilet_b.mdl TAG- (馬桶-開蓋)
+models/props_interiors/toilet_c.mdl TAG- (馬桶-開蓋)
+models/props_interiors/toiletpaperroll.mdl TAG- (衛生紙)
+models/props_interiors/dvd_player.mdl TAG- (DVD)
+models/props_interiors/vcr.mdl TAG- (DVD-2)
+models/props_interiors/closet_clothes.mdl TAG- (衣架-含衣服)
+models/props_interiors/clothing_pile1.mdl TAG- (掉在地上的衣服)
+models/props_interiors/clothing_pile2.mdl TAG- (掉在地上的衣服)
+models/props_interiors/clothing_pile3.mdl TAG- (掉在地上的衣服)
+models/props_interiors/clothing_pile4.mdl TAG- (掉在地上的衣服)
+models/props_interiors/clothing_pile5.mdl TAG- (掉在地上的衣服)
+models/props_unique/zombiebreakwallexterior01_main.mdl TAG- (壁紙)
+models/props_unique/zombiebreakwallexteriorairport01_main.mdl TAG- (壁紙)
+models/props_unique/zombiebreakwallexteriorairportoffices01_main.mdl TAG- (壁紙)
+models/props_urban/picture_frame001.mdl TAG- 一个壁画
+models/props_interiors/painting_landscape01.mdl TAG- (一幅畫)
+models/props_urban/ashtray_stand001.mdl TAG- 烟灰桶
+models/props_urban/ashtray_stand001.mdl TAG- 烟灰桶 (可动)
+models/props_foliage/flower_barrel.mdl TAG- (盆栽)
+models/props_plants/planthanging01.mdl TAG- 一盆吊兰
+models/props_junk/metalbucket02a.mdl TAG- 盆子
+models/props_interiors/waterbottle.mdl TAG- (桶子)
+models/props_urban/plastic_bucket001.mdl TAG- 一个白色桶子
+models/props_furniture/piano.mdl TAG- (鋼琴)
+models/props_interiors/bbq_grill.mdl TAG- (烤肉架)
+models/props_interiors/fridge_mini.mdl TAG- (電暖器)
+models/props_interiors/gun_cabinet.mdl TAG- (武器架)
+models/props_interiors/magazine_rack.mdl TAG- (週刊櫃)
+models/props_interiors/makeshift_stove_battery.mdl TAG- (傳播器)
+models/props_interiors/medicalcabinet02.mdl TAG- (醫藥箱)
+models/props_interiors/mounteddeerhead01.mdl TAG- (鹿頭標本)
+models/props_interiors/paper_towel_dispenser.mdl TAG- (咖啡機)
+models/props_interiors/paper_tray.mdl TAG- (文件)
+models/props_interiors/phone_motel.mdl TAG- (電話)
+models/props_interiors/pot01a.mdl TAG- (把手)
+models/props_interiors/printer.mdl TAG- (影印機)
+models/props_interiors/prison_heater001a.mdl TAG- (暖爐機)
+models/props_interiors/shelf1_clutter01c.mdl TAG- (書)
+models/props_interiors/water_cooler.mdl TAG- (飲水機)
+models/props_interiors/styrofoam_cups.mdl TAG- (疊起來的杯子)
+models/props_interiors/teddy_bear.mdl TAG- (泰迪熊)
+models/props_interiors/waterheater.mdl TAG- (熱水器)
+models/props_unique/wheelchair01.mdl TAG- (輪椅)
+models/props_c17/computer01_keyboard.mdl TAG- (鍵盤)
+models/props_c17/consolebox01a.mdl TAG- (呼叫機)
+models/props_junk/garbage_plasticbottle001a_fullsheet.mdl TAG- 一桶油漆
+models/props_c17/pottery08a.mdl TAG- 一个绿色的瓶子
+models/props_interiors/tv.mdl TAG- 一台电视机
+models/props/cs_office/fire_extinguisher.mdl TAG- 灭火器 
+
+
+//Category Exterior
+models/props_fortifications/concrete_wall001_96_reference.mdl TAG- 石墙
+models/props_unique/wooden_barricade.mdl TAG- (木頭障礙1)
+models/props_unique/wooden_barricade_break1.mdl TAG- (木頭障礙2)
+models/props_unique/wooden_barricade_break2.mdl TAG- (木頭障礙3)
+models/props_unique/wooden_barricade_break3.mdl TAG- (木頭障礙4)
+models/props_industrial/warehouse_shelf001.mdl TAG- (貨堆1)
+models/props_industrial/warehouse_shelf002.mdl TAG- (貨堆2)
+models/props_industrial/warehouse_shelf003.mdl TAG- (貨堆3)
+models/props_industrial/warehouse_shelf004.mdl TAG- (貨堆4)
+models/props_industrial/barrel_fuel.mdl TAG- 燃油桶
+models/props/cs_assault/box_stack1.mdl TAG- 危险包装 1
+models/props/cs_assault/box_stack2.mdl TAG- 危险包装 2
+models/props_exteriors/chimney2.mdl TAG- 烟囱 1
+models/props_exteriors/chimney4.mdl TAG- 烟囱 2
+models/props_exteriors/chimney5.mdl TAG- 烟囱 3
+models/props_docks/dock_broken01a_256.mdl TAG- 码头的断的木桥
+models/props_vehicles/bridgecollapse_part01.mdl TAG- 木桥
+models/props_urban/fence_768_collapsed.mdl TAG- 已倒的栅栏 (c4m5)
+models/props_urban/fence_cover001_128.mdl TAG- 栅栏
+models/props_urban/fence_cover001_256.mdl TAG- 栅栏 x2
+models/props_wasteland/exterior_fence002c.mdl TAG- 金属栅栏
+models/props_wasteland/exterior_fence002b.mdl TAG- 金属栅栏 1/2
+models/props_wasteland/exterior_fence002d.mdl TAG- 金属栅栏 x2
+models/props_wasteland/exterior_fence002e.mdl TAG- 金属栅栏 x4
+models/props_urban/fence_gate001_256.mdl TAG- 栅栏 1
+models/props_exteriors/fence002.mdl TAG- 栅栏 2
+models/props_exteriors/fence002_end.mdl TAG- 栅栏已断的木头
+models/props_exteriors/fence_plastic001.mdl TAG- 栅栏塑料
+models/props_exteriors/guardrail128a.mdl TAG- 舷栏干
+models/props_exteriors/guardrail128b.mdl TAG- 护栏滑污垢
+models/props_exteriors/guardshack.mdl TAG- 守卫木屋
+models/props_exteriors/lighthousedoorframe.mdl TAG- 门框 1
+models/props_exteriors/lighthouserailing_02_a.mdl TAG- 门框 2
+models/props_exteriors/park_sign.mdl TAG- 公园提示牌
+models/props_signs/raisedbillboard.mdl TAG- 超大广告牌
+models/props_exteriors/roadsidefence_512.mdl TAG- 护栏 (512 单位)
+models/props_exteriors/roadsidefence_64.mdl TAG- 护栏 (64 单位)
+models/props_interiors/sawhorse.mdl TAG- 锯木架
+models/props_exteriors/stairs_house_01.mdl TAG- 木房子的楼梯
+models/props_exteriors/train_truss01.mdl TAG- 火车桁架
+models/props_urban/gate_wall001_128.mdl TAG- 公园里的墙 128
+models/props_urban/gate_wall001_256.mdl TAG- 公园里的墙 256
+models/props_urban/gate_wall001_64.mdl TAG- 公园里的墙 64
+models/props_urban/gate_wall002_128.mdl TAG- 栅栏墙 128
+models/props_urban/gate_wall003_128.mdl TAG- 栅栏铁板 128
+models/props_urban/gate_wall003_32.mdl TAG- 栅栏铁板 32
+models/props_urban/gate_wall003_64.mdl TAG- 栅栏铁板 64
+models/props/cs_militia/logpile2.mdl TAG- 木桩堆
+models/props_exteriors/wood_porchsteps_01.mdl TAG- 横向木楼梯
+models/props_exteriors/wood_post001.mdl TAG- 木杆
+models/props_exteriors/wood_railing001.mdl TAG- 木栏杆
+models/props_exteriors/wood_railing002.mdl TAG- 木栏杆 2
+models/props_exteriors/wood_railing002.mdl TAG- 木栏杆 3
+models/props_exteriors/wood_railing004d.mdl TAG- 灰色木栏杆 2
+models/props_exteriors/wood_railing004c.mdl TAG- 灰色木栏杆
+models/props_exteriors/wood_stairs_120.mdl TAG- 没有栏杆的木头楼梯 1
+models/props_exteriors/wood_stairs_120_swamp.mdl TAG- 楼梯 2
+models/props_exteriors/wood_stairs_40.mdl TAG- 楼梯 3
+models/props_exteriors/wood_stairs_swamp.mdl TAG- 楼梯 4
+models/props_exteriors/wood_stairs_wide_48.mdl TAG- 楼梯 5
+models/props_c17/metalladder001.mdl TAG- 竖樓梯
+models/props_c17/metalladder005.mdl TAG- 竖楼梯
+models/props_equipment/tablegreenhouse01.mdl TAG- 鐵樓梯(大型)
+models/props_mall/mall_escalator.mdl TAG- 一个电梯
+
+//Category Decorative
+models/props_cemetery/crypts_wall.mdl TAG- 加厚的大石墙
+models/props_urban/fence_cover001_128.mdl TAG- 创一个铁版
+models/props_urban/fence_gate001_256.mdl TAG- 铁丝门
+models/props_cemetery/cemetery_gate_128.mdl TAG- 上面带尖刺的铁丝门
+models/props_interiors/door_sliding_breakable01.mdl TAG- (鐵捲門)
+models/props_street/police_barricade.mdl TAG- (中小型鐵籃框)
+models/props_street/police_barricade2.mdl TAG- (中中型鐵籃框)
+models/props_street/police_barricade3.mdl TAG- (中大型鐵籃框)
+models/props_street/police_barricade4.mdl TAG- (最大型鐵籃框)
+models/props_street/police_barricade_368in.mdl TAG- (中中型鐵籃框)
+models/props_street/police_barricade_496in.mdl TAG- (中中型鐵籃框)
+models/props_vehicles/racecar_stage_floor.mdl TAG- 第一关车下面的地板（铺路特好使）
+models/props_vents/vent_cluster006.mdl TAG- (长直通風管)
+models/props_vents/vent_cluster007.mdl TAG- (90度拐弯通風管)
+models/props_vents/vent_large_corner001.mdl TAG- (小弯型通風管)
+models/props_vents/vent_large_straight001.mdl TAG- (短直通風管)
+models/props_vents/vent_large_straight002.mdl TAG- (通風管)
+models/props_wasteland/prison_pipes002a.mdl TAG- (大量水管)
+models/props_unique/subwaytracks01_a.mdl TAG- (鐵軌)
+models/props_unique/subwaytracks01_b.mdl TAG- (鐵軌)
+models/props_unique/subwaytracks01_c.mdl TAG- (鐵軌)
+models/props_unique/subwaytracks01_d.mdl TAG- (鐵軌)
+models/props_unique/subwaytracks01_e.mdl TAG- (鐵軌)
+models/props_unique/subwaytracks01_f.mdl TAG- (鐵軌)
+models/props_unique/subwaytracks01_g.mdl TAG- (鐵軌)
+models/props_unique/subwaytracks01_h.mdl TAG- (鐵軌)
+models/props_cemetery/grave_01.mdl TAG- (墓碑)
+models/props_cemetery/grave_02.mdl TAG- (墓碑)
+models/props_cemetery/grave_03.mdl TAG- (墓碑)
+models/props_cemetery/grave_04.mdl TAG- (墓碑)
+models/props_cemetery/grave_05.mdl TAG- (墓碑)
+models/props_cemetery/grave_06.mdl TAG- (墓碑)
+models/props_cemetery/grave_07.mdl TAG- (墓碑)
+models/props_cemetery/grave_08.mdl TAG- (墓碑)
+models/props_debris/barricade_short02a.mdl TAG- (岩碎)
+models/props_debris/barricade_short03a.mdl TAG- (岩碎)
+models/props_debris/barricade_short04a.mdl TAG- (岩碎)
+models/props_wasteland/rock_cliff01.mdl TAG- (巨大石)
+models/props_wasteland/rock_moss01.mdl TAG- (大石)
+models/props_wasteland/rock_moss02.mdl TAG- (大石)
+models/props_wasteland/rock_moss03.mdl TAG- (大石)
+models/props_wasteland/rock_moss04.mdl TAG- (大石)
+models/props_wasteland/rock_moss05.mdl TAG- (大石)
+models/props_wasteland/rockcliff07b.mdl TAG- (大石)
+models/props_wasteland/rockcliff_cluster01a.mdl TAG- (巨大型岩石)
+models/props_wasteland/rockcliff_cluster02c.mdl TAG- (巨大型岩石)
+models/props_wasteland/rockcliff_cluster03a.mdl TAG- (大型岩石)
+models/props_wasteland/rockcliff_cluster03a_river.mdl TAG- (大型岩石)
+models/props_wasteland/rockcliff_cluster03b.mdl TAG- (两个大型岩石)
+models/props_wasteland/rockcliff_cluster03b_caves.mdl TAG- (两个大型岩石)
+models/props_wasteland/rockcliff_cluster03c.mdl TAG- (两个大型和一个小型岩石)
+models/props_unique/haybails_farmhouse.mdl TAG- (一大堆 草捆 半面)
+models/props_unique/haybails_single.mdl TAG- (草捆)
+prop_physics_create props_cemetery/grave_07.mdl TAG- 一个十字架 
+models/props_unique/rope_bridge.mdl TAG- (吊橋)
+models/props_doors/doormain01.mdl TAG- (木門-可以打破)
+models/Props_doors/doormain01_airport.mdl TAG- (木門-可以打破)
+models/props_doors/doormain01_airport_small.mdl TAG- (木門-可以打破)
+models/props_doors/doormain01_airport_small_02.mdl TAG- (木門-可以打破)
+models/props_industrial/pumpvertical01.mdl TAG- (排廢水處理機)
+models/props_interiors/elevator_interior.mdl TAG- (電梯-沒圍牆)
+models/props_vehicles/floodlight_generator_nolight.mdl TAG- (吊車)
+models/props_swamp/ferry.mdl TAG- 一个棚子（挺好用
+models/props_unique/airport_greenhouse.mdl TAG- (巨大 機場第一關卡的 溫室骨架)
+models/props_street/trafficlight01.mdl TAG- (大型路燈)
+models/props_c17/lamppost03a_on.mdl TAG- （开着的路灯）*****
+models/props_c17/lamppost03a_off.mdl TAG- (关着的路灯)*****
+models/props_street/trafficlight01.mdl TAG- (大型路燈)*****
+models/props_docks/dock02_pole02a.mdl TAG- (純木柱)***
+models/props_buildings/warehouse_beam_01.mdl TAG- (木柱)
+models/props_buildings/warehouse_beam_02.mdl TAG- (木柱)
+models/props_windows/brick_window03_pillar.mdl TAG- (大理石柱)
+models/props_cemetery/cemetery_column.mdl TAG- (石柱)
+models/props_buildings/barn_supports_bases.mdl TAG- (柱子)
+models/props_c17/substation_circuitbreaker03.mdl TAG- (發電廠 上)
+models/props_c17/substation_transformer01a.mdl TAG- (發電機 下)
+models/props_c17/substation_transformer01b.mdl TAG- (發電機 測邊)
+models/props_equipment/scaffolding.mdl TAG- (機場 鷹架)
+models/props_equipment/scaffolding_norails.mdl TAG- (機場 鷹架2)
+models/props_interiors/luggagescale.mdl TAG- (機場標誌)
+models/props_lighting/lights_industrialcluster01a.mdl TAG- (機場照明 沒亮)
+models/props_misc/fire_exit_crushed.mdl TAG- (機場的廢墟物件)
+models/props_wasteland/coolingtank01.mdl TAG- (水塔)
+models/props_wasteland/coolingtank02.mdl TAG- (水塔)
+models/props_buildings/watertower_001a.mdl TAG- (水塔)
+models/props_unique/generator.mdl TAG- (發電機 1)
+models/props_unique/generator01.mdl TAG- (發電機 2 )
+models/props_unique/generator_short.mdl TAG- (發電機 3)
+models/props_wasteland/powertower01.mdl TAG- (高壓電塔)
+models/props_wasteland/prison_conduit001a.mdl TAG- (高壓電塔 電線)
+models/props_street/phonepole1_tall.mdl TAG- (電線竿)
+models/props_c17/utilitypole01d.mdl TAG- (電線竿)
+models/props_mall/mall_directory.mdl TAG- 像是进商场的一个指示牌
+models/props_fairgrounds/fairgrounds_flagpole01.mdl TAG- 一扇旗子（扇页不会被风吹动，原因不明。）
+models/props_signs/burgersign_beacon.mdl TAG- 一个广告牌
+models/props_buildings/warehouse_roofbeams.mdl TAG- (屋樑)
+models/props_street/watertower01.mdl TAG- (大型穀倉)
+models/props_unique/hospital05_rooftop_cube01.mdl TAG- (中小型 基座)
+models/props_unique/ticketbooth.mdl TAG- (售票口) 
+models/props_plants/corndry_split01.mdl TAG- (稻田稻苗)
+models/props_rooftop/rooftank01.mdl TAG- (大型存水槽)
+models/props_rooftop/satellitedish_large01.mdl TAG- (天線小耳朵)
+models/props_rooftop/solarpanels01.mdl TAG- (太陽能光板)
+models/props_interiors/luggagecarthotel01.mdl TAG- (搬行李的車架)
+models/props_fortifications/fortification_indoor_01.mdl TAG- (雜物-行李箱)
+models/props_c17/hospital_surgerytable01.mdl TAG- (單架)
+models/props_urban/gas_meter.mdl TAG- (瓦斯表)
+models/props_interiors/corkboardverticle01.mdl TAG- (公告欄)
+models/props_interiors/sewerpipe_opening.mdl TAG- (大型排水管)
+models/props_junk/barrel_fire.mdl TAG- (油桶)
+models/props_interiors/ac_wallunit.mdl TAG- (冷氣機)
+models/props_interiors/airportdeparturerampcontrol01.mdl TAG- (儀器)
+models/props_industrial/construction_crane_leverbody.mdl TAG- (電箱)
+models/props_canal/canal_bars004.mdl TAG- (地下道的台水孔) 
+models/props_foliage/tree_trunk_chunk01.mdl TAG- (枯樹塊-可打破)
+models/props_foliage/tree_trunk_chunk02.mdl TAG- (枯樹塊-可打破)
+models/props_foliage/tree_trunk_chunk03.mdl TAG- (枯樹塊-可打破)
+models/props_foliage/tree_trunk_chunk04.mdl TAG- (枯樹塊-可打破)
+models/props_foliage/tree_trunk_chunk05.mdl TAG- (枯樹塊-可打破)
+models/props_foliage/tree_trunk_chunk06.mdl TAG- (枯樹塊-可打破)
+models/props_industrial/oil_pipes.mdl TAG- (排水管)
+models/props_industrial/pumpstation_pipes01.mdl TAG- (排水管開關)
+models/props_industrial/sluicegate.mdl TAG- (排水閘門)
+models/props_interiors/constructionwalls04_damage01.mdl TAG- (一根鐵杆)
+models/props_interiors/constructionwalls04_frame.mdl TAG- (四方鐵杆)
+models/props_wasteland/prison_sprinkler001a.mdl TAG- (小鐵竿)
+models/props_wasteland/prison_switchbox001a.mdl TAG- (小鐵竿)
+models/props_industrial/wire_spool_01.mdl TAG- (電纜線捲)
+models/props_industrial/wire_spool_02.mdl TAG- (電纜線捲-沒線)
+models/props_rooftop/train_signalbox_01.mdl TAG- (電壓箱)
+models/props_rooftop/vent_large1.mdl TAG- (電壓箱)
+models/props_unique/greenhouse_pipewall.mdl TAG- (大型管線)
+models/props_unique/greenhouseboiler_all.mdl TAG- (大型管線2)
+models/props_fortifications/orange_cone001_reference.mdl TAG- 挡车桶
+models/props_debris/dead_cow.mdl TAG- (死牛)
+models/props_debris/dead_cow_smallpile.mdl TAG- (一堆死牛)
+models/props_unique/mopbucket01.mdl TAG- 拖把挤水用的桶
+models/props_urban/tire001.mdl TAG- 一个轮胎
+models/props_windows/window_stained_glass_broken01_reference.mdl TAG- (教堂的 東西)
+models/props_unique/pumpstation01.mdl TAG- (屋頂上的 中央空調物品)
+models/props_unique/processor_tank.mdl TAG- (因該算是鍋爐)
+models/props_unique/sandtower02.mdl TAG- (水塔類的)
+models/props_wasteland/chimneypipe01a.mdl TAG- (煙囪)
+models/props_unique/guncabinet01_main.mdl TAG- (武器箱 沒有武器)
+models/props_unique/grocerystorechiller01.mdl TAG- (超商 冷凍櫃)
+models/deadbodies/dead_female_civilian_01.mdl TAG- 死去的平民
+models/deadbodies/dead_female_civilian_02.mdl TAG- 死去的平民 2
+models/deadbodies/dead_female_civilian_draped_01.mdl TAG- 死去的平民 1(已盖上布)
+models/deadbodies/dead_female_civilian_draped_02.mdl TAG- 死去的平民 2(已盖上布)
+models/deadbodies/dead_male_torso_01.mdl TAG- 只有一半尸体的平民
+
+
+//Category Misc
+models/infected/smoker.mdl TAG- Smoker模型
+models/infected/boomer.mdl TAG- Boomer模型
+models/infected/boomette.mdl TAG- 女Boomer模型?
+models/infected/hunter.mdl TAG- Hunter模型
+models/infected/hulk.mdl TAG- Tank模型
+models/infected/charger.mdl TAG- Charger模型
+models/infected/jockey.mdl TAG- Jockey模型
+models/infected/spitter.mdl TAG- Spitter模型
+models/infected/witch.mdl TAG- Witch模型	
+models/props_debris/airliner_wreckage1.mdl TAG- 客机 A
+models/props_debris/airliner_wreckage2.mdl TAG- 客机 B
+models/props_debris/airliner_wreckage3.mdl TAG- 客机 C
+models/props_vehicles/airliner_finale_left.mdl TAG- (半面 飛機 左)
+models/props_vehicles/airliner_finale_right.mdl TAG- (半面 飛機 右)
+models/props_fairgrounds/alligator.mdl TAG- 鳄鱼玩具
+models/props_fairgrounds/amp_plexi.mdl TAG- 音响
+models/props_fairgrounds/amp_stack.mdl TAG- 大型音响
+models/props_fairgrounds/amp_stack_small.mdl TAG- 中型音响
+models/props_fairgrounds/anvil_case_32.mdl TAG- 舞会箱 
+models/props_fairgrounds/anvil_case_64.mdl TAG- 舞会箱 2
+models/props_fairgrounds/anvil_case_casters_32.mdl TAG- 舞会箱 3
+models/props_fairgrounds/anvil_case_casters_64.mdl TAG- 舞会箱 4
+models/props_fairgrounds/arcadegame01.mdl TAG- 游乐园游戏机
+models/props_fortifications/barricade001_128_reference.mdl TAG- 路障 1
+models/props_fortifications/barricade001_64_reference.mdl TAG- 路障 2
+models/props_fortifications/barricade_gate001_64_reference.mdl TAG- 路障 3
+models/props_fairgrounds/bass_amp.mdl TAG- 低音放大器
+models/props_fairgrounds/bass_case.mdl TAG- 低音箱
+models/props_fairgrounds/bass_monitor.mdl TAG- 低音监视器
+models/props/cs_militia/caseofbeer01.mdl TAG- 啤酒瓶
+models/props_fairgrounds/building_support_128.mdl TAG- 建筑支撑物
+models/props_fairgrounds/bumpercar.mdl TAG- 碰碰车
+models/props_fairgrounds/bumpercar_wpole.mdl TAG- 碰碰车 2
+models/props_equipment/cargo_container01.mdl TAG- 集装箱
+models/props_equipment/cargo_container02.mdl TAG- 打开的集装箱
+models/props_fairgrounds/coaster_car01.mdl TAG- 过山车的车
+models/props_fairgrounds/coaster_gate.mdl TAG- 过山车的门
+models/props_fortifications/concrete_barrier001_128_reference.mdl TAG- 混凝土防撞栏
+models/props_fortifications/concrete_barrier001_96_reference.mdl TAG- 混凝土防撞栏 (小)
+models/props_fortifications/concrete_block001_128_reference.mdl TAG- 混凝土砌块
+models/props_fortifications/concrete_wall001_96_reference.mdl TAG- 混凝土墙
+models/props_fortifications/concrete_barrier01.mdl TAG- 混凝土墙 2
+models/props_equipment/construction_lift.mdl TAG- 营救提升机
+models/props_industrial/construction_crane.mdl TAG- 吊车
+models/props_vehicles/floodlight_generator_nolight.mdl TAG- (吊車)
+models/props_fairgrounds/elephant.mdl TAG- 坐着的大象玩具
+models/props_fairgrounds/entrance_sign.mdl TAG- 游乐园入口标志
+models/props_fairgrounds/fairgrounds_banner02.mdl TAG- 露天广场旗帜
+models/props_misc/fairground_tent_closed.mdl TAG- 帐篷
+models/props_fairgrounds/fairgrounds_flagpole01.mdl TAG- 旗杆
+models/props_fairgrounds/foodcart.mdl TAG- 食品车
+models/props/cs_militia/footlocker01_closed.mdl TAG- 礼物盒
+models/props_fairgrounds/front_speaker.mdl TAG- 扬声器
+models/props_fairgrounds/giraffe.mdl TAG- 长颈鹿玩具
+models/props_fairgrounds/kiddyland_ridecar.mdl TAG- 袒护土地汽车
+models/props_fairgrounds/kiddyland_ridestructure_closed.mdl TAG- 关闭的游乐园骑马棚
+models/props_fairgrounds/kiddyland_ridetrain.mdl TAG- 游乐园小火车
+models/props_mall/mall_escalator.mdl TAG- 购物中心自动扶梯
+models/props_mall/mall_kiosk.mdl TAG- 商场亭 A
+models/props_mall/mall_kioskb.mdl TAG- 商场亭 B
+models/props_mall/mall_kioskc.mdl TAG- 商场亭 C
+models/props_fairgrounds/mic_stand.mdl TAG- 麦克风
+models/props_misc/military_sign01.mdl TAG- 军事标志 1
+models/props_misc/military_sign01_2.mdl TAG- 军事标志 2
+models/props_misc/military_sign02.mdl TAG- 军事标志 3
+models/props_fortifications/police_barrier001_128_reference.mdl TAG- 警察障碍物
+models/props_fairgrounds/slide.mdl TAG- 游乐园滑梯
+models/props_fairgrounds/snake.mdl TAG- 玩具蛇
+models/props_mill/tank_medium01.mdl TAG- 暴风聚雨的圆柱形建筑
+models/props_interiors/teddy_bear.mdl TAG- 玩具熊
+models/props_fortifications/sandbags_corner2.mdl TAG- 建筑沙袋 1
+models/props_fortifications/sandbags_corner3.mdl TAG- 建筑沙袋 2
+models/props_fortifications/sandbags_line2.mdl TAG- 建筑沙袋 3
+models/props/cs_office/vending_machine.mdl TAG- 自动贩卖机

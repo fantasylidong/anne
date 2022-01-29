@@ -1,0 +1,738 @@
+"United RPG Save"
+{
+	"STEAM_1:1:439244099"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:460674008"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:631968000"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:123680543"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:610415722"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:193540006"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:188247578"
+	{
+		"MELEE_SKILL"		"2"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:438840167"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:202531352"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:199562965"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:218464738"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:393343753"
+	{
+		"MELEE_SKILL"		"1"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:41598868"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:441797306"
+	{
+		"MELEE_SKILL"		"2"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:227462356"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:521593307"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:446722294"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:458194124"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"1"
+	}
+	"STEAM_1:1:538967272"
+	{
+		"MELEE_SKILL"		"1"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:91552457"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:507199606"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:427690999"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:221843351"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:540693106"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:462234795"
+	{
+		"MELEE_SKILL"		"2"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:547048502"
+	{
+		"MELEE_SKILL"		"0"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:232922487"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:423736529"
+	{
+		"MELEE_SKILL"		"2"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:234485588"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:499669967"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:523623355"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"1"
+	}
+	"STEAM_1:1:206054314"
+	{
+		"MELEE_SKILL"		"0"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:444097216"
+	{
+		"MELEE_SKILL"		"2"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:444682009"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:214684506"
+	{
+		"MELEE_SKILL"		"0"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:503727195"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:418280479"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:443403798"
+	{
+		"MELEE_SKILL"		"5"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:107769478"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:432930320"
+	{
+		"MELEE_SKILL"		"2"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:459376772"
+	{
+		"MELEE_SKILL"		"0"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:163361840"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:549271790"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:466939629"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:148979444"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:185083834"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:592711747"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:420450169"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:423811805"
+	{
+		"MELEE_SKILL"		"2"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:507945255"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:169487723"
+	{
+		"MELEE_SKILL"		"2"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:437540286"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:521314984"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:603408804"
+	{
+		"MELEE_SKILL"		"1"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:531037603"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:148181699"
+	{
+		"MELEE_SKILL"		"2"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:181996562"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:199861330"
+	{
+		"MELEE_SKILL"		"0"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:171717300"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"1"
+	}
+	"STEAM_1:0:453157649"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:217704852"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:427494441"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:419931119"
+	{
+		"MELEE_SKILL"		"1"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:585603773"
+	{
+		"MELEE_SKILL"		"0"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:225698059"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:220334468"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:450731286"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:185444390"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:174862220"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:623055206"
+	{
+		"MELEE_SKILL"		"1"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:442970556"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:502144437"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:197839985"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:504222628"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:138811837"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:223719061"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:440665233"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:160746172"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:119407160"
+	{
+		"MELEE_SKILL"		"0"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:554791097"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:63230264"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"1"
+	}
+	"STEAM_1:1:196631521"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:476650639"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:225803652"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:148765973"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:533279452"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:186003411"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"1"
+	}
+	"STEAM_1:0:109999979"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:220319992"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:240367732"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:531806256"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:176368092"
+	{
+		"MELEE_SKILL"		"2"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:502414563"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:229791049"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:431417975"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:522802870"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:440661605"
+	{
+		"MELEE_SKILL"		"1"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:49180250"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:197641117"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:64990549"
+	{
+		"MELEE_SKILL"		"2"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:224456811"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:128092573"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:569634811"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:82215497"
+	{
+		"MELEE_SKILL"		"5"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:158316055"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:449995729"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:241383614"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:515144955"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:506326432"
+	{
+		"MELEE_SKILL"		"2"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:244522447"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:225014225"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:175533176"
+	{
+		"MELEE_SKILL"		"5"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:223388260"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:197797045"
+	{
+		"MELEE_SKILL"		"2"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:440446570"
+	{
+		"MELEE_SKILL"		"1"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:442864362"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"1"
+	}
+	"STEAM_1:0:71811366"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:207406212"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:215878467"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:191335059"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:546958640"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:437350153"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:557544331"
+	{
+		"MELEE_SKILL"		"2"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:199051048"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:241384205"
+	{
+		"MELEE_SKILL"		"0"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:147805192"
+	{
+		"MELEE_SKILL"		"2"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:450441928"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:53475088"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:45500606"
+	{
+		"MELEE_SKILL"		"2"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:499929956"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:180825153"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:516844000"
+	{
+		"MELEE_SKILL"		"2"
+		"BLOOD_SKILL"		"1"
+	}
+	"STEAM_1:1:517577437"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:443213324"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:178105499"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:428906055"
+	{
+		"MELEE_SKILL"		"0"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:605645210"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:202248380"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:495409542"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:611279541"
+	{
+		"MELEE_SKILL"		"5"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:220572650"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:518081752"
+	{
+		"MELEE_SKILL"		"3"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:495097745"
+	{
+		"MELEE_SKILL"		"2"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:1:227061248"
+	{
+		"MELEE_SKILL"		"2"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:243362090"
+	{
+		"MELEE_SKILL"		"2"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:42188050"
+	{
+		"MELEE_SKILL"		"1"
+		"BLOOD_SKILL"		"0"
+	}
+	"STEAM_1:0:245826334"
+	{
+		"MELEE_SKILL"		"4"
+		"BLOOD_SKILL"		"0"
+	}
+}
