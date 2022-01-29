@@ -1,0 +1,15 @@
+"Phrases"
+{ 
+	"TAG_NOTICE"
+	{
+		"en"			"{ORANGE}[{GREEN}NOTICE{ORANGE}]{DEFAULT} "
+		"zho"			"{ORANGE}[{GREEN}提示{ORANGE}]{DEFAULT} "
+		"chi"			"{ORANGE}[{GREEN}提示{ORANGE}]{DEFAULT} "
+	}
+	"TAG_ANNOUNCE"
+	{
+		"en"			"{ORANGE}[{GREEN}ANNOUNCE{ORANGE}]{DEFAULT} "
+		"zho"			"{ORANGE}[{GREEN}公告{ORANGE}]{DEFAULT} "
+		"chi"			"{ORANGE}[{GREEN}公告{ORANGE}]{DEFAULT} "
+	}
+}
