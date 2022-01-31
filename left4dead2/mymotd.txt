@@ -1,1 +1,1 @@
-http://sb.trygek.com:8080/l4d_stats/index.php
+http://sb.trygek.com:8880/l4d_stats/index.php
