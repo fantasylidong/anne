@@ -1,1 +1,1 @@
-http://111.67.204.59/aliyun/serverip.php
+http://sb.trygek.com:8080/l4d_stats/index.php
