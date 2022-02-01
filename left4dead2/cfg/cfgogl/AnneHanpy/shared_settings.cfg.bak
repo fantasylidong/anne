@@ -6,40 +6,25 @@ confogl_addcvar l4d2_shotgun_ff_max 8.0	//修复喷子最大黑枪伤害（小�
 confogl_addcvar cssladders_enabled 1  //爬梯持枪扩展开关（0关，1开）
 confogl_addcvar cssladders_allow_m2 0  //爬梯是否允许右键（0关，1开）
 confogl_addcvar cssladders_allow_reload 1 //爬梯是否允许换弹（0关，1开）
-// [l4d2_si_staggers.smx]
-confogl_addcvar l4d2_disable_si_friendly_staggers 7
-// [server.smx]
-confogl_addcvar sm_cfgmotd_title "AnneHanpy"		//服务器按H键的Motd的标题
-confogl_addcvar sm_cfgmotd_url "http://sb.trygek.com:8880/l4d_stats/index.php"		//服务器按H键的Motd的内容
-confogl_addcvar sm_cfgip_url "http://sb.trygek.com:8880/l4d_stats/index.php"		//输入!ip显示收录的Anne服务器ip
-// [l4d2_slowdown_control.smx]
-confogl_addcvar z_tank_damage_slow_min_range 0
-confogl_addcvar z_tank_damage_slow_max_range 0
-confogl_addcvar l4d2_slowdown_gunfire_si 0
-confogl_addcvar l4d2_slowdown_gunfire_tank 0
-confogl_addcvar l4d2_slowdown_water_tank 0
-confogl_addcvar l4d2_slowdown_water_survivors -1
-confogl_addcvar l4d2_slowdown_water_survivors_during_tank 225
 // [slots_vote.smx]
 confogl_addcvar sm_slot_vote_min 1
 confogl_addcvar sm_slot_vote_max 16		//slots开位允许的最大数值（整数）
+// [server.smx]
+confogl_addcvar sm_cfgmotd_title "AnneHanpy"		//服务器按H键的Motd的标题
+confogl_addcvar sm_cfgmotd_url "http://111.67.204.59/aliyun/serverip.php"		//服务器按H键的Motd的内容
+confogl_addcvar sm_cfgip_url "http://111.67.204.59/aliyun/serverip.php"		//输入!ip显示收录的Anne服务器ip
 // [TickrateFixes.smx]
 confogl_addcvar tick_door_speed 1.3		//修复高tick下门的速度过快问题（小数）
 // [l4d2_horde_equaliser.smx]
 confogl_addcvar l4d2_heq_no_tank_horde 1	//出tank时不推进停止刷尸潮（0关，1开）
-// [l4d2_melee_fix.smx]
-confogl_addcvar melee_damage_charger 325.0   //近战对Charger的伤害，爆头也无法超过此值（整数）
-//[l4d2_tank_rock_pouch]
-confogl_addcvar vs_tank_pound_damage 100		//tank攻击倒地的生还伤害（整数）
-confogl_addcvar vs_tank_rock_damage 36		//tank石头的伤害（整数）
 //[sam_vs.smx]
 confogl_addcvar sam_vs_spec_time 45		//玩家持续无操作达到此时间时移至旁观（整数/单位秒）
 confogl_addcvar sam_vs_kick_time 75		//玩家被移至旁观持续无操作达到此时间时踢出服务器（整数/单位秒）
 confogl_addcvar sam_vs_respect_spec 1		//是否在对抗模式中使用，本药役属于对抗（0关，1开）
-// [l4d_boss_percent.smx]
-confogl_addcvar l4d_global_percent 1		//出门是否打印Boss产生的百分比（0关，1开）
-confogl_addcvar l4d_tank_percent 1		//出门是否打印tank产生的百分比（0关，1开）
-confogl_addcvar l4d_witch_percent 1		//出门是否打印wicth产生的百分比（0关，1开）
+// [l4d2_si_ladder_booster.smx]
+confogl_addcvar l4d2_ai_ladder_boost 1		//特感爬梯加速开关（0关，1开）
+confogl_addcvar l4d2_pz_ladder_boost 0		//小ss爬梯加速开关（0关，1开）
+confogl_addcvar l4d2_boost_multiplier 2.50	//特感爬梯加速的倍数（小数）
 // [l4dinfectedbots.smx]
 confogl_addcvar l4d_infectedbots_lifespan 20	//特感在某些条件下达到此值/s后处死（整数）---该功能貌似无效果
 // [lerpmonitor.smx]
@@ -52,8 +37,8 @@ confogl_addcvar sm_max_lerp 0.100		//lerp最大值（小数）
 confogl_addcvar pickup_switch_flags 3	//获得东西不会切换1.近战，2药物
 confogl_addcvar pickup_incap_flags 6	//1(口水) . 2 (克拳).4 (克石).
 // [l4d2_smg_reload_tweak.smx]
-confogl_addcvar l4d2_reload_speed_uzi 1.75  //uzi换弹速度
-confogl_addcvar l4d2_reload_speed_silenced_smg 1.88	//smg换弹速度
+confogl_addcvar l4d2_reload_speed_uzi 1.88  //uzi换弹速度
+confogl_addcvar l4d2_reload_speed_silenced_smg 2.0	//smg换弹速度
 //////////////////////////////
 //////////////////////////////
 // [witch_and_tankifier.smx]		控制插件不产生witch的地图（部分地图自带witch或不适合产生妹子时使用）
@@ -132,24 +117,6 @@ static_tank_map eu05_train_b16		//static_tank_map 地图建图代码
 static_tank_map uz_escape		//static_tank_map 地图建图代码
 static_tank_map uf4_airfield		//static_tank_map 地图建图代码
 static_tank_map mnac			//static_tank_map 地图建图代码
-static_tank_map l4d2_wanli03	//三方图万里
-static_tank_map 6_m6			//三方图增城
-// [eq_finale_tanks.smx]		控制救援关直接跳过第一个tank，只产生第二个克（不包括路程克）
-tank_map_flow_and_second_event c2m5_concert				//tank_map_flow_and_second_event 建图代码
-tank_map_flow_and_second_event c3m4_plantation				//tank_map_flow_and_second_event 建图代码
-tank_map_flow_and_second_event c8m5_rooftop				//tank_map_flow_and_second_event 建图代码
-tank_map_flow_and_second_event c9m2_lots					//tank_map_flow_and_second_event 建图代码
-tank_map_flow_and_second_event c10m5_houseboat				//tank_map_flow_and_second_event 建图代码
-tank_map_flow_and_second_event c12m5_cornfield				//tank_map_flow_and_second_event 建图代码
-tank_map_flow_and_second_event c14m2_lighthouse				//tank_map_flow_and_second_event 建图代码
-// [eq_finale_tanks.smx]		控制救援关只产生第一个tank（不包括路程克）
-tank_map_only_first_event c1m4_atrium					//tank_map_only_first_event 建图代码
-tank_map_only_first_event c5m5_bridge					//tank_map_only_first_event 建图代码
-tank_map_only_first_event c13m4_cutthroatcreek				//tank_map_only_first_event 建图代码
-tank_map_only_first_event l4d2_daybreak05_rescue				//tank_map_only_first_event 建图代码
-tank_map_only_first_event l4d_yama_5					//tank_map_only_first_event 建图代码
-tank_map_only_first_event l4d2_darkblood04_extraction			//tank_map_only_first_event 建图代码
-tank_map_only_first_event death_sentence_5				//tank_map_only_first_event 建图代码
 // [l4d2_skill_detect.smx] [l4d2_stats.smx]
 sm_skill_report_enable 1		//玩家骚操作的各种提示开关（0关，1开）
 // Confogl Additional
