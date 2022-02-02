@@ -17,7 +17,7 @@
 	}
 	"Anne版本选择"
 	{
-		"sm_fm Annehappy"
+		"sm_fm AnneHappy"
 		{
 			"message" "22-1-25号版本"
 		}
