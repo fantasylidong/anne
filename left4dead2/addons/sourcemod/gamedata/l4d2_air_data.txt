@@ -1,0 +1,34 @@
+"Games"
+{
+	"left4dead2"
+	{
+		"Addresses"
+		{
+			"CVomit::IsAbilityReadyToFire"
+			{
+				"linux"
+				{
+					"signature" "CVomit::IsAbilityReadyToFire"
+				}
+			}
+			
+		}
+		"Offsets"
+		{
+			"boomer_offset"
+			{
+				"linux"		"118"
+			}
+		}
+		"Signatures" 
+		{
+			"CVomit::IsAbilityReadyToFire"
+			{
+				// * CVomit::IsAbilityReadyToFire(CVomit *this)
+				
+				"library"	"server"
+				"linux"	"@_ZNK6CVomit20IsAbilityReadyToFireEv"
+			}
+		}
+	}
+}
