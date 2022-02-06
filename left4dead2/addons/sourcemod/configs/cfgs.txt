@@ -183,15 +183,15 @@
 			"message" "关闭高级人机"
 		}
 	}
-	"私有mod开启选项"
+	"增加特感能力"
 	{
-		"sm_cvar l4d2_addons_eclipse -1"
+		"exec vote/newsiab_on.cfg"
 		{
-			"message" "开启mod"
+			"message" "开启增强smoker,tank,spitter"
 		}
-		"sm_cvar l4d2_addons_eclipse  0"
+		"exec vote/newsiab_off.cfg"
 		{
-			"message" "关闭mod"
+			"message" "关闭增强smoker,tank,spitter"
 		}
 	}
 	"模式选择"
