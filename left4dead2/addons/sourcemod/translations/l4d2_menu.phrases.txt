@@ -1,0 +1,37 @@
+"Phrases"
+{
+	"sm_vote"
+	{
+		"en"			"投票菜单"		
+		"zho"			"投票菜单"
+		"chi"			"投票菜单"
+	}
+
+	"sm_rpg"
+	{
+		"en"			"RPG商店"		
+		"zho"			"RPG商店"
+		"chi"			"RPG商店"
+	}
+
+	"sm_mapvote"
+	{
+		"en"			"三方图投票"		
+		"zho"			"三方图投票"
+		"chi"			"三方图投票"
+	}
+
+	"sm_match"
+	{
+		"en"			"模式投票"		
+		"zho"			"模式投票"
+		"chi"			"模式投票"
+	}
+
+	"MENU"
+	{
+		"en"			"返回菜单"		
+		"zho"			"返回菜单"
+		"chi"			"返回菜单"
+	}
+}

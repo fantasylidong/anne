@@ -1,0 +1,37 @@
+"AnneHappy"
+{
+	"2333"
+	{
+		"servername"	"Anne电信1服"
+	}
+	
+	"2334"
+	{
+		"servername"	"Anne电信2服"
+	}
+	
+	"2335"
+	{
+		"servername"	"Anne电信3服"
+	}
+	"2336"
+	{
+		"servername"	"Anne电信4服"
+	}
+	"2337"
+	{
+		"servername"	"Anne电信5服"
+	}
+	"2338"
+	{
+		"servername"	"Anne电信6服"
+	}
+	"2339"
+	{
+		"servername"	"Anne电信7服"
+	}
+	"2340"
+	{
+		"servername"	"Anne电信8服"
+	}
+}
