@@ -194,6 +194,17 @@
 			"message" "关闭增强smoker,tank,spitter"
 		}
 	}
+	"内鬼模式开关"
+	{
+		"exec vote/NeiGui_on.cfg"
+		{
+			"message" "开启内鬼模式"
+		}
+		"exec vote/NeiGui_off.cfg"
+		{
+			"message" "关闭内鬼模式"
+		}
+	}
 	"模式选择"
 	{
 		"sm_fm AnneHappy"
@@ -211,10 +222,6 @@
 		"sm_fm WitchParty"
 		{
 			"message" "WitchParty模式"
-		}
-		"sm_fm AnneNeiGui"
-		{
-			"message" "内鬼药役模式[1-25]"
 		}
 	}
 	"开关回血"
