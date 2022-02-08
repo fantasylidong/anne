@@ -48,7 +48,7 @@
 	"10"
 	{
 		"type"		"S"
-		"text"		"{LIGHTGREEN}内鬼系统已经集成 投票切换 默认使用最新版本Anne核心不可更改"
+		"text"		"{LIGHTGREEN}内鬼开关可以 !vote 投票开启"
 	}
 	"11"
 	{
