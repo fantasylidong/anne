@@ -1,0 +1,83 @@
+"Advertisements"
+{
+	"1"
+	{
+		"type"		"S"
+		"text"		"{LIGHTGREEN}[本章节地图]: {GREEN}{CURRENTMAP} \n{LIGHTGREEN}[服务器时间]: {GREEN}{TIME24} - {DATE}"
+	}
+	"2"
+	{
+		"type"		"S"
+		"text"		"{LIGHTGREEN}!away闲置 !join加入 !slots开位 !xx模式查询 !mapvote三方图"
+	}
+	"3"
+	{
+		"type"		"S"
+		"text"		"{LIGHTGREEN}新手建议走四号位清理小僵尸和解控 但不要离开特感视线太远哦"
+	}
+	"4"
+	{
+		"type"		"S"
+		"text"		"{LIGHTGREEN}已经开放100tick观战，更爽的观赏大佬坐牢"
+	}
+	"5"
+	{
+		"type"		"S"
+		"text"		"{LIGHTGREEN}为了游戏体验 本组药役建议游戏时间在250小时"
+	}
+	"6"
+	{
+		"type"		"S"
+		"text"		"{LIGHTGREEN}血量低于40时要考虑跳楼表演了 因为会拖慢队伍推进速度哦"
+	}
+	"7"
+	{
+		"type"		"S"
+		"text"		"{LIGHTGREEN}!zs自杀  !tank查看boss !rpg购物商店 !xx模式查询"
+	}
+	"8"
+	{
+		"type"		"S"
+		"text"		"{LIGHTGREEN}本组服务器都有商店系统 打不过可以输入!buy或!rpg进行氪金"
+	}
+	"9"
+	{
+		"type"		"S"
+		"text"		"{LIGHTGREEN}近战没必要留给一号位 没有近战的一号位本身就是傻逼"
+	}
+	"10"
+	{
+		"type"		"S"
+		"text"		"{LIGHTGREEN}内鬼开关可以 !vote 投票开启"
+	}
+	"11"
+	{
+		"type"		"S"
+		"text"		"{LIGHTGREEN}tank局建议不要太贪输出哦 该退就退 小心被特感爆菊花"
+	}
+	"12"
+	{
+		"type"		"S"
+		"text"		"{LIGHTGREEN}尽量不要被胖子喷哦 被喷不但拖节奏还很难帮助队友"
+	}
+	"13"
+	{
+		"type"		"S"
+		"text"		"{LIGHTGREEN}如果电脑不会给药 可以对着电脑疯狂按E进行抢劫"
+	}
+	"14"
+	{
+		"type"		"S"
+		"text"		"{LIGHTGREEN}默认关闭高级人机，开了会让你自己觉得自己很呆，可以投票开启"
+	}
+	"15"
+	{
+		"type"		"S"
+		"text"		"{LIGHTGREEN}本服OP 东 ，常玩的可以在steam组里申请管理员"
+	}
+	"16"
+	{
+		"type"		"S"
+		"text"		"{LIGHTGREEN}服务器提供Anne版本选择，默认当前最新版本22-1-25"
+	}
+}
