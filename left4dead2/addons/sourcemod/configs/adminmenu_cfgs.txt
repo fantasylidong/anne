@@ -10,4 +10,5 @@ Configs
 	"cfg/sourcemod/test_on.cfg"		"测试模式开启"
 	"cfg/sourcemod/test_off.cfg"		"测试模式关闭"
 	"cfg/sourcemod/build_on.cfg"		"载物插件开启"
+	"cfg/sourcemod/build_off.cfg"		"载物插件开启"
 }
