@@ -1,0 +1,12 @@
+"Phrases"
+{
+	"Door_Open"
+	{
+		"en"		"开始挨打"
+	}
+
+	"Door_Close"
+	{
+		"en"		"算你走运"
+	}
+}
