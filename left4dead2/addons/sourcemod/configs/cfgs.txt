@@ -172,18 +172,7 @@
 			"message" "20秒"
 		}
 	}
-	"开关高级人机[只当回合生效]"
-	{
-		"sm_cvar sb_fix_enabled 1"
-		{
-			"message" "开启高级人机"
-		}
-		"sm_cvar sb_fix_enabled 0"
-		{
-			"message" "关闭高级人机"
-		}
-	}
-	"增加特感能力"
+	"杂项"
 	{
 		"exec vote/newsiab_on.cfg"
 		{
@@ -192,6 +181,22 @@
 		"exec vote/newsiab_off.cfg"
 		{
 			"message" "关闭增强smoker,tank,spitter"
+		}
+		"sm_cvar sb_fix_enabled 1"
+		{
+			"message" "开启高级人机"
+		}
+		"sm_cvar sb_fix_enabled 0"
+		{
+			"message" "关闭高级人机"
+		}
+		"exec vote/mysqlShop_on.cfg"
+		{
+			"message" "开启数据库商店"
+		}
+		"exec vote/mysqlShop_off.cfg"
+		{
+			"message" "开启无数据库版商店"
 		}
 	}
 	"内鬼模式开关"

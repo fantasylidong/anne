@@ -11,4 +11,6 @@ Configs
 	"cfg/sourcemod/test_off.cfg"		"测试模式关闭"
 	"cfg/sourcemod/build_on.cfg"		"载物插件开启"
 	"cfg/sourcemod/build_off.cfg"		"载物插件关闭"
+	"cfg/vote/mysqlShop_on.cfg"		"使用数据库商店"
+	"cfg/vote/mysqlShop_off.cfg"		"使用无数据库商店"
 }
