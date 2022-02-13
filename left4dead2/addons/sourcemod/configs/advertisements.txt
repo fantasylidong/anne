@@ -53,6 +53,6 @@
 	"11"
 	{
 		"type"		"S"
-		"text"		"{LIGHTGREEN}服务器提供Anne版本选择，可以投票更换"
+		"text"		"{LIGHTGREEN}服务器提供Anne版本选择，地图选择，可以投票更换"
 	}
 }
