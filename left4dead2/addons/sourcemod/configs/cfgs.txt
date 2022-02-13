@@ -19,7 +19,7 @@
 	{
 		"sm_fm AnneHappy"
 		{
-			"message" "22-1-25号版本"
+			"message" "最新版本"
 		}
 		"sm_fm Anne11-28"
 		{
@@ -32,6 +32,17 @@
 		"sm_fm Anne7-7"
 		{
 			"message" "21-7-7号版本"
+		}
+	}
+	"地图选择"
+	{
+		"sm_fm AnneHappy"
+		{
+			"message" "zonemod版本"
+		}
+		"sm_fm Anneold"
+		{
+			"message" "原版"
 		}
 	}
 	"特感数量"
@@ -198,9 +209,6 @@
 		{
 			"message" "开启无数据库版商店"
 		}
-	}
-	"内鬼模式开关"
-	{
 		"exec vote/NeiGui_on.cfg"
 		{
 			"message" "开启内鬼模式"
