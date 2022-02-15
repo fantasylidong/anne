@@ -248,21 +248,6 @@
 			"message" "关闭回血"
 		}
 	}
-	"同步频率切换[越高性能要求越高]"
-	{
-		"sm_cvar nb_update_frequency 0.01"
-		{
-			"message" "0.01[高频率]"
-		}
-		"sm_cvar nb_update_frequency 0.014"
-		{
-			"message" "0.014[中频率]"
-		}
-		"sm_cvar nb_update_frequency 0.03"
-		{
-			"message" "0.03[低频率(原版默认)]"
-		}
-	}
 	"武器配置"
 	{
 		"exec vote/weapon/AnneHappy.cfg"

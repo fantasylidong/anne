@@ -13,7 +13,7 @@ Configs
 	"cfg/sourcemod/build_off.cfg"		"载物插件关闭"
 	"cfg/vote/mysqlShop_on.cfg"		"使用数据库商店"
 	"cfg/vote/mysqlShop_off.cfg"		"使用无数据库商店"
-	"sm_cvar nb_update_frequency 0.01"	"高频率同步"
-	"sm_cvar nb_update_frequency 0.014"	"中频率同步"
-	"sm_cvar nb_update_frequency 0.03"	"低频率同步"
+	"cfg/vote/frequency/high.cfg"	"高频率同步"
+	"cfg/vote/frequency/medium.cfg"	"中频率同步"
+	"cfg/vote/frequency/low.cfg"	"低频率同步"
 }
