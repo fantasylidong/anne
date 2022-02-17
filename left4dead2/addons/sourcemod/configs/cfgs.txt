@@ -217,6 +217,14 @@
 		{
 			"message" "关闭内鬼模式"
 		}
+		"exec vote/tank_on.cfg"
+		{
+			"message" "开启Tank大致血量显示"
+		}
+		"exec vote/tank_off.cfg"
+		{
+			"message" "关闭Tank大致血量显示"
+		}
 	}
 	"模式选择"
 	{
