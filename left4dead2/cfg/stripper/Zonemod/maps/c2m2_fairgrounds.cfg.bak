@@ -23,6 +23,17 @@ add:
         "angles" "0 -89 0"
         "model"  "models/props_street/police_barricade3.mdl"
         "classname"     "prop_dynamic"
+}
+add:
+{
+    "classname" "func_simpleladder"
+    "origin" "-1479 173 0"
+    "angles" "0.00 -89 0.00"
+    "model" "*64"        
+    "normal.x" "0.98"
+    "normal.y" "0.14"
+    "normal.z" "0.00"
+    "team" "2"
 } 
 add:
 {
