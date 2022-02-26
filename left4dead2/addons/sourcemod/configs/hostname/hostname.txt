@@ -2,7 +2,7 @@
 {
 	"2331"
 	{
-		"servername"	"Anne电信1服"
+		"servername"	"Anne电信1服[禁MOD]"
 	}
 	"2332"
 	{
@@ -40,6 +40,6 @@
 	}
 	"2340"
 	{
-		"servername"	"Anne电信0服"
+		"servername"	"Anne电信0服[禁MOD]"
 	}
 }
