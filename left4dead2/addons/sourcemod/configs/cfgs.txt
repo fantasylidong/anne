@@ -209,14 +209,6 @@
 		{
 			"message" "开启无数据库版商店"
 		}
-		"exec vote/NeiGui_on.cfg"
-		{
-			"message" "开启内鬼模式"
-		}
-		"exec vote/NeiGui_off.cfg"
-		{
-			"message" "关闭内鬼模式"
-		}
 		"exec vote/tank_on.cfg"
 		{
 			"message" "开启Tank大致血量显示"
