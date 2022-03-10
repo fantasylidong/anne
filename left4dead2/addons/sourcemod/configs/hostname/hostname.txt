@@ -16,8 +16,7 @@
 	"2334"
 	{
 		"servername"	"Anne电信4服[进阶]"
-	}
-	
+	}	
 	"2335"
 	{
 		"servername"	"Anne电信5服[专家]"
@@ -40,7 +39,7 @@
 	}
 	"2340"
 	{
-		"servername"	"Anne电信10服[专家]"
+		"servername"	"Anne电信10服[大师]"
 	}	
 	"2343"
 	{
@@ -48,6 +47,6 @@
 	}
 	"2344"
 	{
-		"servername"	"Anne电信12服[禁MOD][专家]"
+		"servername"	"Anne电信12服[禁MOD][大师]"
 	}
 }
