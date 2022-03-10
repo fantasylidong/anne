@@ -19,23 +19,23 @@
 	}	
 	"2335"
 	{
-		"servername"	"Anne电信5服[专家]"
+		"servername"	"Anne电信5服[钻石]"
 	}
 	"2336"
 	{
-		"servername"	"Anne电信6服[专家]"
+		"servername"	"Anne电信6服[钻石]"
 	}
 	"2337"
 	{
-		"servername"	"Anne电信7服[专家]"
+		"servername"	"Anne电信7服[钻石]"
 	}
 	"2338"
 	{
-		"servername"	"Anne电信8服[专家]"
+		"servername"	"Anne电信8服[钻石]"
 	}
 	"2339"
 	{
-		"servername"	"Anne电信9服[专家]"
+		"servername"	"Anne电信9服[钻石]"
 	}
 	"2340"
 	{
@@ -43,7 +43,7 @@
 	}	
 	"2343"
 	{
-		"servername"	"Anne电信11服[禁MOD][专家]"
+		"servername"	"Anne电信11服[禁MOD][钻石]"
 	}
 	"2344"
 	{
