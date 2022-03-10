@@ -1,0 +1,41 @@
+"Phrases"
+{
+	"ERROR"
+	{
+		"en"			"Failed to retrieve your playtime"
+		"chi"			"获取你的游戏时间失败"
+	}
+	
+	"PRIVATEPROFILE"
+	{
+		"en"			"You need to make your steam community profile public so we can extract your playtime"
+		"chi"			"你需要把你steam社区页面设为公开才能获取确切游戏时间，否则不允许进入此服务器"
+	}
+
+	"REJECTED"
+	{
+		"#format"		"{1:.1f},{2:.1f}"
+		"en"			"You need to have at least {1} hours of total playtime and {2} hours of playtime minus your last two weeks playtime, to be able to join this server"
+		"chi"			"你至少需要{1}小时求生之路2总游戏时间，且最近两周需要进行{2}小时得游戏才能进入服务器"
+	}
+	
+	"EXCLUDED"
+	{
+		"#format"		"{1:s}"
+		"en"			"SteamId {1} added to the exclude list"
+		"chi"			"SteamId {1} 玩家已经被加入白名单"
+	}
+	
+	"INCLUDED"
+	{
+		"#format"		"{1:s}"
+		"en"			"SteamId {1} removed from the exclude list"
+		"chi"			"SteamId {1} 玩家已经被删除出白名单"
+	}
+	
+	"PRIMENEEDED"
+	{
+		"en"			"You need to have a prime status to be able to play on this server"
+		"chi"			"你必须的是会员才能在这个服务器游玩"
+	}
+}
