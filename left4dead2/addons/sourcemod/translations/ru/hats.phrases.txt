@@ -1,0 +1,63 @@
+"Phrases"
+{
+	"Hat_Wearing"
+	{
+		"#format"		"{1:s}"
+		"ru"			"Вы одели шляпу: {green}[{1}] {lightgreen}"
+	}
+	"Hat_Changed"
+	{
+		"#format"		"{1:s}"
+		"ru"			"Шапка заменена у {green}{1}{lightgreen}."
+	}
+	"Hat_No_Index"
+	{
+		"#format"		"{1:d}{2:d}"
+		"ru"			"Не могу найти индекс шапки {green}{1}{lightgreen}, значения между {green}1{lightgreen} и {green}{2}{lightgreen}."
+	}
+	"Hat_Not_Found"
+	{
+		"#format"		"{1:s}"
+		"ru"			"Не могу найти шапку {green}{1}{lightgreen}."
+	}
+	"Hat_Invalid"
+	{
+		"ru"			"Выбран неверный игрок."
+	}
+	"Hat_Unblocked"
+	{
+		"#format"		"{1:s}"
+		"ru"			"Разблокированы шапки для {green}{1}{lightgreen}."
+	}
+	"Hat_Blocked"
+	{
+		"#format"		"{1:s}"
+		"ru"			"Заблокированы шапки для {green}{1}{lightgreen}."
+	}
+	"Hat_View"
+	{
+		"#format"		"{1:s}"
+		"ru"			"{lightgreen}Возможность видеть свою шапку: {green}{1}."
+	}
+	"Hat_Ability"
+	{
+		"#format"		"{1:s}"
+		"ru"			"{lightgreen}Возможность одевать шапки: {green}{1}."
+	}
+	"Hat_On"
+	{
+		"ru"			"включена"
+	}
+	"Hat_Off"
+	{
+		"ru"			"отключена"
+	}
+	"Hat_Menu_Title"
+	{
+		"ru"			"Выберите свою шляпу."
+	}
+	"Hat_Missing"
+	{
+		"ru"			"На вас не одята шляпа!"
+	}
+}

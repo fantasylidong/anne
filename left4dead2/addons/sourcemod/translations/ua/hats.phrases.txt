@@ -1,0 +1,63 @@
+"Phrases"
+{
+	"Hat_Wearing"
+	{
+		"#format"		"{1:s}"
+		"ua"			"Ви одягнули капелюх: {green}[{1}] {lightgreen}"
+	}
+	"Hat_Changed"
+	{
+		"#format"		"{1:s}"
+		"ua"			"Шапка замінена у {green}{1}{lightgreen}."
+	}
+	"Hat_No_Index"
+	{
+		"#format"		"{1:d}{2:d}"
+		"ua"			"Не можу знайти індекс шапки {green}{1}{lightgreen}, значення між {green}1{lightgreen} и {green}{2}{lightgreen}."
+	}
+	"Hat_Not_Found"
+	{
+		"#format"		"{1:s}"
+		"ua"			"Не можу знайти шапку {green}{1}{lightgreen}."
+	}
+	"Hat_Invalid"
+	{
+		"ua"			"Обрано невірного гравця."
+	}
+	"Hat_Unblocked"
+	{
+		"#format"		"{1:s}"
+		"ua"			"Розблоковані шапки для {green}{1}{lightgreen}."
+	}
+	"Hat_Blocked"
+	{
+		"#format"		"{1:s}"
+		"ua"			"Заблоковані шапки для {green}{1}{lightgreen}."
+	}
+	"Hat_View"
+	{
+		"#format"		"{1:s}"
+		"ua"			"{lightgreen}Можливість бачити свою шапку: {green}{1}."
+	}
+	"Hat_Ability"
+	{
+		"#format"		"{1:s}"
+		"ua"			"{lightgreen}Можливість вдягати шапки: {green}{1}."
+	}
+	"Hat_On"
+	{
+		"ua"			"вімкнена"
+	}
+	"Hat_Off"
+	{
+		"ua"			"відключена"
+	}
+	"Hat_Menu_Title"
+	{
+		"ua"			"Оберіть свій капелюх."
+	}
+	"Hat_Missing"
+	{
+		"ua"			"На вас не вдягнений капелюх!"
+	}
+}
