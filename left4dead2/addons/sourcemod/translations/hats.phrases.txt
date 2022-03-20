@@ -1,0 +1,63 @@
+"Phrases"
+{
+	"Hat_Wearing"
+	{
+		"#format"		"{1:s}"
+		"en"			"You are now wearing the {green}[{1}] {lightgreen}hat."
+	}
+	"Hat_Changed"
+	{
+		"#format"		"{1:s}"
+		"en"			"Changed hat on {green}{1}{lightgreen}."
+	}
+	"Hat_No_Index"
+	{
+		"#format"		"{1:d}{2:d}"
+		"en"			"Cannot find the hat index {green}{1}{lightgreen}, values between {green}1{lightgreen} and {green}{2}{lightgreen}."
+	}
+	"Hat_Not_Found"
+	{
+		"#format"		"{1:s}"
+		"en"			"Cannot find the hat {green}{1}{lightgreen}."
+	}
+	"Hat_Invalid"
+	{
+		"en"			"Invalid player selected."
+	}
+	"Hat_Unblocked"
+	{
+		"#format"		"{1:s}"
+		"en"			"Unblocked hats for {green}{1}{lightgreen}."
+	}
+	"Hat_Blocked"
+	{
+		"#format"		"{1:s}"
+		"en"			"Blocked hats for {green}{1}{lightgreen}."
+	}
+	"Hat_View"
+	{
+		"#format"		"{1:s}"
+		"en"			"{lightgreen}Personal hat view has been turned {green}{1}{lightgreen}."
+	}
+	"Hat_Ability"
+	{
+		"#format"		"{1:s}"
+		"en"			"{lightgreen}You have turned {green}{1}{lightgreen} the ability to wear hats."
+	}
+	"Hat_On"
+	{
+		"en"			"on"
+	}
+	"Hat_Off"
+	{
+		"en"			"off"
+	}
+	"Hat_Menu_Title"
+	{
+		"en"			"Select your hat."
+	}
+	"Hat_Missing"
+	{
+		"en"			"You're not wearing a hat!"
+	}
+}

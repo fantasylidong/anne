@@ -1,0 +1,63 @@
+"Phrases"
+{
+	"Hat_Wearing"
+	{
+		"#format"		"{1:s}"
+		"de"			"Du trägst nun den {green}[{1}] {lightgreen}Hut."
+	}
+	"Hat_Changed"
+	{
+		"#format"		"{1:s}"
+		"de"			"Hut von {green}{1}{lightgreen} geändert."
+	}
+	"Hat_No_Index"
+	{
+		"#format"		"{1:d}{2:d}"
+		"de"			"Kann den Hut Index {green}{1}{lightgreen} nicht finden, Werte zwischen {green}1{lightgreen} und {green}{2}{lightgreen}."
+	}
+	"Hat_Not_Found"
+	{
+		"#format"		"{1:s}"
+		"de"			"Kann den Hut {green}{1}{lightgreen} nicht finden."
+	}
+	"Hat_Invalid"
+	{
+		"de"			"Ungültigen Spieler ausgewählt."
+	}
+	"Hat_Unblocked"
+	{
+		"#format"		"{1:s}"
+		"de"			"Hüte für {green}{1}{lightgreen} wurden erlaubt."
+	}
+	"Hat_Blocked"
+	{
+		"#format"		"{1:s}"
+		"de"			"Hüte für {green}{1}{lightgreen} wurden verboten."
+	}
+	"Hat_View"
+	{
+		"#format"		"{1:s}"
+		"de"			"{lightgreen}Sichtbarkeit des eigenen Hutes {green}{1}{lightgreen}."
+	}
+	"Hat_Ability"
+	{
+		"#format"		"{1:s}"
+		"de"			"{lightgreen}Du hast die Möglichkeit einen Hut zu tragen {green}{1}{lightgreen}geschaltet."
+	}
+	"Hat_On"
+	{
+		"de"			"ein"
+	}
+	"Hat_Off"
+	{
+		"de"			"aus"
+	}
+	"Hat_Menu_Title"
+	{
+		"de"			"Wähle deinen Hut."
+	}
+	"Hat_Missing"
+	{
+		"de"			"Du trägst keinen Hut!"
+	}
+}

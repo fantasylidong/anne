@@ -1,0 +1,99 @@
+"Phrases"
+{
+	"Hat_Wearing"
+	{
+		"#format"		"{1:s}"
+		"zho"			"您正在配戴{green}{1}{default}。"
+	}
+	"Hat_Changed"
+	{
+		"#format"		"{1:s}"
+		"zho"			"您正在配戴{green}{1}{default}。"
+	}
+	"Hat_No_Index"
+	{
+		"#format"		"{1:d}{2:d}"
+		"zho"			"無法找到編號為{green}{1}{default}的帽子。 (應在{green}1{default}至{green}{2}{default}內)"
+	}
+	"Hat_Not_Found"
+	{
+		"#format"		"{1:s}"
+		"zho"			"無法找到帽子{green}{1}{default}。"
+	}
+	"Hat_Invalid"
+	{
+		"zho"			"無效的玩家。"
+	}
+	"Hat_Unblocked"
+	{
+		"#format"		"{1:s}"
+		"zho"			"Unblocked hats for {green}{1}{default}."
+	}
+	"Hat_Blocked"
+	{
+		"#format"		"{1:s}"
+		"zho"			"Blocked hats for {green}{1}{default}."
+	}
+	"Hat_View"
+	{
+		"#format"		"{1:s}"
+		"zho"			"Personal hat view has been turned {green}{1}{default}."
+	}
+	"Hat_Ability"
+	{
+		"#format"		"{1:s}"
+		"zho"			"You have turned {green}{1}{default} the ability to wear hats."
+	}
+	"Hat_On"
+	{
+		"zho"			"on"
+	}
+	"Hat_Off"
+	{
+		"zho"			"off"
+	}
+	"Hat_Menu_Title"
+	{
+		"zho"			"選擇帽子:"
+	}
+	"Hat_Missing"
+	{
+		"zho"			"無法配戴帽子。"
+	}
+
+
+	"SYSTEM"
+	{
+		"zho"			"{lightgreen}[帽子]{default} "
+	}
+
+	"NO_RIGHT_NOW"
+	{
+		"zho"			"暫時無法使用。 "
+	}
+
+	"ADMIN_DISABLE_HAT"
+	{
+		"zho"			"選擇玩家停用帽子:"
+	}
+
+	"ADMIN_CHANGE_HAT"
+	{
+		"zho"			"選擇玩家更換帽子:"
+	}
+
+	"SET_ANGLE"
+	{
+		"zho"			"選擇帽子角度:"
+	}
+
+	"SET_POSITION"
+	{
+		"zho"			"選擇帽子位置:"
+	}
+
+	"SET_SIZE"
+	{
+		"zho"			"選擇帽子大細:"
+	}
+}
