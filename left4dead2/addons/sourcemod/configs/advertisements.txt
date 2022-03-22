@@ -58,6 +58,6 @@
 	"12"
 	{
 		"type"		"S"
-		"text"		"{LIGHTGREEN}输入!ch !tagslist选择自己已获得的称号佩戴"
+		"text"		"{LIGHTGREEN}输入!ch !tagslist选择自己已获得的称号佩戴，如果称号未正确加载输入!cz重新载入称号"
 	}
 }
