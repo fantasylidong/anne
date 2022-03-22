@@ -28,7 +28,7 @@
 	"6"
 	{
 		"type"		"S"
-		"text"		"{LIGHTGREEN}本组服务器都有商店系统 打不过可以输入!buy或!rpg进行氪金"
+		"text"		"{LIGHTGREEN}本组服务器都有商店系统 打不过可以输入!buy或!rpg进行氪金,!pen快速买喷,!ammo快速买子弹，在原版商店上增加了数据库支持，妈妈再也不用担心我出门不带近战了"
 	}
 	"7"
 	{
@@ -49,5 +49,15 @@
 	{
 		"type"		"S"
 		"text"		"{LIGHTGREEN}本服摆烂OP 东，欢迎加入组服务器qq群：484690502 寻找小伙伴一起开黑"
+	}
+	"11"
+	{
+		"type"		"S"
+		"text"		"{LIGHTGREEN}输入!dance跳跳舞解解压"
+	}
+	"12"
+	{
+		"type"		"S"
+		"text"		"{LIGHTGREEN}输入!ch !tagslist选择自己已获得的称号佩戴"
 	}
 }
