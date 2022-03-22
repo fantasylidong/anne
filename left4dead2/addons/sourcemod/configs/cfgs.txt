@@ -203,11 +203,11 @@
 		}
 		"exec vote/mysqlShop_on.cfg"
 		{
-			"message" "开启数据库商店"
+			"message" "开启Anne老版数据库商店"
 		}
 		"exec vote/mysqlShop_off.cfg"
 		{
-			"message" "开启无数据库版商店"
+			"message" "开启电信服数据库版商店"
 		}
 		"exec vote/tank_on.cfg"
 		{

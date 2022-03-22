@@ -1,0 +1,262 @@
+"Phrases"
+{ 
+	"购买枪械"
+	{
+		"en"			"Gun Shop"
+		"zho"			"购买枪械"
+		"chi"			"购买枪械 "
+	}
+	"购买补给"
+	{
+		"en"			"Supply Shop"
+		"zho"			"购买补给"
+		"chi"			"购买补给"
+	}
+	"出门近战技能"
+	{
+		"en"			"Melee Ability"
+		"zho"			"出门近战技能"
+		"chi"			"出门近战技能"
+	}
+	"回血技能"
+	{
+		"en"			"BloodySkill"
+		"zho"			"回血技能"
+		"chi"			"回血技能"
+	}
+	"普通小手枪"
+	{
+		"#format" "{1:d}"
+		"en"			"pistol {1}B"
+		"zho"			"普通小手枪 {1}B数"
+		"chi"			"普通小手枪 {1}B数"
+	}
+	"马格南"
+	{
+		"#format" "{1:d}"
+		"en"			"pistol_magnum {1}B"
+		"zho"			"马格南 {1}B数"
+		"chi"			"马格南 {1}B数"
+	}
+	"Uzi"
+	{
+		"#format" "{1:d}"
+		"en"			"Uzi {1}B数"
+		"zho"			"Uzi {1}B数"
+		"chi"			"Uzi {1}B数"
+	}
+	"消音smg"
+	{
+		"#format" "{1:d}"
+		"en"			"smg_silenced {1}B"
+		"zho"			"消音smg {1}B数"
+		"chi"			"消音smg {1}B数"
+	}
+	"一代单发霰弹枪"
+	{
+		"#format" "{1:d}"
+		"en"			"pumpshotgun {1}B"
+		"zho"			"一代单发霰弹枪 {1}B"
+		"chi"			"一代单发霰弹枪 {1}B数"
+	}
+	"二代单发霰弹枪"
+	{
+		"#format" "{1:d}"
+		"en"			"shotgun_chrome {1}B"
+		"zho"			"二代单发霰弹枪 {1}B数"
+		"chi"			"二代单发霰弹枪 {1}B数"
+	}
+	"mp5机枪"
+	{
+		"#format" "{1:d}"
+		"en"			"mp5 {1}B"
+		"zho"			"mp5机枪 {1}B数"
+		"chi"			"mp5机枪 {1}B数"
+	}
+	"一代连发霰弹枪"
+	{
+		"#format" "{1:d}"
+		"en"			"autoshotgun {1}B"
+		"zho"			"一代连发霰弹枪 {1}B数"
+		"chi"			"一代连发霰弹枪 {1}B数"
+	}
+	"二代连发霰弹枪"
+	{
+		"#format" "{1:d}"
+		"en"			"shotgun_spas {1}B"
+		"zho"			"二代连发霰弹枪 {1}B数"
+		"chi"			"二代连发霰弹枪 {1}B数"
+	}
+	"m16步枪"
+	{
+		"#format" "{1:d}"
+		"en"			"m16 {1}B"
+		"zho"			"m16步枪 {1}B数"
+		"chi"			"m16步枪 {1}B数"
+	}
+	"ak47步枪"
+	{
+		"#format" "{1:d}"
+		"en"			"ak47 {1}B"
+		"zho"			"ak47步枪 {1}B数"
+		"chi"			"ak47步枪 {1}B数"
+	}
+	"sg552步枪"
+	{
+		"#format" "{1:d}"
+		"en"			"sg552 {1}B"
+		"zho"			"sg552步枪 {1}B数"
+		"chi"			"sg552步枪 {1}B数"
+	}
+	"scar步枪"
+	{
+		"#format" "{1:d}"
+		"en"			"scar {1}B"
+		"zho"			"scar步枪 {1}B数"
+		"chi"			"scar步枪 {1}B数"
+	}
+	"一代连狙"
+	{
+		"#format" "{1:d}"
+		"en"			"hunting_rifle {1}B"
+		"zho"			"一代连狙 {1}B数"
+		"chi"			"一代连狙 {1}B数"
+	}
+	"二代连狙"
+	{
+		"#format" "{1:d}"
+		"en"			"sniper_military {1}B"
+		"zho"			"二代连狙 {1}B数"
+		"chi"			"二代连狙 {1}B数"
+	}
+	"鸟狙"
+	{
+		"#format" "{1:d}"
+		"en"			"sniper_scout {1}B"
+		"zho"			"鸟狙 {1}B数"
+		"chi"			"鸟狙 {1}B数"
+	}
+	"AWP狙击枪"
+	{
+		"#format" "{1:d}"
+		"en"			"sniper_awp {1}B"
+		"zho"			"AWP狙击枪 {1}B数"
+		"chi"			"AWP狙击枪 {1}B数"
+	}
+	"m60"
+	{
+		"#format" "{1:d}"
+		"en"			"m60 {1}B"
+		"zho"			"m60 {1}B数"
+		"chi"			"m60 {1}B数"
+	}
+	"榴弹发射器"
+	{
+		"#format" "{1:d}"
+		"en"			"grenade_launcher {1}B"
+		"zho"			"榴弹发射器 {1}B数"
+		"chi"			"榴弹发射器 {1}B数"
+	}
+	"药丸"
+	{
+		"#format" "{1:d}"
+		"en"			"pain_pills {1}B"
+		"zho"			"药丸 {1}B数"
+		"chi"			"药丸 {1}B数"
+	}
+	"肾上腺素"
+	{
+		"#format" "{1:d}"
+		"en"			"adrenaline {1}B"
+		"zho"			"肾上腺素 {1}B数"
+		"chi"			"肾上腺素 {1}B数"
+	}
+	"医疗包"
+	{
+		"#format" "{1:d}"
+		"en"			"first_aid_kit {1}B"
+		"zho"			"医疗包 {1}B数"
+		"chi"			"医疗包 {1}B数"
+	}
+	"油桶"
+	{
+		"#format" "{1:d}"
+		"en"			"gascan {1}B"
+		"zho"			"油桶 {1}B数"
+		"chi"			"油桶 {1}B数"
+	}
+	"子弹"
+	{
+		"#format" "{1:d}"
+		"en"			"ammo {1}B"
+		"zho"			"子弹 {1}B数"
+		"chi"			"子弹 {1}B数"
+	}
+	"治疗小侏儒"
+	{
+		"#format" "{1:d}"
+		"en"			"healing_gnome {1}B"
+		"zho"			"治疗小侏儒 {1}B数"
+		"chi"			"治疗小侏儒 {1}B数"
+	}
+	"砍刀"
+	{
+		"en"			"machete"
+		"zho"			"砍刀"
+		"chi"			"砍刀"
+	}
+	"消防斧"
+	{
+		"en"			"fireaxe"
+		"zho"			"消防斧"
+		"chi"			"消防斧"
+	}
+	"小刀"
+	{
+		"en"			"knife"
+		"zho"			"小刀"
+		"chi"			"小刀"
+	}
+	"武士刀"
+	{
+		"en"			"katana"
+		"zho"			"武士刀"
+		"chi"			"武士刀"
+	}
+	"电吉他"
+	{
+		"en"			"electric_guitar"
+		"zho"			"电吉他"
+		"chi"			"电吉他"
+	}
+	"警棍"
+	{
+		"en"			"tonfa"
+		"zho"			"警棍"
+		"chi"			"警棍"
+	}
+	"草叉"
+	{
+		"en"			"pitchfork"
+		"zho"			"草叉"
+		"chi"			"草叉"
+	}
+	"铲子"
+	{
+		"en"			"shovel"
+		"zho"			"铲子"
+		"chi"			"铲子"
+	}
+	"是"
+	{
+		"en"			"Yes"
+		"zho"			"是"
+		"chi"			"是"
+	}
+	"否"
+	{
+		"en"			"No"
+		"zho"			"否"
+		"chi"			"否"
+	}
+}
