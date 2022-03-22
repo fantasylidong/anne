@@ -1,0 +1,137 @@
+"Phrases"
+{
+	"Vetoed"
+	{
+		"de"		"{1} hat ein Veto gegen die aktuelle Umfrage eingelegt!"
+	}
+	
+	"Passed"
+	{
+		"de"		"{1} hat die aktuelle Umfrage passieren lassen!"
+	}
+	
+	"Cant Pass"
+	{
+		"de"		"Zu wenige Enthaltungen, um die Umfrage passieren zu lassen!"
+	}
+	
+	"Cant Veto"
+	{
+		"de"		"Zu wenige Enthaltungen, um ein Veto gegen die Umfrage einzulegen!"
+	}	
+	
+	"No Vote"
+	{
+		"de"		"Es läuft gerade keine Umfrage!"
+	}
+	
+	"Log Error"
+	{
+		"de"		"Vote Manager 3 konnte eine Aktion nicht in seiner eigenen Datei aufzeichnen!"
+	}
+	
+	"Conflict"
+	{
+		"de"		"Es läuft gerade eine Umfrage! Warte bis diese Umfrage vorbei ist!"
+	}
+	
+	"Wait"
+	{
+		"de"		"Du musst {1} Sekunden warten bevor du eine neue Umfrage starten kannst!"
+	}
+	
+	"No Access"
+	{
+		"de"		"{1} darf keine {2} Umfrage starten! Grund: Keine Erlaubnis!"
+	}	
+	
+	"Vote Called"
+	{
+		"de"		"{1} startet eine {2} Umfrage!"
+	}
+	
+	"Custom Vote"
+	{
+		"de"		"{1} startet eine selbst erstellte Umfrage: '{3}' für Team {2}, mit dem Befehl: '{4}'"
+	}
+	
+	"Custom Vote Passed"
+	{
+		"de"		"Der selbst erstellten Umfrage wurde zugestimmt..."
+	}
+	
+	"Use sm_customvote"
+	{
+		"de"		"Bitte benutze 'sm_customvote', um eine Umfrage selbst zu erstellen!"
+	}
+	
+	"Custom Passed"
+	{
+		"de"		"Der selbst erstellten Umfrage von {1} wurde zugestimmt! Frage war: '{2}'"
+	}
+	
+	"Custom Failed"
+	{
+		"de"		"Der selbst erstellten Umfrage von {1} wurde nicht zugestimmt! Frage war: '{2}'"
+	}	
+	
+	"Vote Failed"
+	{
+		"de"		"Der Umfrage wurde nicht zugestimmt!"
+	}
+	
+	"Vote Called 2 Arguments"
+	{
+		"de"		"{1} hat eine {2} Umfrage mit der Option {3} gestartet!"
+	}
+	
+	"Vote Passed"
+	{
+		"de"		"Der Umfrage wurde zugestimmt!"
+	}
+
+	"Kick Vote"
+	{
+		"de"		"{1} hat eine Spieler rauswerfen Umfrage gegen {2} gestartet!"
+	}
+
+	"Kick Vote Call Failed"
+	{
+		"de"		"{1} wurde abgehalten eine Spieler rauswerfen Umfrage gegen {2} zu starten! Grund: Spieler nicht auswählbar!"
+	}
+	
+	"Kick Immunity"
+	{
+		"de"		"{1} wurde abgehalten eine Spieler rauswerfen Umfrage gegen {2} zu starten! Grund: Spieler ist immun gegen Spieler rauswerfen Umfragen!"
+	}	
+	
+	"Invalid Kick Userid"
+	{
+		"de"		"{1} wurde abgehalten eine Spieler rauswerfen Umfrage gegen Benutzer ID {2} zu starten! Grund: Ungültiger Spieler!"
+	}
+	
+	"Tank Immune Response"
+	{
+		"de"		"{1} wurde abgehalten eine Spieler rauswerfen Umfrage gegen {2} zu starten! Grund: Tanks sind immun!"
+	}
+	
+	"Spectator Response"
+	{
+		"de"		"{1} wurde abgehalten eine Spieler rauswerfen Umfrage gegen {2} zu starten! Grund: Zuschauer können keine Spieler rauswerfen Umfragen starten!"
+	}
+	
+	"Client Exploit Attempt"
+	{
+		"de"		"{1}(clientid:{2}) versuchte einen falschen Umfrage Typus zu starten, um weitere Umfragen zu blockieren ({3})!"
+	}
+	
+	"Usage"
+	{
+		"de"		"Benutzung: sm_customvote: <string: Umfrage Text> <string: Auszuführender Befehl bei Zustimmung>!"
+	}
+	
+	"Invalid Handle"
+	{
+		"de"		"Die selbst erstellte Umfrage konnte nicht erzeugt werden, wende dich an den Entwickler!"
+	}	
+}	
