@@ -45,4 +45,12 @@
 	{
 		"servername"	"Anne电信测试服"
 	}
+	"2343"
+	{
+		"servername"	"Anne电信11服"
+	}
+	"2344"
+	{
+		"servername"	"Anne电信12服"
+	}
 }
