@@ -246,19 +246,19 @@
 		}
 		"sm_fm Realism"
 		{
-			"name" "电信服写实多特"
+			"message" "电信服写实多特"
 		}
 		"sm_fm Realism8t"
 		{
-			"name" "电信服绝境多特"
+			"message" "电信服绝境多特"
 		}
 		"sm_fm Coop"
 		{
-			"name" "电信服战役多特"
+			"message" "电信服战役多特"
 		}
 		"exec vote/duote.cfg"
 		{
-			"name" "关闭电信服多特[使用引擎刷新]"
+			"message" "关闭电信服多特[使用引擎刷新]"
 		}
 	}
 	"开关回血"
