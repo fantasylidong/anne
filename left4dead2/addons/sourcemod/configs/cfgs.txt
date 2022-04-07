@@ -248,6 +248,10 @@
 		{
 			"message" "电信服写实多特"
 		}
+		"sm_fm Coop"
+		{
+			"message" "电信服战役多特"
+		}
 		"exec vote/duote.cfg"
 		{
 			"message" "关闭电信服多特[使用引擎刷新]"
