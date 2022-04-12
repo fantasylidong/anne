@@ -19,4 +19,10 @@
 "Patches"
 {
 	"aggresive_specials_patch"	"CDirector::SpecialsShouldAdvanceOnSurvivors::HasPlayerControlledZombiesCondition"
+	//"aggresive_specials_patch"	"SmokerBehavior::InitialContainedAction::SpecialsShouldAssaultCondition"
+	"aggresive_specials_patch"	"BoomerBehavior::InitialContainedAction::SpecialsShouldAssaultCondition"
+	"aggresive_specials_patch"	"HunterBehavior::InitialContainedAction::SpecialsShouldAssaultCondition"
+	"aggresive_specials_patch"	"SpitterBehavior::InitialContainedAction::SpecialsShouldAssaultCondition"
+	"aggresive_specials_patch"	"JockeyBehavior::InitialContainedAction::SpecialsShouldAssaultCondition"
+	"aggresive_specials_patch"	"ChargerBehavior::InitialContainedAction::SpecialsShouldAssaultCondition"
 }
