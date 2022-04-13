@@ -276,10 +276,10 @@
 		}
 		"exec vote/weapon/zonemod.cfg"
 		{
-			"message" "zonemod1.99枪械"
+			"message" "zonemod2.6.4枪械"
 		}
 	}
-	"Tank连跳开关"
+	"Tank选项"
 	{
 		"sm_cvar ai_tank_bhop 1"
 		{
@@ -288,6 +288,14 @@
 		"sm_cvar ai_tank_bhop 0"
 		{
 			"message" "关闭Tank连跳"
+		}
+		"sm_cvar ai_TankConsume 1"
+		{
+			"message" "开启消耗克"
+		}
+		"sm_cvar ai_TankConsume 0"
+		{
+			"message" "关闭消耗克"
 		}
 	}
 	"多特特感数量"
