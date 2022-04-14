@@ -289,11 +289,11 @@
 		{
 			"message" "关闭Tank连跳"
 		}
-		"sm_cvar ai_TankConsume 1"
+		"exec vote/Consume_on.cfg"
 		{
 			"message" "开启消耗克"
 		}
-		"sm_cvar ai_TankConsume 0"
+		"exec vote/Consume_off.cfg"
 		{
 			"message" "关闭消耗克"
 		}
