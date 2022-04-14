@@ -189,13 +189,13 @@
 	}
 	"杂项"
 	{
-		"exec vote/newsiab_on.cfg"
+		"exec vote/sky_ability_on.cfg"
 		{
-			"message" "开启增强smoker,tank,spitter"
+			"message" "开启特感跳吐"
 		}
-		"exec vote/newsiab_off.cfg"
+		"exec vote/sky_ability_off.cfg"
 		{
-			"message" "关闭增强smoker,tank,spitter"
+			"message" "关闭特感跳吐"
 		}
 		"sm_cvar sb_fix_enabled 1"
 		{
