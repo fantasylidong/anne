@@ -207,11 +207,11 @@
 		}
 		"sm_cvar l4d2_scripted_hud_enable 1"
 		{
-			"message" "开启高级人机"
+			"message" "开启hud显示"
 		}
 		"sm_cvar l4d2_scripted_hud_enable 0"
 		{
-			"message" "关闭高级人机"
+			"message" "关闭hud显示"
 		}
 		"exec vote/mysqlShop_on.cfg"
 		{
