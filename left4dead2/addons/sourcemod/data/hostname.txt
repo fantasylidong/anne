@@ -11,8 +11,7 @@
 	"2333"
 	{
 		"servername"	"Anne电信多特3服"
-	}
-	
+	}	
 	"2334"
 	{
 		"servername"	"Anne电信多特4服"
