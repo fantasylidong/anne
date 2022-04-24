@@ -612,14 +612,8 @@
 		{
 			"pain_pills"	"0"
 		}
-		"tank_ban_flow"
-		{
-			"Early spawns"
-			{
-				"min"		"0"
-				"max"		"30"
-			}
-		}
+		"tank_ban_flow_min" "0"
+		"tank_ban_flow_max" "30"
 	}
 	"cdta_01detour"
 	{
