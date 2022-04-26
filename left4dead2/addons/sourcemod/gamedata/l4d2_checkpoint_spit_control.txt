@@ -1,0 +1,134 @@
+"Games"
+{
+	"left4dead2"
+	{
+		"Offsets"
+		{
+			"OS"
+			{
+				"linux"			"0"
+				"windows"		"1"
+			}
+		}
+		
+		"Functions"
+		{
+			"CSpitterProjectile_BounceTouch"
+			{
+				"signature"		"CSpitterProjectile_BounceTouch"
+				"callconv"		"thiscall"
+				"return"		"void"
+				"this"			"entity"
+				"arguments"
+				{
+					"a1"
+					{
+						"type"	"cbaseentity"
+					}
+				}
+			}
+			
+			"CSpitterProjectile_Detonate"
+			{
+				"signature"		"CSpitterProjectile_Detonate"
+				"callconv"		"thiscall"
+				"return"		"void"
+				"this"			"entity"
+			}
+		}
+		
+		"MemPatches"
+		{
+			"SaferoomPatch"
+			{
+				"signature"		"CSpitterProjectile_Detonate"
+				"linux"
+				{
+					"offset"	"151"
+					"verify"	"\x01"
+					"patch"		"\x00"
+				}
+				"windows"
+				{
+					"offset"	"131"
+					"verify"	"\x01"
+					"patch"		"\x00"
+				}
+			}
+			
+			"BrushPatch1"
+			{
+				"signature"		"CSpitterProjectile_Detonate"
+				"linux"
+				{
+					"offset"	"159"
+					"verify"	"\x0F\x84"
+					"patch"		"\x90\xE9"
+				}
+			}
+			
+			"BrushPatch2"
+			{
+				"signature"		"CSpitterProjectile_Detonate"
+				"linux"
+				{
+					"offset"	"353"
+					"verify"	"\x0F\x85"
+					"patch"		"\x90\xE9"
+				}
+				"windows"
+				{
+					"offset"	"184"
+					"verify"	"\x0F\x85"
+					"patch"		"\x90\xE9"
+				}
+			}
+			
+			"BrushPatch3"
+			{
+				"signature"		"CSpitterProjectile_Detonate"
+				"linux"
+				{
+					"offset"	"752"
+					"verify"	"\x3B\x15"
+					"patch"		"\xE9\x09\x00\x00\x00"
+				}
+				"windows"
+				{
+					"offset"	"368"
+					"verify"	"\x74"
+					"patch"		"\xE9"
+				}
+			}
+		}
+		
+		"Signatures"
+		{
+			/* Windows sig:
+			 *	Search "CSpitterProjectile::Detonate" first.
+			 *	Go to the vtable of the function, "CSpitterProjectile::BounceTouch" is right 1 offset above.
+			**/
+			"CSpitterProjectile_BounceTouch"
+			{
+				"library"		"server"
+				"linux"			"@_ZN18CSpitterProjectile11BounceTouchEP11CBaseEntity"
+				"windows"		"\x55\x8B\xEC\x83\x2A\x2A\x56\x8B\x2A\x2A\xF6\x2A\x2A\x2A\x2A\x2A\x28\x57\x8B\x2A\x74"
+				/* 55 8B EC 83 ? ? 56 8B ? ? F6 ? ? ? ? ? 28 57 8B ? 74 */
+			}
+			
+			/* Windows sig:
+			 *	Search string "SpitProjectile.Bounce", only 2 of them reference to functions.
+			 *	Theoretically they are closed to each other, so you can choose anyone to look into.
+			 *	Find the one that has only 1 string, then go to the vtable of the function.
+			 *	The virtual function 2 offsets above is the sig.
+			**/
+			"CSpitterProjectile_Detonate"
+			{
+				"library"		"server"
+				"linux"			"@_ZN18CSpitterProjectile8DetonateEv"
+				"windows"		"\x55\x8B\xEC\x81\x2A\x2A\x2A\x2A\x2A\xA1\x2A\x2A\x2A\x2A\x33\x2A\x89\x2A\x2A\x53\x8B\x2A\x57"
+				/* 55 8B EC 81 ? ? ? ? ? A1 ? ? ? ? 33 ? 89 ? ? 53 8B ? 57 */
+			}
+		}
+	}
+}
