@@ -284,7 +284,7 @@
 		{
 			"message" "普通药役模式"
 		}
-		"sm_fm AnneHanpy"
+		"sm_fm Hunters"
 		{
 			"message" "1vHunter模式"
 		}
@@ -326,11 +326,11 @@
 	}
 	"武器配置"
 	{
-		"exec vote/weapon/AnneHappy.cfg"
+		"sm_cvar ZonemodWeapon 0"
 		{
 			"message" "AnneHappy枪械"
 		}
-		"exec vote/weapon/zonemod.cfg"
+		"sm_cvar ZonemodWeapon 1"
 		{
 			"message" "zonemod2.6.4枪械"
 		}
