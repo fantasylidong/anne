@@ -9,7 +9,7 @@
 	}
 	"1vHunters模式"
 	{
-		"AnneHanpy"
+		"Hunters"
 		{
 			"name" "1vHunters模式"
 		}
