@@ -1,4 +1,4 @@
-"hostname"
+"AnneHappy"
 {
 	"2331"
 	{
@@ -11,7 +11,7 @@
 	"2333"
 	{
 		"servername"	"Anne电信多特3服"
-	}	
+	}
 	"2334"
 	{
 		"servername"	"Anne电信多特4服"
@@ -38,18 +38,14 @@
 	}
 	"2340"
 	{
-		"servername"	"Anne电信多特0服[无MOD]"
+		"servername"	"Anne电信多特10服"
 	}	
-	"2342"
-	{
-		"servername"	"Anne电信多特测试服"
-	}
-	"2343"
+	"2349"
 	{
 		"servername"	"Anne电信多特11服"
 	}
-	"2344"
+	"2350"
 	{
-		"servername"	"Anne电信多特12服"
+		"servername"	"Anne电信多特12服[无MOD]"
 	}
 }
