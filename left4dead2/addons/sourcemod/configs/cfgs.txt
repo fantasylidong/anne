@@ -38,15 +38,31 @@
 			"message" "21-7-7号版本"
 		}
 	}
-	"地图选择"
+	"多人运动"
 	{
-		"sm_fm AnneHappy"
+		"exec cfg/sourcemod/duoren_on.cfg"
 		{
-			"message" "zonemod版本"
+			"message" "打开多人运动"
 		}
-		"sm_fm Anneold"
+		"exec cfg/sourcemod/duoren_off.cfg"
 		{
-			"message" "原版"
+			"message" "关闭多人运动"
+		}
+		"exec cfg/vote/duoren/duoren5.cfg"
+		{
+			"message" "5人运动"
+		}
+		"exec cfg/vote/duoren/duoren6.cfg"
+		{
+			"message" "6人运动"
+		}
+		"exec cfg/vote/duoren/duoren7.cfg"
+		{
+			"message" "7人运动"
+		}
+		"exec cfg/vote/duoren/duoren8.cfg"
+		{
+			"message" "8人运动"
 		}
 	}
 	"特感数量"
@@ -554,6 +570,17 @@
 		"exec vote/time/20.cfg"
 		{
 			"message" "20秒"
+		}
+	}
+	"地图选择"
+	{
+		"sm_fm AnneHappy"
+		{
+			"message" "zonemod版本"
+		}
+		"sm_fm Anneold"
+		{
+			"message" "原版"
 		}
 	}
 	"开关死门"
