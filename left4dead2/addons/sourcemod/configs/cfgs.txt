@@ -40,27 +40,27 @@
 	}
 	"多人运动"
 	{
-		"exec cfg/sourcemod/duoren_on.cfg"
+		"exec sourcemod/duoren_on.cfg"
 		{
 			"message" "打开多人运动"
 		}
-		"exec cfg/sourcemod/duoren_off.cfg"
+		"exec sourcemod/duoren_off.cfg"
 		{
 			"message" "关闭多人运动"
 		}
-		"exec cfg/vote/duoren/duoren5.cfg"
+		"exec vote/duoren/duoren5.cfg"
 		{
 			"message" "5人运动"
 		}
-		"exec cfg/vote/duoren/duoren6.cfg"
+		"exec vote/duoren/duoren6.cfg"
 		{
 			"message" "6人运动"
 		}
-		"exec cfg/vote/duoren/duoren7.cfg"
+		"exec vote/duoren/duoren7.cfg"
 		{
 			"message" "7人运动"
 		}
-		"exec cfg/vote/duoren/duoren8.cfg"
+		"exec vote/duoren/duoren8.cfg"
 		{
 			"message" "8人运动"
 		}
