@@ -1,6 +1,18 @@
 // Many thanks to Psykotikism for sharing the Windows signature (https://github.com/Psykotikism/L4D1-2_Signatures)
 "Games"
 {
+	"#default"
+	{
+		"Offsets"
+		{
+			"OS"
+			{
+				"linux"		"1"
+				"windows"	"0"
+			}
+		}
+	}
+
 	"left4dead2"
 	{
 		"Functions"
@@ -9,16 +21,18 @@
 			{
 				"signature"		"CDirector::Restart"
 				"callconv"		"thiscall"
-				"return"		"void"
+				"return"		"int"
 				"this"			"address"
 			}
+
 			"DD::CTerrorPlayer::TransitionRestore"
 			{
 				"signature"		"CTerrorPlayer::TransitionRestore"
 				"callconv"		"thiscall"
-				"return"		"void"
+				"return"		"int"
 				"this"			"entity"
 			}
+
 			"DD::CDirector::IsHumanSpectatorValid"
 			{
 				"signature"		"CDirector::IsHumanSpectatorValid"
@@ -33,18 +47,12 @@
 					}
 				}
 			}
-			"DD::CDirectorSessionManager::UpdateNewPlayers"
-			{
-				"signature"		"CDirectorSessionManager::UpdateNewPlayers"
-				"callconv"		"thiscall"
-				"return"		"void"
-				"this"			"address"
-			}
+
 			"DD::CDirectorSessionManager::FillRemainingSurvivorTeamSlotsWithBots"
 			{
 				"signature"		"CDirectorSessionManager::FillRemainingSurvivorTeamSlotsWithBots"
 				"callconv"		"thiscall"
-				"return"		"void"
+				"return"		"int"
 				"this"			"address"
 			}
 		}
@@ -54,6 +62,7 @@
 			"CTerrorPlayer::TransitionRestore::RestoreByUserId"
 			{
 				"signature"		"CTerrorPlayer::TransitionRestore"
+
 				"linux"
 				{
 					"offset"	"64h"
@@ -68,22 +77,24 @@
 					"patch"		"\x90\xE9\x22\x01\x00\x00"
 				}
 			}
+
 			"RestoreTransitionedSurvivorBots::MaxRestoreSurvivorBots"
 			{
 				"signature"		"RestoreTransitionedSurvivorBots"
+
 				"linux"
 				{
 					"offset"	"6Ah"
-					"verify"	"\x83\xF8"
-					"patch"		"\x00\x00\x00"
+					"verify"	"\x83\xF8\x03"
+					"patch"		"\x83\xF8\x03"
 					"preserve"	"\xFF\xFF\xFF"
 				}
 				
 				"windows"
 				{
 					"offset"	"50h"
-					"verify"	"\x83\xF8"
-					"patch"		"\x00\x00\x00"
+					"verify"	"\x83\xF8\x04"
+					"patch"		"\x83\xF8\x04"
 					"preserve"	"\xFF\xFF\xFF"
 				}
 			}
@@ -104,6 +115,7 @@
 					"read"		"446"
 				}
 			}
+
 			"SavedSurvivorBotCount"
 			{
 				"linux"
@@ -117,6 +129,7 @@
 					"read"		"53"
 				}
 			}
+
 			"CDirector"
 			{
 				"linux"
@@ -151,6 +164,7 @@
 				"windows"	"\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\xA1\x2A\x2A\x2A\x2A\x33\x2A\x89\x2A\x2A\xA1\x2A\x2A\x2A\x2A\x8B\x2A\x2A\x53\x56\x57\x8B"
 				/* ? ? ? ? ? ? ? ? ? A1 ? ? ? ? 33 ? 89 ? ? A1 ? ? ? ? 8B ? ? 53 56 57 8B */
 			}
+
 			/* CTerrorPlayer::TransitionRestore(CTerrorPlayer *__hidden this) */
 			"CTerrorPlayer::TransitionRestore"
 			{
@@ -159,6 +173,7 @@
 				"windows"	"\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x80\x2A\x2A\x2A\x2A\x2A\x2A\x75\x2A\x33\x2A\x5E\x8B\x2A\x5D\xC3"
 				/* ? ? ? ? ? ? ? 80 ? ? ? ? ? ? 75 ? 33 ? 5E 8B ? 5D C3 */
 			}
+
 			/* CDirector::IsHumanSpectatorValid(CDirector *__hidden this, SurvivorBot *) */
 			"CDirector::IsHumanSpectatorValid"
 			{
@@ -167,14 +182,16 @@
 				"windows"	"\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x50\xE8\x2A\x2A\x2A\x2A\x83\x2A\x2A\x85\x2A\x74\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x8B"
 				/* ? ? ? ? ? ? ? 8B ? ? ? ? ? 50 E8 ? ? ? ? 83 ? ? 85 ? 74 ? 8B ? ? ? ? ? 8B */
 			}
-			/* CDirectorSessionManager::UpdateNewPlayers(CDirectorSessionManager *__hidden this) */
-			"CDirectorSessionManager::UpdateNewPlayers"
+
+			/* RestoreTransitionedSurvivorBots(void) */
+			"RestoreTransitionedSurvivorBots"
 			{
 				"library"	"server"
-				"linux"		"@_ZN23CDirectorSessionManager16UpdateNewPlayersEv"
-				"windows"	"\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x0F\x85\x2A\x2A\x2A\x2A\xA1\x2A\x2A\x2A\x2A\x83\x2A\x2A\x2A\x7E\x2A\x8B"
-				/* ? ? ? ? ? ? ? 0F 85 ? ? ? ? A1 ? ? ? ? 83 ? ? ? 7E ? 8B */
+				"linux"		"@_Z31RestoreTransitionedSurvivorBotsv"
+				"windows"	"\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x83\x2A\x2A\x85\x2A\x0F\x84\x2A\x2A\x2A\x2A\x53\x56\x57\x50\x68"
+				/* ? ? ? ? ? ? ? ? 83 ? ? 85 ? 0F 84 ? ? ? ? 53 56 57 50 68 */
 			}
+
 			/* CDirectorSessionManager::FillRemainingSurvivorTeamSlotsWithBots(CDirectorSessionManager *__hidden this) */
 			"CDirectorSessionManager::FillRemainingSurvivorTeamSlotsWithBots"
 			{
@@ -183,6 +200,7 @@
 				"windows"	"\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x8B\x2A\x83\x2A\x2A\x85\x2A\x74\x2A\x8B\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x8B\x2A\xFF\x2A\x83\x2A\x2A\x7D\x2A\x8B\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x8B\x2A\xFF\x2A\xB9\x2A\x2A\x2A\x2A\x2B\x2A\x85\x2A\x7E\x2A\x8B\x2A\xEB"
 				/* ? ? ? ? ? ? ? ? 8B ? 83 ? ? 85 ? 74 ? 8B ? 8B ? ? ? ? ? 8B ? FF ? 83 ? ? 7D ? 8B ? 8B ? ? ? ? ? 8B ? FF ? B9 ? ? ? ? 2B ? 85 ? 7E ? 8B ? EB */
 			}
+
 			/* KeyValues::GetString(KeyValues *__hidden this, const char *, const char *) */
 			"KeyValues::GetString"
 			{
@@ -190,8 +208,8 @@
 				"linux"		"@_ZN9KeyValues9GetStringEPKcS1_"
 				"windows"	"\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\xA1\x2A\x2A\x2A\x2A\x33\x2A\x89\x2A\x2A\x53\x8B\x2A\x2A\x56\x57\x6A\x2A\x53\x8B\x2A\xE8\x2A\x2A\x2A\x2A\x8B\x2A\x85\x2A\x0F\x84\x2A\x2A\x2A\x2A\x0F\x2A\x2A\x2A\x48\x83\x2A\x2A\x0F\x87\x2A\x2A\x2A\x2A\xFF\x24\x2A\x2A\x2A\x2A\x2A\xD9\x2A\x2A\x83\x2A\x2A\xDD\x2A\x2A\x68"
 				/* ? ? ? ? ? ? ? ? ? A1 ? ? ? ? 33 ? 89 ? ? 53 8B ? ? 56 57 6A ? 53 8B ? E8 ? ? ? ? 8B ? 85 ? 0F 84 ? ? ? ? 0F ? ? ? 48 83 ? ? 0F 87 ? ? ? ? FF 24 ? ? ? ? ? D9 ? ? 83 ? ? DD ? ? 68 */
-				/* Search: "WrongTeamMsg", call below is our function. */
 			}
+
 			/* KeyValues::SetString(KeyValues *__hidden this, const char *s, const char *) */
 			"KeyValues::SetString"
 			{
@@ -199,13 +217,14 @@
 				"linux"		"@_ZN9KeyValues9SetStringEPKcS1_"
 				"windows"	"\x2A\x2A\x2A\x2A\x2A\x2A\x56\x6A\x2A\x50\xE8\x2A\x2A\x2A\x2A\x8B\x2A\x85\x2A\x74\x2A\x8B\x2A\x2A\x53\x57\x51\xE8\x2A\x2A\x2A\x2A\x8B\x2A\x2A\x52\xE8\x2A\x2A\x2A\x2A\x8B\x2A\x2A\x83\x2A\x2A\xC7\x46\x2A\x2A\x2A\x2A\x2A\x85\x2A\x75\x2A\xBB\x2A\x2A\x2A\x2A\x53"
 				/* ? ? ? ? ? ? 56 6A ? 50 E8 ? ? ? ? 8B ? 85 ? 74 ? 8B ? ? 53 57 51 E8 ? ? ? ? 8B ? ? 52 E8 ? ? ? ? 8B ? ? 83 ? ? C7 46 ? ? ? ? ? 85 ? 75 ? BB ? ? ? ? 53 */
-				/* Search: "victimname" - below is call */
 			}
+
 			"TheDirector"
 			{
 				"library"	"server"
 				"linux"		"@TheDirector"
 			}
+
 			/* CDirectorMusicBanks::OnRoundStart(CDirectorMusicBanks *__hidden this) */
 			"CDirectorMusicBanks::OnRoundStart"
 			{
@@ -213,6 +232,7 @@
 				"windows"	"\x2A\x2A\x2A\x2A\x2A\x2A\x56\x57\x8B\x2A\x8B\x0D\x2A\x2A\x2A\x2A\xE8\x2A\x2A\x2A\x2A\x84\x2A\x0F"
 				/* ? ? ? ? ? ? 56 57 8B ? 8B 0D ? ? ? ? E8 ? ? ? ? 84 ? 0F */
 			}
+
 			/* CDirector::IsInTransition(CDirector *__hidden this) */
 			"CDirector::IsInTransition"
 			{
@@ -220,14 +240,6 @@
 				"linux"		"@_ZNK9CDirector14IsInTransitionEv"
 				"windows"	"\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x75\x2A\x80\xB9\xCC"
 				/* ? ? ? ? ? ? ? 75 ? 80 B9 CC */
-			}
-			/* RestoreTransitionedSurvivorBots(void) */
-			"RestoreTransitionedSurvivorBots"
-			{
-				"library"	"server"
-				"linux"		"@_Z31RestoreTransitionedSurvivorBotsv"
-				"windows"	"\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x83\x2A\x2A\x85\x2A\x0F\x84\x2A\x2A\x2A\x2A\x53\x56\x57\x50\x68"
-				/* ? ? ? ? ? ? ? ? 83 ? ? 85 ? 0F 84 ? ? ? ? 53 56 57 50 68 */
 			}
 		}
 	}
