@@ -8,7 +8,7 @@
 	"2"
 	{
 		"type"		"S"
-		"text"		"{LIGHTGREEN}!away闲置 !join加入 !slots开位 !xx模式查询 !mapvote三方图"
+		"text"		"{LIGHTGREEN}!away闲置 !join加入 !slots开位 !xx模式查询 !mapvote三方图 !spechud 打开旁观hud"
 	}
 	"3"
 	{
