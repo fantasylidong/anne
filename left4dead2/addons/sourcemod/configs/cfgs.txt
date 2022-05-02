@@ -147,22 +147,6 @@
 		{
 			"message" "20特模式"
 		}
-		"exec vote/AnneHappy21.cfg"
-		{
-			"message" "21特模式"
-		}
-		"exec vote/AnneHappy22.cfg"
-		{
-			"message" "22特模式"
-		}
-		"exec vote/AnneHappy23.cfg"
-		{
-			"message" "23特模式"
-		}
-		"exec vote/AnneHappy24.cfg"
-		{
-			"message" "24特模式"
-		}
 	}
 	"复活时间"
 	{
