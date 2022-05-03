@@ -1,4 +1,5 @@
 //Download Only (no precaching)
+addons/sourcemod/plugins/extend/anne_abm.smx
 addons/sourcemod/plugins/optional/ai_boomer_new.smx
 addons/sourcemod/plugins/optional/ai_charger_new.smx
 addons/sourcemod/plugins/optional/AI_HardSI_new.smx
@@ -12,4 +13,6 @@ addons/sourcemod/plugins/optional/hunters.smx
 addons/sourcemod/plugins/optional/infected_control.smx
 addons/sourcemod/plugins/optional/server.smx
 addons/sourcemod/plugins/optional/text.smx
+addons/sourcemod/plugins/l4d_stats.smx
+addons/sourcemod/plugins/hextags.smx
 addons/sourcemod/configs/hextags.cfg
