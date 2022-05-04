@@ -1,0 +1,40 @@
+"Updater"
+{
+	"Information"
+	{
+		"Version"
+		{
+			"Latest"	"1.3.3"
+		}
+		
+		"Notes"	"More info @ https://github.com/Teamkiller324/Updater"
+		"Notes"	"Removed ReloadPlugin() from updater.inc."
+		"Notes"	"Added Updater_ReloadPlugin() native to replace 'ReloadPlugin()'"
+	}
+	
+	"Files"
+	{
+		"Patch"
+		{
+			"Plugin"	"Path_SM/plugins/updater.smx"
+			
+			"Source"	"Path_SM/scripting/updater.sp"
+			"Source"	"Path_SM/scripting/updater/api.sp"
+			"Source"	"Path_SM/scripting/updater/download.sp"
+			"Source"	"Path_SM/scripting/updater/filesus.sp"
+			"Source"	"Path_SM/scripting/updater/plugins.sp"
+			
+			"Include"	"Path_SM/scripting/include/updater.inc"
+		}
+		
+		"Plugin"	"Path_SM/plugins/updater.smx"
+		
+		"Source"	"Path_SM/scripting/updater.sp"
+		"Source"	"Path_SM/scripting/updater/api.sp"
+		"Source"	"Path_SM/scripting/updater/download.sp"
+		"Source"	"Path_SM/scripting/updater/filesus.sp"
+		"Source"	"Path_SM/scripting/updater/plugins.sp"
+		
+		"Include"	"Path_SM/scripting/include/updater.inc"
+	}
+}
