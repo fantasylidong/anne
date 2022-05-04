@@ -1,4 +1,4 @@
-http://home.trygek.com:8880/left4dead2/addons/sourcemod/plugins/updater.smx"
+http://home.trygek.com:8880/left4dead2/addons/sourcemod/plugins/updater.smx
 http://home.trygek.com:8880/left4dead2/addons/sourcemod/plugins/extend/anne_abm.smx
 http://home.trygek.com:8880/left4dead2/addons/sourcemod/plugins/optional/ai_boomer_new.smx
 http://home.trygek.com:8880/left4dead2/addons/sourcemod/plugins/optional/ai_charger_new.smx
