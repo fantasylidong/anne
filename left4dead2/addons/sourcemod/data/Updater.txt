@@ -14,27 +14,23 @@
 	
 	"Files"
 	{
-		"Patch"
-		{
-			"Plugin"	"Path_SM/plugins/updater.smx"
-			
-			"Source"	"Path_SM/scripting/updater.sp"
-			"Source"	"Path_SM/scripting/updater/api.sp"
-			"Source"	"Path_SM/scripting/updater/download.sp"
-			"Source"	"Path_SM/scripting/updater/filesus.sp"
-			"Source"	"Path_SM/scripting/updater/plugins.sp"
-			
-			"Include"	"Path_SM/scripting/include/updater.inc"
-		}
-		
 		"Plugin"	"Path_SM/plugins/updater.smx"
-		
-		"Source"	"Path_SM/scripting/updater.sp"
-		"Source"	"Path_SM/scripting/updater/api.sp"
-		"Source"	"Path_SM/scripting/updater/download.sp"
-		"Source"	"Path_SM/scripting/updater/filesus.sp"
-		"Source"	"Path_SM/scripting/updater/plugins.sp"
-		
-		"Include"	"Path_SM/scripting/include/updater.inc"
+		"Plugin"	"Path_SM/plugins/extend/anne_abm.smx
+		"Plugin"	"Path_SM/plugins/optional/ai_boomer_new.smx
+		"Plugin"	"Path_SM/plugins/optional/ai_charger_new.smx
+		"Plugin"	"Path_SM/plugins/optional/AI_HardSI_new.smx
+		"Plugin"	"Path_SM/plugins/optional/ai_hunter_new.smx
+		"Plugin"	"Path_SM/plugins/optional/ai_smoker_new.smx
+		"Plugin"	"Path_SM/plugins/optional/ai_spitter_new.smx
+		"Plugin"	"Path_SM/plugins/optional/ai_tank_new.smx
+		"Plugin"	"Path_SM/plugins/optional/Alone.smx
+		"Plugin"	"Path_SM/plugins/optional/charger.smx
+		"Plugin"	"Path_SM/plugins/optional/hunters.smx
+		"Plugin"	"Path_SM/plugins/optional/infected_control.smx
+		"Plugin"	"Path_SM/plugins/optional/server.smx
+		"Plugin"	"Path_SM/plugins/optional/text.smx
+		"Plugin"	"Path_SM/plugins/l4d_stats.smx
+		"Plugin"	"Path_SM/plugins/hextags.smx
+		"Plugin"	"Path_SM/configs/hextags.cfg
 	}
 }
