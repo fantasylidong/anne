@@ -4,7 +4,7 @@
 	{
 		"#format"	"{1:s}"
 		"en"		"[{green}!{default}] {blue}Facts {default}of the {blue}Tank {default}({olive}{1}{default})"
-		"chi"		"[{green}TankFact{default}] {blue}Tank {default}({olive}{1:s}{default}) 造成的{blue}伤害"
+		"chi"		"[{green}TankFact{default}] {blue}Tank {default}({olive}{1}{default}) 造成的{blue}伤害"
 	}
 	
 	// CSayText appears to be async or via text stream?, whatever it costs random amount of time.
