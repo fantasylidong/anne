@@ -2,11 +2,21 @@
 {
 	"Door_Open"
 	{
-		"en"		"开始挨打"
+		"en"		"{olive}[Saferoom] {white}opened by {orange}%N"
 	}
 
 	"Door_Close"
 	{
-		"en"		"算你走运"
+		"en"		"{olive}[Saferoom] {white}closed by {orange}%N"
+	}
+
+	"Door_Wait"
+	{
+		"en"		"{olive}[Saferoom] {white}door will unlock in {orange}%d {white}seconds"
+	}
+
+	"Door_Unlocked"
+	{
+		"en"		"{olive}[Saferoom] {white}door {orange}opened"
 	}
 }
