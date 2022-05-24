@@ -15,8 +15,8 @@
 	"REJECTED"
 	{
 		"#format"		"{1:.1f},{2:.1f}"
-		"en"			"You need to have at least {1} hours of total playtime and {2} hours of playtime minus your last two weeks playtime, to be able to join this server"
-		"chi"			"你至少需要{1}小时求生之路2总游戏时间，且最近两周需要进行{2}小时得游戏才能进入服务器"
+		"en"			"You need to have at least {1} hours of total playtime ,{2} hours of playtime minus your last two weeks playtime and {3} hours play in myserver to be able to join this server"
+		"chi"			"你至少需要{1}小时求生之路2总游戏时间，去除最近两周游戏时间还需要进行{2}小时游戏且在电信服服务器玩过{3}小时才能进入服务器"
 	}
 	
 	"EXCLUDED"
