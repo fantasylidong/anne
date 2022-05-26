@@ -13,7 +13,7 @@
 	"3"
 	{
 		"type"		"S"
-		"text"		"{LIGHTGREEN}{green}!chr !pum{LIGHTGREEN}快速买喷,{green}!smg !uzi{LIGHTGREEN}快速买机枪,!pill快速买药"
+		"text"		"{LIGHTGREEN}!chr !pum{LIGHTGREEN}快速买喷,!smg !uzi快速买机枪,!pill快速买药"
 	}
 	"4"
 	{
