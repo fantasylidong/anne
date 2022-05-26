@@ -13,7 +13,7 @@
 	"3"
 	{
 		"type"		"S"
-		"text"		"{LIGHTGREEN}!pen快速买喷,!ammo快速买子弹,!smg快速买机枪,!pill快速买药，可以在控制台用bind b sm_pill绑定快捷键使用"
+		"text"		"{LIGHTGREEN}{green}!chr !pum{LIGHTGREEN}快速买喷,{green}!smg !uzi{LIGHTGREEN}快速买机枪,!pill快速买药"
 	}
 	"4"
 	{
@@ -28,7 +28,7 @@
 	"6"
 	{
 		"type"		"S"
-		"text"		"{LIGHTGREEN}本组服务器都有商店系统，打不过可以输入!buy或!rpg进行氪金,在原版商店上增加了数据库支持，妈妈再也不用担心我出门不带近战了"
+		"text"		"{LIGHTGREEN}本组服务器都有数据库商店系统，打不过可以输入!buy或!rpg进行氪金"
 	}
 	"7"
 	{
@@ -38,7 +38,7 @@
 	"8"
 	{
 		"type"		"S"
-		"text"		"{LIGHTGREEN}输入!ch或者!tagslist选择自己已获得的称号佩戴，50W以上积分可以进群自定义称号哦，如果称号未正确加载输入!cz重新载入称号"
+		"text"		"{LIGHTGREEN}输入!ch或者!tagslist选择自己已获得的称号佩戴和重载称号，{green}50W以上积分{LIGHTGREEN}可以进群自定义称号哦"
 	}
 	"9"
 	{
@@ -53,6 +53,6 @@
 	"11"
 	{
 		"type"		"S"
-		"text"		"{LIGHTGREEN}输入!dance跳跳舞解解压，如果跳舞人物没动作，请steam联机选项打开允许全部服务器内容"
+		"text"		"{LIGHTGREEN}输入!dance跳跳舞解解压，如果跳舞人物没动作，请steam联机选项打开允许全部服务器内容后重新进入服务器"
 	}
 }
