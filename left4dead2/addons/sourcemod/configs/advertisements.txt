@@ -38,7 +38,7 @@
 	"8"
 	{
 		"type"		"S"
-		"text"		"{LIGHTGREEN}输入!ch或者!tagslist选择自己已获得的称号佩戴和重载称号，{green}50W以上积分{LIGHTGREEN}可以进群自定义称号哦"
+		"text"		"{LIGHTGREEN}输入!ch或者!tagslist选择自己已获得的称号佩戴和重载称号，50W以上积分{LIGHTGREEN}可以进群自定义称号哦"
 	}
 	"9"
 	{
