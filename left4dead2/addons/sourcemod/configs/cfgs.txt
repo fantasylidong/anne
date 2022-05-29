@@ -21,9 +21,13 @@
 		{
 			"message" "最新版本"
 		}
+		"sm_fm Anne22-5"
+		{
+			"message" "22-5月版本"
+		}
 		"sm_fm Anne2-2"
 		{
-			"message" "22-2-2号版本"
+			"message" "22-2月版本"
 		}
 		"sm_fm Anne11-28"
 		{
