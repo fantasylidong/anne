@@ -257,6 +257,14 @@
 	}
 	"杂项"
 	{
+		"exec vote/hard_on.cfg"
+		{
+			"message" "开启特感属性增强"
+		}
+		"exec vote/hard_off.cfg"
+		{
+			"message" "关闭特感属性增强"
+		}
 		"exec vote/sky_ability_on.cfg"
 		{
 			"message" "开启特感跳吐"

@@ -42,10 +42,10 @@
 	}
 	"2341"
 	{
-		"servername"	"Anne电信11服[难]"
+		"servername"	"Anne电信11服"
 	}
 	"2342"
 	{
-		"servername"	"Anne电信12服[无MOD难]"
+		"servername"	"Anne电信12服[无MOD]"
 	}	
 }
