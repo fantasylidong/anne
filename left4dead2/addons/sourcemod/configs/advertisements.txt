@@ -55,4 +55,9 @@
 		"type"		"S"
 		"text"		"{LIGHTGREEN}输入!dance跳跳舞解解压，如果跳舞人物没动作，请steam联机选项打开允许全部服务器内容后重新进入服务器"
 	}
+	"12"
+	{
+		"type"		"S"
+		"text"		"{LIGHTGREEN}多人运动过关后如果bot数量不对，重新投票或者输入!setbot设置bot数量"
+	}
 }
