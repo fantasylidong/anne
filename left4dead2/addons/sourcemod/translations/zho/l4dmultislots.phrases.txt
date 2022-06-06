@@ -34,4 +34,8 @@
 	{
 		"zho" "沒有倖存者Bot能取代."
 	}
+	"No Second Chance"
+	{
+		"zho" "你已於當前回合當過{blue}生還者隊伍{default}. 給予 {green}死亡{default} Bot."
+	}
 }
