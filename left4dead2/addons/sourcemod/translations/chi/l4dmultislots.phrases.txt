@@ -34,4 +34,8 @@
 	{
 		"chi" "没有生还者Bot能控制."
 	}
+	"No Second Chance"
+	{
+		"chi" "你已于当前回合当过{blue}生还者队伍{default}. 给予 {green}死亡{default} Bot."
+	}
 }
