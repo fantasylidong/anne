@@ -2,7 +2,7 @@
 {
 	"models/infected/gibs/gibs.mdl"
 	{
-		"zho"		"布吉手臂"
+		"zho"		"隻手遮天"
 	}
 	"models/infected/limbs/exploded_boomer_head.mdl"
 	{
@@ -10,7 +10,7 @@
 	}
 	"models/infected/limbs/limb_male_head01.mdl"
 	{
-		"zho"		"布吉頭"
+		"zho"		"假面"
 	}
 	"models/props/cs_militia/circularsaw01.mdl"
 	{
@@ -26,7 +26,7 @@
 	}
 	"models/props_fairgrounds/mr_mustachio.mdl"
 	{
-		"zho"		"穆斯塔基奧先生"
+		"zho"		"鬍子先生"
 	}
 	"models/props_fortifications/orange_cone001_clientside.mdl"
 	{
@@ -34,7 +34,7 @@
 	}
 	"models/props_interiors/teddy_bear.mdl"
 	{
-		"zho"		"泰迪熊"
+		"zho"		"玩具熊"
 	}
 	"models/props_interiors/toilet_b_breakable01_part13.mdl"
 	{
@@ -90,7 +90,7 @@
 	}
 	"models/props_unique/grill_campground.mdl"
 	{
-		"zho"		"燒烤爐"
+		"zho"		"燒烤架"
 	}
 	"models/props_unique/luggagecart01.mdl"
 	{
@@ -130,7 +130,7 @@
 	}
 	"models/props_fairgrounds/gnome_closet.mdl"
 	{
-		"zho"		"小矮人的櫃子尸"
+		"zho"		"小矮人的櫃子"
 	}
 	"models/props_fairgrounds/snake.mdl"
 	{
@@ -150,7 +150,7 @@
 	}
 	"models/props_mall/mall_mannequin_rhand.mdl"
 	{
-		"zho"		"模特手"
+		"zho"		"模型手"
 	}
 	"models/props_lab/desklamp01.mdl"
 	{
@@ -174,7 +174,7 @@
 	}
 	"models/props_urban/big_wheel001.mdl"
 	{
-		"zho"		"三輪車"
+		"zho"		"兒童三輪車"
 	}
 	"models/props_interiors/mounteddeerhead01.mdl"
 	{
@@ -182,11 +182,11 @@
 	}
 	"models/props_misc/pot-1.mdl"
 	{
-		"zho"		"平底煲"
+		"zho"		"平底鍋"
 	}
 	"models/props_c17/metalpot002a.mdl"
 	{
-		"zho"		"平底鍋"
+		"zho"		"煎鍋"
 	}
 	"models/gibs/hgibs.mdl"
 	{
@@ -198,7 +198,7 @@
 	}
 	"models/props/cs_office/chair_office.mdl"
 	{
-		"zho"		"辦公椅"
+		"zho"		"辦公椅子"
 	}
 	"models/props_cemetery/crypts_top02.mdl"
 	{
@@ -206,7 +206,7 @@
 	}
 	"models/props_fairgrounds/kiddyland_riderocket_small.mdl"
 	{
-		"zho"		"火箭"
+		"zho"		"兒童樂園火箭"
 	}
 	"models/props_interiors/toilet_b_breakable01.mdl"
 	{
@@ -254,11 +254,11 @@
 	}
 	"models/props_downtown/ironing_board_flat.mdl"
 	{
-		"zho"		"燙衣板"
+		"zho"		"熨衣板"
 	}
 	"models/props_collectables/coin.mdl"
 	{
-		"zho"		"錢幣"
+		"zho"		"金幣"
 	}
 	"models/infected/jockey.mdl"
 	{
@@ -342,15 +342,15 @@
 	}
 	"models/props_placeable/tier1_guns_trophy.mdl"
 	{
-		"zho"		"槍戰利品1"
+		"zho"		"槍架1"
 	}
 	"models/props_placeable/tier2_guns_trophy.mdl"
 	{
-		"zho"		"槍戰利品2"
+		"zho"		"槍架2"
 	}
 	"models/weapons/arms/v_spitter_arms.mdl"
 	{
-		"zho"		"飛濺武器"
+		"zho"		"Spitter的手"
 	}
 	"models/weapons/arms/v_jockey_arms.mdl"
 	{
@@ -362,7 +362,7 @@
 	}
 	"models/w_models/weapons/w_he_grenade.mdl"
 	{
-		"zho"		"手榴彈殼"
+		"zho"		"炮彈"
 	}
 	"models/props_junk/propanecanister001a.mdl"
 	{
@@ -370,7 +370,7 @@
 	}
 	"models/w_models/weapons/w_eq_medkit.mdl"
 	{
-		"zho"		"藥盒蓋"
+		"zho"		"醫療包帽"
 	}
 	"models/weapons/melee/w_riotshield.mdl"
 	{
@@ -378,6 +378,6 @@
 	}
 	"models/props_skybox/boat_rescue_tug_sunshine.mdl"
 	{
-		"zho"		"拖船"
+		"zho"		"遊艇"
 	}
 }
