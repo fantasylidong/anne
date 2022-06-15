@@ -348,6 +348,17 @@
 			"message" "关闭回血"
 		}
 	}
+	"开关Mod"
+	{
+		"exec vote/mod_on.cfg"
+		{
+			"message" "开启Mod"
+		}
+		"exec vote/mod_off.cfg"
+		{
+			"message" "关闭Mod"
+		}
+	}
 	"武器配置"
 	{
 		"sm_cvar ZonemodWeapon 0"
