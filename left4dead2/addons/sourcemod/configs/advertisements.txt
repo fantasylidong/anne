@@ -38,7 +38,7 @@
 	"8"
 	{
 		"type"		"S"
-		"text"		"{LIGHTGREEN}输入!ch或者!tagslist选择自己已获得的称号佩戴和重载称号，50W以上积分{LIGHTGREEN}可以进群自定义称号哦"
+		"text"		"{LIGHTGREEN}称号、帽子和生还者轮廓系统已在商店系统上线，50W积分称号可以使用!setch \"名字\"进行设置和修改"
 	}
 	"9"
 	{
@@ -59,5 +59,10 @@
 	{
 		"type"		"S"
 		"text"		"{LIGHTGREEN}多人运动过关后如果bot数量不对，重新投票或者输入!setbot设置bot数量"
+	}
+	"13"
+	{
+		"type"		"S"
+		"text"		"{LIGHTGREEN}服务器Mod开关可以再投票菜单中开启"
 	}
 }
