@@ -46,6 +46,6 @@
 	}
 	"2342"
 	{
-		"servername"	"Anne电信12服[无MOD]"
+		"servername"	"Anne电信12服"
 	}	
 }
