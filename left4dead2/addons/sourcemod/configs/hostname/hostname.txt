@@ -1,5 +1,9 @@
 "AnneHappy"
 {
+	"2330"
+	{
+		"servername"	"Anne电信0服"
+	}
 	"2331"
 	{
 		"servername"	"Anne电信1服"
