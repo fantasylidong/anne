@@ -21,23 +21,23 @@
 		{
 			"message" "最新版本"
 		}
-		"sm_fm Anne22-5"
+		"exec vote/Anne/Anne22-5.cfg"
 		{
 			"message" "22-5月版本"
 		}
-		"sm_fm Anne2-2"
+		"exec vote/Anne/Anne22-2.cfg"
 		{
 			"message" "22-2月版本"
 		}
-		"sm_fm Anne11-28"
+		"exec vote/Anne/Anne11-28.cfg"
 		{
 			"message" "21-11-28号版本"
 		}
-		"sm_fm Anne10-10"
+		"exec vote/Anne/Anne10-10.cfg"
 		{
 			"message" "21-10-10号版本"
 		}
-		"sm_fm Anne7-7"
+		"exec vote/Anne/Anne7-7.cfg"
 		{
 			"message" "21-7-7号版本"
 		}
@@ -593,13 +593,13 @@
 	}
 	"地图选择"
 	{
-		"sm_fm AnneHappy"
+		"exec vote/Anne/Annenew.cfg"
 		{
 			"message" "zonemod版本"
 		}
-		"sm_fm Anneold"
+		"exec vote/Anne/Anneold.cfg"
 		{
-			"message" "原版"
+			"message" "AnneHappy原版"
 		}
 	}
 	"开关死门"
