@@ -293,14 +293,6 @@
 		{
 			"message" "关闭Tank大致血量显示"
 		}
-		"exec vote/leg_on.cfg"
-		{
-			"message" "打开看腿插件"
-		}
-		"exec vote/leg_off.cfg"
-		{
-			"message" "关闭看腿插件"
-		}
 	}
 	"模式选择"
 	{
@@ -382,11 +374,11 @@
 		}
 		"exec vote/Consume_on.cfg"
 		{
-			"message" "开启消耗克"
+			"message" "开启消耗克[22-7版本起有效]"
 		}
 		"exec vote/Consume_off.cfg"
 		{
-			"message" "关闭消耗克"
+			"message" "关闭消耗克[22-7版本起有效]"
 		}
 	}
 	"多特特感数量"
