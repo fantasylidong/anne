@@ -63,6 +63,6 @@
 	"13"
 	{
 		"type"		"S"
-		"text"		"{LIGHTGREEN}服务器Mod开关可以再投票菜单中开启"
+		"text"		"{LIGHTGREEN}服务器Mod开关可以在投票菜单中开启"
 	}
 }
