@@ -21,9 +21,9 @@
 		{
 			"message" "最新版本"
 		}
-		"exec vote/Anne/Anne22-5.cfg"
+		"exec vote/Anne/Anne22-6.cfg"
 		{
-			"message" "22-5月版本"
+			"message" "22-6月版本"
 		}
 		"exec vote/Anne/Anne22-2.cfg"
 		{
