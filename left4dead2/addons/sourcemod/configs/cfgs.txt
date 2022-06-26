@@ -361,6 +361,10 @@
 		{
 			"message" "zonemod2.6.4枪械"
 		}
+		"sm_cvar ZonemodWeapon 2"
+		{
+			"message" "AnneHappyPlus枪械[9特以上]"
+		}
 	}
 	"Tank选项"
 	{
