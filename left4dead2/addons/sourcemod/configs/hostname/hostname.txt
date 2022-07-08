@@ -2,7 +2,7 @@
 {
 	"2330"
 	{
-		"servername"	"Anne电信0服"
+		"servername"	"Anne电信测试服"
 	}
 	"2331"
 	{
