@@ -852,7 +852,7 @@
 				{
 					"a1"
 					{
-						"type"	"int"
+						"type"	"objectptr"
 					}
 					"a2"
 					{
@@ -2239,18 +2239,6 @@
 				"windows"	"\x55\x8B\x2A\xA1\x2A\x2A\x2A\x2A\x83\x2A\x2A\x83\x2A\x2A\x2A\x57\x8B\x2A\x0F\x85\x2A\x2A\x2A\x2A\x56"
 				/* 55 8B ? A1 ? ? ? ? 83 ? ? 83 ? ? ? 57 8B ? 0F 85 ? ? ? ? 56 */
 				/* Search: "JockeyZombie.Ride" */ // Found by "SilverShot".
-			}
-
-			/*
-			 * CTerrorPlayer::OnStartCarryingVictim(CTerrorPlayer *this, CTerrorPlayer *)
-			 */
-			"CTerrorPlayer::OnStartCarryingVictim"
-			{
-				"library"	"server"
-				"linux"		"@_ZN13CTerrorPlayer21OnStartCarryingVictimEPS_"
-				"windows"	"\x2A\x2A\x2A\x2A\x2A\x2A\x8B\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x8B\x2A\x8B\x2A\x2A\x6A\x00\x6A\x00\x68\x2A\x2A\x2A\x2A\xFF\x2A\x8B\x2A\x85\x2A\x74\x2A\x8B\x2A\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x8B\x2A\x50\x8B\x2A\x2A\xFF\x2A\x8B\x2A\x50\x8B\x2A\x2A\x68\x2A\x2A\x2A\x2A\x8B\x2A\xFF\x2A\x8B\x2A\x2A\x8B"
-				/* ? ? ? ? ? ? 8B ? 8B ? ? ? ? ? 8B ? 8B ? ? 6A 00 6A 00 68 ? ? ? ? FF ? 8B ? 85 ? 74 ? 8B ? ? 8B ? ? ? ? ? 8B ? 50 8B ? ? FF ? 8B ? 50 8B ? ? 68 ? ? ? ? 8B ? FF ? 8B ? ? 8B */
-				/* Search: "charger_carry_start" */ // Found by "SilverShot".
 			}
 
 			/*
@@ -3697,19 +3685,6 @@
 			}
 
 			/*
-			*	CTerrorPlayer::QueuePummelVictim(CTerrorPlayer*)
-			*	int __cdecl CTerrorPlayer::QueuePummelVictim(int a1, int a2, float a3)
-			*	Search: "ChargerZombie.VocalizePummel". xref calls sub_#### ((void *)v2, 0, -1.0);
-			*/
-			"CTerrorPlayer::QueuePummelVictim"
-			{
-				"library"		"server"
-				"linux"			"@_ZN13CTerrorPlayer17QueuePummelVictimEPS_f"
-				"windows"		"\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x56\x57\x8B\x2A\x85\x2A\x74\x2A\x8B\x2A\x8B\x2A\x2A\x8B\x2A\xFF\x2A\x8B\x2A\x83\x2A\xFF\x74"
-				/* ? ? ? ? ? ? ? 56 57 8B ? 85 ? 74 ? 8B ? 8B ? ? 8B ? FF ? 8B ? 83 ? FF 74 */
-			}
-
-			/*
 			*	ThrowImpactedSurvivor(CTerrorPlayer *, CTerrorPlayer *, float, bool)
 			*	Search: "charger_impact"
 			*/
@@ -3751,15 +3726,15 @@
 			}
 
 			/*
-			*	ThrowImpactedSurvivor(CTerrorPlayer *, CTerrorPlayer *, float, bool)
-			*	Search: "charger_impact"
-			*/
-			"ThrowImpactedSurvivor"
+			 * CTerrorPlayer::OnStartCarryingVictim(CTerrorPlayer *this, CTerrorPlayer *)
+			 */
+			"CTerrorPlayer::OnStartCarryingVictim"
 			{
-				"library"		"server"
-				"linux"			"@_Z21ThrowImpactedSurvivorP13CTerrorPlayerS0_fb"
-				"windows"		"\x2A\x2A\x2A\x2A\x2A\x2A\x53\x56\x57\x8B\x2A\x2A\x8B\x2A\x2A\x2A\x2A\x2A\xC1\x2A\x2A\x2A\x2A\x74\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x8B"
-				/* ? ? ? ? ? ? 53 56 57 8B ? ? 8B ? ? ? ? ? C1 ? ? ? ? 74 ? ? ? ? ? ? ? ? 8B ? ? ? ? ? 8B */
+				"library"	"server"
+				"linux"		"@_ZN13CTerrorPlayer21OnStartCarryingVictimEPS_"
+				"windows"	"\x2A\x2A\x2A\x2A\x2A\x2A\x8B\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x8B\x2A\x8B\x2A\x2A\x6A\x00\x6A\x00\x68\x2A\x2A\x2A\x2A\xFF\x2A\x8B\x2A\x85\x2A\x74\x2A\x8B\x2A\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x8B\x2A\x50\x8B\x2A\x2A\xFF\x2A\x8B\x2A\x50\x8B\x2A\x2A\x68\x2A\x2A\x2A\x2A\x8B\x2A\xFF\x2A\x8B\x2A\x2A\x8B"
+				/* ? ? ? ? ? ? 8B ? 8B ? ? ? ? ? 8B ? 8B ? ? 6A 00 6A 00 68 ? ? ? ? FF ? 8B ? 85 ? 74 ? 8B ? ? 8B ? ? ? ? ? 8B ? 50 8B ? ? FF ? 8B ? 50 8B ? ? 68 ? ? ? ? 8B ? FF ? 8B ? ? 8B */
+				/* Search: "charger_carry_start" */ // Found by "SilverShot".
 			}
 
 			/*
@@ -3788,15 +3763,15 @@
 			}
 
 			/*
-			*	CTerrorPlayer::OnStartCarryingVictim(CTerrorPlayer*)
-			*	Search: "charger_carry_start"
-			*/
-			"CTerrorPlayer::OnStartCarryingVictim"
+			 * CTerrorPlayer::OnRideEnded(CTerrorPlayer *this, CTerrorPlayer *)
+			 */
+			"CTerrorPlayer::OnRideEnded"
 			{
-				"library"		"server"
-				"linux"			"@_ZN13CTerrorPlayer21OnStartCarryingVictimEPS_"
-				"windows"		"\x2A\x2A\x2A\x2A\x2A\x2A\x8B\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x8B\x2A\x8B\x2A\x2A\x6A\x00\x6A\x00\x68\x2A\x2A\x2A\x2A\xFF\x2A\x8B\x2A\x85\x2A\x74\x2A\x8B\x2A\x2A\x8B\x2A\x2A\x2A\x2A\x2A\x8B\x2A\x50\x8B\x2A\x2A\xFF\x2A\x8B\x2A\x50\x8B\x2A\x2A\x68\x2A\x2A\x2A\x2A\x8B\x2A\xFF\x2A\x8B\x2A\x2A\x8B"
-				/* ? ? ? ? ? ? 8B ? 8B ? ? ? ? ? 8B ? 8B ? ? 6A 00 6A 00 68 ? ? ? ? FF ? 8B ? 85 ? 74 ? 8B ? ? 8B ? ? ? ? ? 8B ? 50 8B ? ? FF ? 8B ? 50 8B ? ? 68 ? ? ? ? 8B ? FF ? 8B ? ? 8B */
+				"library"	"server"
+				"linux"		"@_ZN13CTerrorPlayer11OnRideEndedEPS_"
+				"windows"	"\x55\x8B\x2A\x83\x2A\x2A\x53\x56\x57\x68\x2A\x2A\x2A\x2A\x8B\x2A\xE8"
+				/* 55 8B ? 83 ? ? 53 56 57 68 ? ? ? ? 8B ? E8 */
+				/* Search: "SurvivorJockeyEnded.Ride" */ // Found by "SilverShot".
 			}
 
 			/*
@@ -4155,6 +4130,29 @@
 				/* 55 8B ? 80 ? ? ? 74 ? 8B ? ? 85 ? 79 */ // Found by "SilverShot".
 				/* Search: "BLOCKED_SURVIVOR". Above/below is target. */
 			}
+
+			/*
+			 * NavAreaBuildPath<ShortestPathCost>(CNavArea *a1_CNavArea, CNavArea *a2_CNavArea, int a3__vector, int a4__vector, int a5, int a6, int a7_flMaxPathLength, int a8_teamID, int a9_ignoreNavBlockers)
+			 */
+			"NavAreaBuildPath_ShortestPathCost"
+			{
+				"library"	"server"
+				"linux"		"@_Z16NavAreaBuildPathI16ShortestPathCostEbP8CNavAreaS2_PK6VectorS5_RT_PS2_fib"
+				"windows"	"\x53\x8B\x2A\x83\x2A\x2A\x83\x2A\x2A\x83\x2A\x2A\x55\x8B\x2A\x2A\x89\x2A\x2A\x2A\x8B\x2A\x83\x2A\x2A\xA1\x2A\x2A\x2A\x2A\x33\x2A\x56\x89"
+				/* 53 8B ? 83 ? ? 83 ? ? 83 ? ? 55 8B ? ? 89 ? ? ? 8B ? 83 ? ? A1 ? ? ? ? 33 ? 56 89 */ // Found by "SilverShot".
+				/* Search: "NavAreaBuildPath". Should be first sub. */
+			}
+			/*
+			 * CNavMesh::ScriptNavAreaBuildPath(int a1, int a2, int a3, int a4, int a5_flMaxPathLength, int a6_TeamID, unsigned __int8 a7_ignoreNavBlockers)
+			 */
+			// "CNavMesh::ScriptNavAreaBuildPath"
+			// {
+				// "library"	"server"
+				// "linux"		"@_Z13GetScriptDescI13TerrorNavAreaEP17ScriptClassDesc_tPT_"
+				// "windows"	"\x55\x8B\x2A\x53\x56\x8B\x2A\x2A\x57\x85\x2A\x74\x2A\x83\x2A\x2A\x74\x2A\xA1\x2A\x2A\x2A\x2A\x8B\x2A\x6A\x2A\xE8\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x8B"
+				/* 55 8B ? 53 56 8B ? ? 57 85 ? 74 ? 83 ? ? 74 ? A1 ? ? ? ? 8B ? 6A ? E8 ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? 8B */ // Found by "SilverShot".
+				/* Search: "ScriptNavAreaBuildPath". 2nd call below is our target. Long signature almost identical to another function. */
+			// }
 
 
 
