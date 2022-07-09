@@ -296,6 +296,10 @@
 	}
 	"模式选择"
 	{
+		"sm_resetmatch"
+		{
+			"message" "卸载模式[先卸载再换模式]"
+		}
 		"sm_fm AnneHappy"
 		{
 			"message" "普通药役模式"
