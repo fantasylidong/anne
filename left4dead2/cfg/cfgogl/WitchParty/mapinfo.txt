@@ -134,6 +134,11 @@
 				"min"		"0"
 				"max"		"26"
 			}
+			"middle part"
+			{
+				"min"		"38"
+				"max"		"49"
+			}
 			"Coaster Start"
 			{
 				"min"		"56"
