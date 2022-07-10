@@ -55,7 +55,7 @@
 			"Event escalators"
 			{
 				"min"		"64"
-				"max"		"68"
+				"max"		"100"
 			}
 		}
 		"witch_ban_flow"
@@ -216,6 +216,14 @@
 		"start_dist"		"50.000000"
 		"start_extra_dist"	"200.000000"
 		"end_dist"			"200.000000"
+		"tank_ban_flow"
+		{
+			"event"
+			{
+				"min"		"70"
+				"max"		"100"
+			}
+		}
 		"max_distance"		"600"
 	}
 	"c3m4_plantation"
@@ -357,7 +365,7 @@
 			"CEDA trailer"
 			{
 				"min"		"49"
-				"max"		"54"
+				"max"		"100"
 			}
 		}
 	}

@@ -112,11 +112,6 @@
 				"min"		"54"
 				"max"		"58"
 			}
-			"middle part"
-			{
-				"min"		"38"
-				"max"		"49"
-			}
 			"Start of event"
 			{
 				"min"		"78"
@@ -138,6 +133,11 @@
 			{
 				"min"		"0"
 				"max"		"26"
+			}
+			"middle part"
+			{
+				"min"		"38"
+				"max"		"49"
 			}
 			"Coaster Start"
 			{
@@ -216,6 +216,14 @@
 		"start_dist"		"50.000000"
 		"start_extra_dist"	"200.000000"
 		"end_dist"			"200.000000"
+		"tank_ban_flow"
+		{
+			"event"
+			{
+				"min"		"70"
+				"max"		"100"
+			}
+		}
 		"max_distance"		"600"
 	}
 	"c3m4_plantation"
@@ -357,7 +365,7 @@
 			"CEDA trailer"
 			{
 				"min"		"49"
-				"max"		"54"
+				"max"		"100"
 			}
 		}
 	}
