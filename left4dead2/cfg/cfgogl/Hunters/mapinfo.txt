@@ -112,6 +112,11 @@
 				"min"		"54"
 				"max"		"58"
 			}
+			"middle part"
+			{
+				"min"		"38"
+				"max"		"49"
+			}
 			"Start of event"
 			{
 				"min"		"78"
