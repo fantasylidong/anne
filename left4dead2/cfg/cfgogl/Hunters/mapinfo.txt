@@ -179,6 +179,14 @@
 		"start_dist"		"100.000000"
 		"start_extra_dist"	"300.000000"
 		"end_dist"			"150.000000"
+		"tank_ban_flow"
+		{
+			"early spawn"
+			{
+				"min"		"0"
+				"max"		"40"
+			}
+		}
 		"ItemLimits"
 		{
 			"pain_pills"	"0"
