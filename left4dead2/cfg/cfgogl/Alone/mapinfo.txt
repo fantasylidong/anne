@@ -126,7 +126,7 @@
 		"start_dist"		"50.000000"
 		"start_extra_dist"	"200.000000"
 		"end_dist"			"150.000000"
-		"horde_limit"		"15"
+		"horde_limit"		"40"
 		"tank_ban_flow"
 		{
 			"first start"
