@@ -7,6 +7,7 @@
 			"ZombieManager::CanZombieSpawnHere::IsInTransitionCondition"
 			{
 				"signature"		"ZombieManager::CanZombieSpawnHere"
+
 				"linux"
 				{
 					"offset"	"29h"
@@ -21,9 +22,11 @@
 					"patch"		"\x90\x90\x90\x90\x90\x90"
 				}
 			}
+
 			"CTerrorPlayer::OnPreThinkGhostState::IsInTransitionCondition"
 			{
 				"signature"		"CTerrorPlayer::OnPreThinkGhostState"
+
 				"linux"
 				{
 					"offset"	"1Eh"
@@ -35,12 +38,14 @@
 				{
 					"offset"	"37h"
 					"verify"	"\x0F\x85\xA5\x07\x00\x00"
-					"patch"		"\x90\xE9\xA5\x07\x00\x00"
+					"patch"		"\x90\x90\x90\x90\x90\x90"
 				}
 			}
+
 			"CTerrorPlayer::OnPreThinkGhostState::SpawnDisabledCondition"
 			{
 				"signature"		"CTerrorPlayer::OnPreThinkGhostState"
+
 				"linux"
 				{
 					"offset"	"104h"
@@ -55,9 +60,11 @@
 					"patch"		"\xEB\x39"
 				}
 			}
+
 			"ZombieManager::AccumulateSpawnAreaCollection::EnforceFinaleNavSpawnRulesCondition"
 			{
 				"signature"		"ZombieManager::AccumulateSpawnAreaCollection"
+
 				"linux"
 				{
 					"offset"	"905h"
@@ -84,6 +91,7 @@
 				"windows"	"\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\xA1\x2A\x2A\x2A\x2A\x33\x2A\x89\x2A\x2A\x8B\x2A\x2A\x8B\x0D\x2A\x2A\x2A\x2A\x53\x8B\x2A\x2A\x56\x8B\x2A\x2A\x57"
 				/* ? ? ? ? ? ? ? ? ? A1 ? ? ? ? 33 ? 89 ? ? 8B ? ? 8B 0D ? ? ? ? 53 8B ? ? 56 8B ? ? 57 */
 			}
+
 			/* CTerrorPlayer::OnPreThinkGhostState(CTerrorPlayer *__hidden this) */
 			"CTerrorPlayer::OnPreThinkGhostState"
 			{
@@ -92,6 +100,7 @@
 				"windows"	"\x53\x8B\xDC\x83\xEC\x08\x83\xE4\xF0\x83\xC4\x04\x55\x8B\x6B\x04\x89\x6C\x24\x04\x8B\xEC\x81\xEC\xD8\x00\x00\x00\xA1\x2A\x2A\x2A\x2A\x33\xC5\x89\x45\xFC\x56\x8B\xF1\x8B\x0D\x2A\x2A\x2A\x2A"
 				/* 53 8B DC 83 EC 08 83 E4 F0 83 C4 04 55 8B 6B 04 89 6C 24 04 8B EC 81 EC D8 00 00 00 A1 ? ? ? ? 33 C5 89 45 FC 56 8B F1 8B 0D ? ? ? ? */
 			}
+			
 			/* ZombieManager::AccumulateSpawnAreaCollection(CUtlVector<CNavArea *, CUtlMemory<CNavArea *, int>> const&, ZombieManager::MobLocationType, ZombieClassType, float, CUtlVector<CNavArea *, CUtlMemory<CNavArea *, int>>*, bool, bool)const */
 			"ZombieManager::AccumulateSpawnAreaCollection"
 			{
