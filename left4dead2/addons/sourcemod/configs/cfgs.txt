@@ -277,6 +277,14 @@
 		{
 			"message" "关闭hud显示"
 		}
+		"sm_cvar l4d_random_beam_item_enable 1"
+		{
+			"message" "开启药的光柱"
+		}
+		"sm_cvar l4d_random_beam_item_enable 0"
+		{
+			"message" "关闭药的光柱"
+		}
 		"exec vote/mysqlShop_on.cfg"
 		{
 			"message" "开启Anne老版数据库商店"
