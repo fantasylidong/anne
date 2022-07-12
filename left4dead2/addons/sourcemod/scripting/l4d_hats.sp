@@ -18,7 +18,7 @@
 
 
 
-#define PLUGIN_VERSION 		"1.45"
+#define PLUGIN_VERSION 		"1.46"
 
 /*======================================================================================
 	Plugin Info:
@@ -31,6 +31,9 @@
 
 ========================================================================================
 	Change Log:
+
+1.46 (13-Jun-2022)
+	- Added forward "L4D_OnHatLoadSave" to report when loading or saving a clients hat type cookies. Requested by "morzlee".
 
 1.45 (29-May-2022)
 	- Added public command "sm_hats" to display a menu of hat options. Thanks to "pan0s" for writing.
@@ -294,6 +297,7 @@
 #include <sdktools>
 #include <sdkhooks>
 #include <clientprefs>
+#include <l4dstats>
 
 #define CVAR_FLAGS			FCVAR_NOTIFY
 #define CONFIG_SPAWNS		"data/l4d_hats.cfg"
@@ -340,6 +344,8 @@ bool g_bCookieAuth[MAXPLAYERS+1];		// When cookies cached and client is authoriz
 Handle g_hTimerView[MAXPLAYERS+1];		// Thirdperson view when selecting hat
 Handle g_hTimerDetect;
 
+GlobalForward g_hForwardLoadSave, g_hSetHat;
+
 // ReadyUP plugin
 native bool ToggleReadyPanel(bool show, int target = 0);
 
@@ -367,6 +373,9 @@ public APLRes AskPluginLoad2(Handle myself, bool late, char[] error, int err_max
 		strcopy(error, err_max, "Plugin only supports Left 4 Dead 1 & 2.");
 		return APLRes_SilentFailure;
 	}
+
+	g_hForwardLoadSave = new GlobalForward("L4D_OnHatLoadSave", ET_Event, Param_Cell, Param_CellByRef, Param_Cell);
+	g_hSetHat = CreateGlobalForward("OnSetHat", ET_Ignore,Param_Cell,Param_Cell);
 
 	MarkNativeAsOptional("ToggleReadyPanel");
 
@@ -474,22 +483,22 @@ public void OnPluginStart()
 
 	// Cvars
 	g_hCvarAllow = CreateConVar(		"l4d_hats_allow",		"1",			"0=Plugin off, 1=Plugin on.", CVAR_FLAGS );
-	g_hCvarBots = CreateConVar(			"l4d_hats_bots",		"1",			"0=Disallow bots from spawning with Hats. 1=Allow bots to spawn with hats.", CVAR_FLAGS, true, 0.0, true, 1.0 );
+	g_hCvarBots = CreateConVar(			"l4d_hats_bots",		"0",			"0=Disallow bots from spawning with Hats. 1=Allow bots to spawn with hats.", CVAR_FLAGS, true, 0.0, true, 1.0 );
 	g_hCvarChange = CreateConVar(		"l4d_hats_change",		"1.3",			"0=Off. Other value puts the player into thirdperson for this many seconds when selecting a hat.", CVAR_FLAGS );
 	g_hCvarDetect = CreateConVar(		"l4d_hats_detect",		"0.3",			"0.0=Off. How often to detect thirdperson view. Also uses ThirdPersonShoulder_Detect plugin if available.", CVAR_FLAGS );
-	g_hCvarMake = CreateConVar(			"l4d_hats_make",		"",				"Specify admin flags or blank to allow all players to spawn with a hat, requires the l4d_hats_random cvar to spawn.", CVAR_FLAGS );
-	g_hCvarMenu = CreateConVar(			"l4d_hats_menu",		"",				"Specify admin flags or blank to allow all players access to the hats menu.", CVAR_FLAGS );
+	g_hCvarMake = CreateConVar(			"l4d_hats_make",		"b",				"Specify admin flags or blank to allow all players to spawn with a hat, requires the l4d_hats_random cvar to spawn.", CVAR_FLAGS );
+	g_hCvarMenu = CreateConVar(			"l4d_hats_menu",		"b",				"Specify admin flags or blank to allow all players access to the hats menu.", CVAR_FLAGS );
 	g_hCvarModes = CreateConVar(		"l4d_hats_modes",		"",				"Turn on the plugin in these game modes, separate by commas (no spaces). (Empty = all).", CVAR_FLAGS );
 	g_hCvarModesOff = CreateConVar(		"l4d_hats_modes_off",	"",				"Turn off the plugin in these game modes, separate by commas (no spaces). (Empty = none).", CVAR_FLAGS );
 	g_hCvarModesTog = CreateConVar(		"l4d_hats_modes_tog",	"",				"Turn on the plugin in these game modes. 0=All, 1=Coop, 2=Survival, 4=Versus, 8=Scavenge. Add numbers together.", CVAR_FLAGS );
 	g_hCvarOpaq = CreateConVar(			"l4d_hats_opaque",		"255", 			"How transparent or solid should the hats appear. 0=Translucent, 255=Opaque.", CVAR_FLAGS, true, 0.0, true, 255.0 );
 	g_hCvarPrecache = CreateConVar(		"l4d_hats_precache",	"",				"Prevent pre-caching models on these maps, separate by commas (no spaces). Enabling plugin on these maps will crash the server.", CVAR_FLAGS );
-	g_hCvarRand = CreateConVar(			"l4d_hats_random",		"1", 			"Attach a random hat when survivors spawn. 0=Never. 1=On round start. 2=Only first spawn (keeps the same hat next round).", CVAR_FLAGS, true, 0.0, true, 3.0 );
-	g_hCvarSave = CreateConVar(			"l4d_hats_save",		"1", 			"0=Off, 1=Save the players selected hats and attach when they spawn or rejoin the server. Overrides the random setting.", CVAR_FLAGS, true, 0.0, true, 1.0 );
+	g_hCvarRand = CreateConVar(			"l4d_hats_random",		"0", 			"Attach a random hat when survivors spawn. 0=Never. 1=On round start. 2=Only first spawn (keeps the same hat next round).", CVAR_FLAGS, true, 0.0, true, 3.0 );
+	g_hCvarSave = CreateConVar(			"l4d_hats_save",		"0", 			"0=Off, 1=Save the players selected hats and attach when they spawn or rejoin the server. Overrides the random setting.", CVAR_FLAGS, true, 0.0, true, 1.0 );
 	g_hCvarThird = CreateConVar(		"l4d_hats_third",		"1", 			"0=Off, 1=When a player is in third person view, display their hat. Hide when in first person view.", CVAR_FLAGS, true, 0.0, true, 1.0 );
 	g_hCvarWall = CreateConVar(			"l4d_hats_wall",		"1",			"0=Show hats glowing through walls, 1=Hide hats glowing when behind walls (creates 1 extra entity per hat).", CVAR_FLAGS, true, 0.0, true, 1.0 );
 	CreateConVar(						"l4d_hats_version",		PLUGIN_VERSION,	"Hats plugin version.",	FCVAR_NOTIFY|FCVAR_DONTRECORD);
-	AutoExecConfig(true,				"l4d_hats");
+	//AutoExecConfig(true,				"l4d_hats");
 
 	g_hCvarMPGameMode = FindConVar("mp_gamemode");
 	g_hCvarMPGameMode.AddChangeHook(ConVarChanged_Allow);
@@ -848,16 +857,33 @@ public void OnClientCookiesCached(int client)
 		// Get client cookies, set type if available or default.
 		GetClientCookie(client, g_hCookie_Hat, sCookie, sizeof(sCookie));
 
+		int type;
+
 		if( sCookie[0] == 0 )
 		{
 			g_iType[client] = 0;
 		}
 		else
 		{
-			int type = StringToInt(sCookie);
+			type = StringToInt(sCookie);
 			g_iType[client] = type;
 		}
 
+		// Forward
+		type = g_iType[client];
+		Action aResult = Plugin_Continue;
+		Call_StartForward(g_hForwardLoadSave);
+		Call_PushCell(client);
+		Call_PushCellRef(type);
+		Call_PushCell(true);
+		Call_Finish(aResult);
+
+		if( aResult == Plugin_Changed )
+		{
+			g_iType[client] = type;
+		}
+
+		// Can use cookies?
 		CookieAuthTest(client);
 	}
 }
@@ -874,6 +900,20 @@ void CookieAuthTest(int client)
 			g_iType[client] = 0;
 			RemoveHat(client);
 			SetClientCookie(client, g_hCookie_Hat, "0");
+
+			// Forward
+			int type = g_iType[client];
+			Action aResult = Plugin_Continue;
+			Call_StartForward(g_hForwardLoadSave);
+			Call_PushCell(client);
+			Call_PushCellRef(type);
+			Call_PushCell(false);
+			Call_Finish(aResult);
+
+			if( aResult == Plugin_Changed )
+			{
+				g_iType[client] = type;
+			}
 		}
 	} else {
 		g_bCookieAuth[client] = true;
@@ -1357,8 +1397,8 @@ Action CmdHatMain(int client, int args)
 		CPrintToChat(client, "%T%T", "HAT_SYSTEM", client, "HAT_NOT_RIGHT_NOW", client);
 		return Plugin_Handled;
 	}
-
-	if( g_iCvarMenu != 0 )
+	/*
+	if( g_iCvarMenu != 0 && !l4dstats_IsTopPlayer(client,50))
 	{
 		int flags = GetUserFlagBits(client);
 
@@ -1368,7 +1408,7 @@ Action CmdHatMain(int client, int args)
 			return Plugin_Handled;
 		}
 	}
-
+	*/
 	SetReadyUpPlugin(client, false);
 
 	g_iMenuType[client] = 0;
@@ -1388,7 +1428,7 @@ Action CmdHatMain(int client, int args)
 
 	Format(option, sizeof(option), "%T", options[0], client);
 	menu.AddItem("option0", option);
-
+	
 	for( int i=0; i < sizeof(bEnabled); i++ )
 	{
 		Format(option, sizeof(option), "%T: %T", options[i+1], client, bEnabled[i] ? "HAT_ENABLED" : "HAT_DISABLED", client);
@@ -1448,13 +1488,13 @@ Action CmdHat(int client, int args)
 		return Plugin_Handled;
 	}
 
-	if( g_iCvarMenu != 0 )
+	if( g_iCvarMenu != 0 && !l4dstats_IsTopPlayer(client,50) )
 	{
 		int flags = GetUserFlagBits(client);
 
 		if( !(flags & ADMFLAG_ROOT) && !(flags & g_iCvarMenu) )
 		{
-			CPrintToChat(client, "%T%T", "HAT_SYSTEM", client, "No Access", client);
+			CPrintToChat(client, "{GREEN}[HAT]{DEFAULT}你还没有权限使用帽子，请确认你是否为{ORANGE}管理员或积分排名榜前50名玩家");
 			return Plugin_Handled;
 		}
 	}
@@ -1485,6 +1525,20 @@ Action CmdHat(int client, int args)
 					{
 						SetClientCookie(client, g_hCookie_Hat, "-1");
 						g_iType[client] = -1;
+
+						// Forward
+						int type = g_iType[client];
+						Action aResult = Plugin_Continue;
+						Call_StartForward(g_hForwardLoadSave);
+						Call_PushCell(client);
+						Call_PushCellRef(type);
+						Call_PushCell(false);
+						Call_Finish(aResult);
+
+						if( aResult == Plugin_Changed )
+						{
+							g_iType[client] = type;
+						}
 					}
 
 					CPrintToChat(client, "%T%T", "HAT_SYSTEM", client, "Hat_Off", client);
@@ -1584,6 +1638,20 @@ int HatMenuHandler(Menu menu, MenuAction action, int client, int index)
 				{
 					SetClientCookie(client, g_hCookie_Hat, "-1");
 					g_iType[client] = -1;
+
+					// Forward
+					int type = g_iType[client];
+					Action aResult = Plugin_Continue;
+					Call_StartForward(g_hForwardLoadSave);
+					Call_PushCell(client);
+					Call_PushCellRef(type);
+					Call_PushCell(false);
+					Call_Finish(aResult);
+
+					if( aResult == Plugin_Changed )
+					{
+						g_iType[client] = type;
+					}
 				}
 
 				CPrintToChat(client, "%T%T", "HAT_SYSTEM", client, "Hat_Off", client);
@@ -2607,12 +2675,18 @@ bool CreateHat(int client, int index = -1)
 	if( g_bBlocked[client] || g_bHatOff[client] || IsValidEntRef(g_iHatIndex[client]) == true || HatsValidClient(client) == false )
 		return false;
 
+	Call_StartForward(g_hSetHat);//转发触发
+	Call_PushCell(client);//按顺序将参数push进forward传参列表里
+	Call_PushCell(index);//按顺序将参数push进forward传参列表里
+	Call_Finish();//转发结束
+
+	
 	if( index == -1 ) // Random hat
 	{
 		if( g_iCvarRand == 0 ) return false;
 		if( g_iType[client] == -1 ) return false;
 
-		if( g_iCvarMenu != 0 )
+		if( g_iCvarMenu != 0 && !l4dstats_IsTopPlayer(client,30))
 		{
 			if( IsFakeClient(client) )
 				return false;
@@ -2670,6 +2744,20 @@ bool CreateHat(int client, int index = -1)
 		char sNum[4];
 		IntToString(index + 1, sNum, sizeof(sNum));
 		SetClientCookie(client, g_hCookie_Hat, sNum);
+
+		// Forward
+		int type = g_iType[client];
+		Action aResult = Plugin_Continue;
+		Call_StartForward(g_hForwardLoadSave);
+		Call_PushCell(client);
+		Call_PushCellRef(type);
+		Call_PushCell(false);
+		Call_Finish(aResult);
+
+		if( aResult == Plugin_Changed )
+		{
+			g_iType[client] = type;
+		}
 
 		///////////////////////////////////////////
 		// Updated by pan0s
