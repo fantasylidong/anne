@@ -2739,7 +2739,7 @@ HandleSmokerSelfClear( attacker, victim, bool:withShove = false )
         }
         else if ( IS_VALID_INGAME(attacker) )
         {
-        	CPrintToChatAll( "{green}★★ {olive}%N {blue}成功{default}从 {olive}smoker{default}的舌头下%s {blue}自救", attacker, victim, (withShove) ? " 用推" : "" );
+        	CPrintToChatAll( "{green}★★ {olive}%N {blue}成功{default}从 {olive}smoker{default}的舌头下%s {blue}自救", attacker, (withShove) ? " 用推" : "" );
             //CPrintToChatAll( "{green}★★ {olive}%N {blue}self-cleared {default}from a smoker tongue{blue}%s", attacker, (withShove) ? " by shoving" : "" );
         }
     }
