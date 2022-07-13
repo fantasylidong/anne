@@ -92,8 +92,8 @@
 	{
 		"start_loc_a"	"-7093.14 6688.61 453.86"
 		"start_loc_b"	"-6354.96 8051.25 65.87"
-		"end_loc_a"	"3734.55 -1860.02 394.79"
-		"end_loc_b"	"4237.81 -1428.38 85.6"
+		"end_loc_a"	"3744 -1848 360"
+		"end_loc_b"	"4224 -1440 72"
 	}
 	"c4m2_sugarmill_a"
 	{
@@ -111,8 +111,8 @@
 	}
 	"c4m4_milltown_b"
 	{
-		"start_loc_a"	"3734.55 -1860.02 394.79"
-		"start_loc_b"	"4237.81 -1428.38 85.6"
+		"start_loc_a"	"3744 -1848 360"
+		"start_loc_b"	"4224 -1440 72"
 		"end_loc_a"	"-3684.23 7746.72 284.03"
 		"end_loc_b"	"-2856.12 8150.86 106.16"
 	}
@@ -318,7 +318,7 @@
 	}
 	"c12m1_hilltop"
 	{
-		"start_loc_a"	"-9027.93 -15762.54 935.88"
+		"start_loc_a"	"-8720 -15762.54 935.88"
 		"start_loc_b"	"-7402.46 -14735.30 240.22"
 		"end_loc_a"	"-6734.21 -6969.61 334.11"
 		"end_loc_b"	"-6328.27 -6575.63 530.19"
@@ -378,6 +378,18 @@
 	{
 		"start_loc_a"	"-3631.93 -9377.93 318.42"
 		"start_loc_b"	"-3134.19 -8887.80 513.99"
+	}
+	"c14m1_junkyard"
+	{
+		"start_loc_a"	"-5152 -9872 224"
+		"start_loc_b"	"-3552 -11120 -320"
+		"end_loc_a"	"-3444 10692 148"
+		"end_loc_b"	"-2924 10176 -136"
+	}
+	"c14m2_lighthouse"
+	{
+		"start_loc_a"	"1904 -700 712"
+		"start_loc_b"	"2420 -1220 440"
 	}
 	"c5m1_darkwaterfront"
 	{
@@ -863,5 +875,104 @@
 	{
 		"start_loc_a"	"78.61 -4791.03 907.94"
 		"start_loc_b"	"539.61 -4568.96 1118.83"
+	}
+	"uz_crash"
+	{
+		"start_loc_a"	"1664 1720 264"
+		"start_loc_b"	"2216 1104 88"
+		"end_loc_a"	"11200 -320 -216"
+		"end_loc_b"	"11792 -896 -368"
+	}
+	"uz_town"
+	{
+		"start_loc_a"	"-2000 3168 -48"
+		"start_loc_b"	"-1392 2592 -272"
+		"end_loc_a"	"-832 -3904 352"
+		"end_loc_b"	"-576 -4544 48"
+	}
+	"uz_desert"
+	{
+		"start_loc_a"	"-11264 3728 160"
+		"start_loc_b"	"-11008 3056 -144"
+		"end_loc_a"	"-1888 -1440 -240"
+		"end_loc_b"	"-1376 -1696 -448"
+	}
+	"uz_bunker"
+	{
+		"start_loc_a"	"-6336 -832 640"
+		"start_loc_b"	"-5824 -1152 416"
+		"end_loc_a"	"-2848 4480 1376"
+		"end_loc_b"	"-2144 4032 1152"
+	}
+	"uz_escape"
+	{
+		"start_loc_a"	"-3616 640 224"
+		"start_loc_b"	"-2912 192 0"
+	}
+	"dkr_m1_motel"
+	{
+		"start_loc_a"	"10152 -5260 -183"
+		"start_loc_b"	"11392 -3648 -664"
+		"end_loc_a"	"-8440 680 -876"
+		"end_loc_b"	"-8008 864 -1008"
+	}
+	"dkr_m2_carnival"
+	{
+		"start_loc_a"	"8841 424 18"
+		"start_loc_b"	"9273 608 -124"
+		"end_loc_a"	"-1572 6484 272"
+		"end_loc_b"	"-1284 7664 -72"
+	}
+	"dkr_m3_tunneloflove"
+	{
+		"start_loc_a"	"1168 -5608 220"
+		"start_loc_b"	"1456 -4428 -124"
+		"end_loc_a"	"-3696 5784 80"
+		"end_loc_b"	"-3180 5964 -60"
+	}
+	"dkr_m4_ferris"
+	{
+		"start_loc_a"	"-2703 -11132 206"
+		"start_loc_b"	"-2187 -10952 66"
+		"end_loc_a"	"-3968 3916 -20"
+		"end_loc_b"	"-3084 4720 -344"
+	}
+	"dkr_m5_stadium"
+	{
+		"start_loc_a"	"-3968 3916 -20"
+		"start_loc_b"	"-3084 4720 -344"
+	}
+	"dprm1_milltown_a"
+	{
+		"start_loc_a"	"-7216 8656 239"
+		"start_loc_b"	"-6348 7408 75"
+		"end_loc_a"	"3744 -1440 360"
+		"end_loc_b"	"4224 -1844 104"
+	}
+	"dprm2_sugarmill_a"
+	{
+		"start_loc_a"	"3744 -1440 360"
+		"start_loc_b"	"4224 -1844 104"
+		"end_loc_a"	"-1919 -13584 258"
+		"end_loc_b"	"-1663 -13840 130"
+	}
+	"dprm3_sugarmill_b"
+	{
+		"start_loc_a"	"-1919 -13584 258"
+		"start_loc_b"	"-1663 -13840 130"
+		"end_loc_a"	"3744 -1440 360"
+		"end_loc_b"	"4224 -1844 104"
+	}
+	"dprm4_milltown_b"
+	{
+		"start_loc_a"	"3744 -1440 360"
+		"start_loc_b"	"4224 -1844 104"
+		"end_loc_a"	"-3968 3916 -20"
+		"end_loc_b"	"-3084 4720 -344"
+	}
+	"dprm5_milltown_escape"
+	{
+		"start_loc_a"	"-3682 8060 281"
+		"start_loc_b"	"-2850 7644 119"
 	}
 }
