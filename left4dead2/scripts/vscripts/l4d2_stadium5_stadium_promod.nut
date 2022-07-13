@@ -6,6 +6,6 @@ DirectorOptions <-
 	//Just in case.
 	ZombieSpawnInFog = true
 	ZombieSpawnRange = 2700
-	CommonLimit = 16
+	CommonLimit = 25
 }
 
