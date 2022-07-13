@@ -362,6 +362,17 @@
 			"message" "AnneHappyPlus枪械[10特以上]"
 		}
 	}
+	"推数模式"
+	{
+		"exec vote/shove/AnneHappy.cfg"
+		{
+			"message" "AnneHappy模式推"
+		}
+		"exec vote/shove/Zonemod.cfg"
+		{
+			"message" "zonemod模式推"
+		}
+	}
 	"Tank选项"
 	{
 		"sm_cvar ai_tank_bhop 1"
