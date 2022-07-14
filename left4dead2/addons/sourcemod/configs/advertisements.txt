@@ -23,7 +23,7 @@
 	"5"
 	{
 		"type"		"S"
-		"text"		"{LIGHTGREEN}!zs自杀  !tank查看boss !rpg购物商店 !xx模式查询"
+		"text"		"{LIGHTGREEN}!zs自杀 !tank查看boss !rpg购物商店 !xx模式查询"
 	}
 	"6"
 	{
@@ -33,7 +33,7 @@
 	"7"
 	{
 		"type"		"S"
-		"text"		"{LIGHTGREEN}服务器提供Anne版本选择，地图选择，推模式更改"
+		"text"		"{LIGHTGREEN}服务器提供Anne版本选择，地图Stripper选择，推限制模式更改"
 	}
 	"8"
 	{
