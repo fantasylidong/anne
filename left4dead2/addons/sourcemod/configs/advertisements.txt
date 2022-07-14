@@ -33,7 +33,7 @@
 	"7"
 	{
 		"type"		"S"
-		"text"		"{LIGHTGREEN}服务器提供Anne版本选择，地图选择，可以投票更换"
+		"text"		"{LIGHTGREEN}服务器提供Anne版本选择，地图选择，推模式更改"
 	}
 	"8"
 	{
@@ -43,7 +43,7 @@
 	"9"
 	{
 		"type"		"S"
-		"text"		"{LIGHTGREEN}默认关闭高级人机，开了会让你自己觉得自己很呆，可以投票开启"
+		"text"		"{LIGHTGREEN}如果某个进度的克不想打，生还者可以使用命令!voteboss 修改Tank和Witch进度"
 	}
 	"10"
 	{
