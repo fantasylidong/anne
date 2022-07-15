@@ -253,14 +253,6 @@
 		{
 			"message" "关闭特感属性增强"
 		}
-		"exec vote/sky_ability_on.cfg"
-		{
-			"message" "开启特感跳吐"
-		}
-		"exec vote/sky_ability_off.cfg"
-		{
-			"message" "关闭特感跳吐"
-		}
 		"sm_cvar sb_fix_enabled 1"
 		{
 			"message" "开启高级人机"
@@ -268,22 +260,6 @@
 		"sm_cvar sb_fix_enabled 0"
 		{
 			"message" "关闭高级人机"
-		}
-		"sm_cvar l4d2_scripted_hud_enable 1"
-		{
-			"message" "开启hud显示"
-		}
-		"sm_cvar l4d2_scripted_hud_enable 0"
-		{
-			"message" "关闭hud显示"
-		}
-		"sm_cvar l4d_random_beam_item_enable 1"
-		{
-			"message" "开启药的光柱"
-		}
-		"sm_cvar l4d_random_beam_item_enable 0"
-		{
-			"message" "关闭药的光柱"
 		}
 		"exec vote/mysqlShop_on.cfg"
 		{
