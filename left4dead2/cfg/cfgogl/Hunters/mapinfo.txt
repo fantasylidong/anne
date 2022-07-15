@@ -370,9 +370,19 @@
 		"horde_limit"		"45"
 		"tank_ban_flow"
 		{
+			"First Spawn"
+			{
+				"min"		"0"
+				"max"		"25"
+			}
 			"CEDA trailer"
 			{
 				"min"		"49"
+				"max"		"56"
+			}
+			"Not To Far"
+			{
+				"min"		"75"
 				"max"		"100"
 			}
 		}
@@ -390,6 +400,11 @@
 			{
 				"min"		"54"
 				"max"		"70"
+			}
+			"Easy win"
+			{
+				"min"		"75"
+				"max"		"82"
 			}
 		}
 		"witch_ban_flow"
