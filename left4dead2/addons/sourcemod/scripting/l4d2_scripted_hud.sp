@@ -53,8 +53,10 @@ public Plugin myinfo =
 #include <basecomm>
 #include <left4dhooks>
 
-#define REQUIRE_PLUGIN
-#include <l4d_boss_percent>
+//#define REQUIRE_PLUGIN
+#undef REQUIRE_PLUGIN
+#include <witch_and_tankifier>
+
 // ====================================================================================================
 // Pragmas
 // ====================================================================================================
@@ -1369,22 +1371,25 @@ void GetHUD1_Text(char[] output, int size)
 }
 */
 
+
 void GetHUD1_Text(char[] output, int size)
 {
+	bool IsStaticTank = IsStaticTankMap();
+	bool IsStaticWitch = IsStaticWitchMap();
    	FormatEx(output, size, "\0");
 	int boss_proximity = RoundToNearest(GetBossProximity() * 100.0);
 	int g_fWitchPercent, g_fTankPercent;
-	if(GetStoredWitchPercent())
+	if(!IsStaticWitch)
 	{
-		g_fWitchPercent = GetStoredWitchPercent();
+		g_fWitchPercent = RoundToNearest(GetWitchFlow(0) * 100.0);
 	}
 	else
 	{
 		g_fWitchPercent = 0;
 	}
-	if(GetStoredTankPercent())
+	if(!IsStaticTank)
 	{
-		g_fTankPercent = GetStoredTankPercent();
+		g_fTankPercent = RoundToNearest(GetTankFlow(0) * 100.0);
 	}
 	else
 	{
@@ -1394,20 +1399,20 @@ void GetHUD1_Text(char[] output, int size)
 	{
 		if(g_fWitchPercent)
 		{
-			FormatEx(output, size, "当前: [%d] 坦克: [%d] 女巫: [%d]", boss_proximity, g_fTankPercent, g_fWitchPercent);
+			FormatEx(output, size, "当前: [ %d ] 坦克: [ %d ] 女巫: [ %d ]", boss_proximity, g_fTankPercent, g_fWitchPercent);
 		}
 		else
 		{
-			FormatEx(output, size, "当前: [%d] 坦克: [%d] 女巫: [None]", boss_proximity, g_fTankPercent);
+			FormatEx(output, size, "当前: [ %d ] 坦克: [ %d ] 女巫: [ Static ]", boss_proximity, g_fTankPercent);
 		}
 	} 
 	else if(g_fWitchPercent)
 	{
-		FormatEx(output, size, "当前: [%d] 坦克: [None] 女巫: [%d]", boss_proximity, g_fWitchPercent);
+		FormatEx(output, size, "当前: [ %d ] 坦克: [ Static ] 女巫: [ %d ]", boss_proximity, g_fWitchPercent);
 	}
 	else
 	{
-		FormatEx(output, size, "当前: [%d] 坦克: [None] 女巫: [None]", boss_proximity);
+		FormatEx(output, size, "当前: [ %d ] 坦克: [ Static ] 女巫: [ Static ]", boss_proximity);
 	}
 }
 

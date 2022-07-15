@@ -62,7 +62,7 @@ public Action SetSlots(int client,int args)
 		ReplyToCommand(client,"\x03错误参数，位置只能设置为%d-%d，使用方式为!slots 7(你想要的位置数)",g_iCVarMinAllowedSlots,g_iCVarMaxAllowedSlots);
 		return Plugin_Handled;
 	}
-	if(client==0||(IsVaildClient(client) && IsPlayerAlive(client))){
+	if(client==0||(IsValidClient(client) && IsPlayerAlive(client))){
 		char arg[32];
     	GetCmdArg(1,arg,sizeof(arg));
     	int slots=StringToInt(arg);
@@ -89,15 +89,15 @@ public Action SetSlots(int client,int args)
 	return Plugin_Handled;
 }
 
-//检查client合法
-int IsVaildClient(int client)
+// 判断是否有效玩家 id，有效返回 true，无效返回 false
+stock bool IsValidClient(int client)
 {
-	if( client > 0 ) return 1;
-	if( client < 64 ) return 1;
-	if( IsClientInGame(client) ) return 1;
-	if( GetClientTeam(client) == 2 ) return 1;
+	if (client > 0 && client <= MaxClients && IsClientConnected(client) && IsClientInGame(client))
+	{
+		return true;
+	}
 	else
-    {
-        return 0;
-    }
+	{
+		return false;
+	}
 }

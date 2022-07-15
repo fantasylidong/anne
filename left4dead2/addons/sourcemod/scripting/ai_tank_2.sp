@@ -119,7 +119,7 @@ public void OnPluginStart()
 	g_hConsumeHealth = CreateConVar("ai_TankConsumeHealth", "2000", "坦克血量少于这个值时强制压制", CVAR_FLAG, true, 0.0);
 	g_hVomitAttackNum = CreateConVar("ai_TankVomitAttackNum", "1", "有这个值的生还者在坦克消耗时被喷，坦克会强制压制", CVAR_FLAG, true, 0.0);
 	g_hConsumeIncap = CreateConVar("ai_TankConsumeIncapNum", "1", "坦克强制压制时，如果令这个数量的生还者倒地，如果可以消耗则继续消耗", CVAR_FLAG, true, 0.0);
-	g_hAirAngleRestrict = CreateConVar("ai_TankAirAngleRestrict", "55", "坦克当前速度与到目标的向量大于这个角度将会停止连跳", CVAR_FLAG, true, 0.0, true, 90.0);
+	g_hAirAngleRestrict = CreateConVar("ai_TankAirAngleRestrict", "60", "坦克当前速度与到目标的向量大于这个角度将会停止连跳", CVAR_FLAG, true, 0.0, true, 90.0);
 	g_hConsumeRockInterval = CreateConVar("ai_TankConsumeRockInterval", "4", "坦克在消耗位上时多少秒扔一次石头", CVAR_FLAG, true, 0.0);
 	// 目标选择
 	g_hTargetChoose = CreateConVar("ai_TankTarget", "0", "坦克目标选择：0=自然目标选择，1=最近，2=血量最低，3=血量最高", CVAR_FLAG, true, 0.0, true, 3.0);

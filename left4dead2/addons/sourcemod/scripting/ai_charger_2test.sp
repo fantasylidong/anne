@@ -34,7 +34,7 @@ public void OnPluginStart()
 	// CreateConVars
 	g_hAllowBhop = CreateConVar("ai_ChargerBhop", "1", "是否开启 Charger 连跳", CVAR_FLAG, true, 0.0, true, 1.0);
 	g_hBhopSpeed = CreateConVar("ai_ChagrerBhopSpeed", "90.0", "Charger 连跳速度", CVAR_FLAG, true, 0.0);
-	g_hChargeDist = CreateConVar("ai_ChargerChargeDistance", "200.0", "Charger 只能在与目标小于这一距离时冲锋", CVAR_FLAG, true, 0.0);
+	g_hChargeDist = CreateConVar("ai_ChargerChargeDistance", "150.0", "Charger 只能在与目标小于这一距离时冲锋", CVAR_FLAG, true, 0.0);
 	g_hAimOffset = CreateConVar("ai_ChargerAimOffset", "30.0", "目标的瞄准水平与 Charger 处在这一范围内，Charger 不会冲锋", CVAR_FLAG, true, 0.0);
 	g_hAllowMeleeAvoid = CreateConVar("ai_ChargerMeleeAvoid", "1", "是否开启 Charger 近战回避", CVAR_FLAG, true, 0.0, true, 1.0);
 	g_hChargerMeleeDamage = CreateConVar("ai_ChargerMeleeDamage", "350", "Charger 血量小于这个值，将不会直接冲锋拿着近战的生还者", CVAR_FLAG, true, 0.0);
@@ -164,8 +164,8 @@ public Action OnPlayerRunCmd(int client, int &buttons, int &impulse, float vel[3
 			buttons |= IN_ATTACK2;
 		}
 		// 连跳，并阻止冲锋，可以攻击被控的人的时，将最小距离置 0，连跳追上被控的人
-		//int min_dist = can_attack_pinned[client] ? 0 : g_hChargeDist.IntValue;
-		if (has_sight && g_hAllowBhop.BoolValue && 75 < closet_survivor_distance < 10000 && cur_speed > 175.0 && IsValidSurvivor(target))
+		int min_dist = can_attack_pinned[client] ? 0 : g_hChargeDist.IntValue;
+		if (has_sight && g_hAllowBhop.BoolValue && min_dist < closet_survivor_distance < 10000 && cur_speed > 175.0 && IsValidSurvivor(target))
 		{
 			if (flags & FL_ONGROUND)
 			{
@@ -197,7 +197,7 @@ public Action L4D2_OnChooseVictim(int specialInfected, int &curTarget)
 		float self_pos[3] = {0.0}, target_pos[3] = {0.0};
 		GetClientEyePosition(specialInfected, self_pos);
 		// 获取在冲锋范围内的目标
-		FindRangedClients(specialInfected, g_hChargeDist.FloatValue + 150.0);
+		FindRangedClients(specialInfected, 2.0 * g_hChargeDist.FloatValue);
 		if (IsValidSurvivor(curTarget) && IsPlayerAlive(curTarget))
 		{
 			GetClientEyePosition(curTarget, target_pos);
@@ -457,13 +457,17 @@ bool ClientPush(int client, float vec[3])
 	float curvel[3] = {0.0};
 	GetEntPropVector(client, Prop_Data, "m_vecAbsVelocity", curvel);
 	AddVectors(curvel, vec, curvel);
-	if (GetVectorLength(curvel) <= 250.0)
+	if (Dont_HitWall_Or_Fall(client, curvel))
 	{
-		NormalizeVector(curvel, curvel);
-		ScaleVector(curvel, 251.0);
+		if (GetVectorLength(curvel) <= 250.0)
+		{
+			NormalizeVector(curvel, curvel);
+			ScaleVector(curvel, 251.0);
+		}
+		TeleportEntity(client, NULL_VECTOR, NULL_VECTOR, curvel);
+		return true;
 	}
-	TeleportEntity(client, NULL_VECTOR, NULL_VECTOR, curvel);
-	return true;
+	return false;
 }
 // 计算与目标之间的向量
 float[] CalculateVel(float self_pos[3], float target_pos[3], float force)
@@ -474,7 +478,80 @@ float[] CalculateVel(float self_pos[3], float target_pos[3], float force)
 	ScaleVector(vecbuffer, force);
 	return vecbuffer;
 }
-
+// 检测下一帧的位置是否会撞墙或向下受到伤害或会掉落
+bool Dont_HitWall_Or_Fall(int client, float vel[3])
+{
+	bool hullrayhit = false;
+	int down_hullray_hitent = -1;
+	char down_hullray_hitent_classname[16] = '\0';
+	float selfpos[3] = {0.0}, resultpos[3] = {0.0}, mins[3] = {0.0}, maxs[3] = {0.0}, hullray_endpos[3] = {0.0}, down_hullray_startpos[3] = {0.0}, down_hullray_endpos[3] = {0.0}, down_hullray_hitpos[3] = {0.0};
+	GetClientAbsOrigin(client, selfpos);
+	AddVectors(selfpos, vel, resultpos);
+	GetClientMins(client, mins);
+	GetClientMaxs(client, maxs);
+	selfpos[2] += NAV_MESH_HEIGHT;
+	resultpos[2] += NAV_MESH_HEIGHT;
+	// 由自身位置 +NAV_MESH_HEIGHT 高度 向前射出大小为 mins，maxs 的固体，检测前方 NAV_MESH_HEIGHT 距离是否能撞到，撞到则不允许连跳
+	Handle hTrace = TR_TraceHullFilterEx(selfpos, resultpos, mins, maxs, MASK_NPCSOLID_BRUSHONLY, TR_EntityFilter);
+	if (TR_DidHit(hTrace))
+	{
+		hullrayhit = true;
+		TR_GetEndPosition(hullray_endpos, hTrace);
+		if (GetVectorDistance(selfpos, hullray_endpos) <= NAV_MESH_HEIGHT)
+		{
+			delete hTrace;
+			return false;
+		}
+	}
+	delete hTrace;
+	resultpos[2] -= NAV_MESH_HEIGHT;
+	// 没有撞到，则说明前方 g_hAttackRange 距离内没有障碍物，接着进行下一帧理论位置向下的检测，检测是否有会对自身造成伤害的位置
+	if (!hullrayhit)
+	{
+		down_hullray_startpos = resultpos;
+	}
+	CopyVectors(down_hullray_startpos, down_hullray_endpos);
+	down_hullray_endpos[2] -= 100000.0;
+	Handle hDownTrace = TR_TraceHullFilterEx(down_hullray_startpos, down_hullray_endpos, mins, maxs, MASK_NPCSOLID_BRUSHONLY, TR_EntityFilter);
+	if (TR_DidHit(hDownTrace))
+	{
+		TR_GetEndPosition(down_hullray_hitpos, hDownTrace);
+		// 如果向下的射线撞到的位置减去起始位置的高度大于 FALL_DETECT_HEIGHT 则说明会掉下去，返回 false
+		if (FloatAbs(down_hullray_startpos[2] - down_hullray_hitpos[2]) > FALL_DETECT_HEIGHT)
+		{
+			delete hDownTrace;
+			return false;
+		}
+		down_hullray_hitent = TR_GetEntityIndex(hDownTrace);
+		GetEdictClassname(down_hullray_hitent, down_hullray_hitent_classname, sizeof(down_hullray_hitent_classname));
+		if (strcmp(down_hullray_hitent_classname, "trigger_hurt") == 0)
+		{
+			delete hDownTrace;
+			return false;
+		}
+		delete hDownTrace;
+		return true;
+	}
+	delete hDownTrace;
+	return false;
+}
+bool TR_EntityFilter(int entity, int mask)
+{
+	if (entity <= MaxClients)
+	{
+		return false;
+	}
+	else if (entity > MaxClients)
+	{
+		char classname[16] = '\0';
+		GetEdictClassname(entity, classname, sizeof(classname));
+		if (strcmp(classname, "infected") == 0 || strcmp(classname, "witch") == 0 || strcmp(classname, "prop_physics") == 0 || strcmp(classname, "tank_rock") == 0)
+		{
+			return false;
+		}
+	}
+	return true;
+}
 // 目标与牛的 x 距离是否在限制内
 bool Is_Target_Watching_Attacker(int client, int target, int offset)
 {

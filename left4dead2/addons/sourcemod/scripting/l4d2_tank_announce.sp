@@ -41,7 +41,7 @@ public void OnPluginStart()
 
 public void OnMapStart()
 {
-	PrecacheSound(SOUNDEFFECT, true);
+	PrecacheSound(SOUNDEFFECT, false);
 }
 
 public void evt_PlayerSpawn(Event event, char[] name, bool dontBroadcast)
@@ -76,7 +76,8 @@ public void evt_PlayerSpawn(Event event, char[] name, bool dontBroadcast)
 		}
 		if (g_iPlaySound == 1)
 		{
-			EmitSoundToAll(SOUNDEFFECT, 0, SNDCHAN_AUTO, SNDLEVEL_CONVO, _, SNDVOL_NORMAL, _, _, _, _, _, _ );
+			EmitSoundToAll(SOUNDEFFECT, SOUND_FROM_PLAYER, SNDCHAN_AUTO, SNDLEVEL_NORMAL, SND_NOFLAGS, 0.5); // Selected Sound
+			//EmitSoundToAll(SOUNDEFFECT, 0, SNDCHAN_AUTO, SNDLEVEL_CONVO, _, SNDVOL_NORMAL, _, _, _, _, _, _ );
 		}
 	}
 }

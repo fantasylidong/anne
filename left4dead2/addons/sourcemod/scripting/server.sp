@@ -43,6 +43,8 @@ public OnPluginStart()
 	HookEvent("finale_win", ResetSurvivors);
 	HookEvent("map_transition", ResetSurvivors);
 	HookEvent("round_start", event_RoundStart);
+	HookEvent("player_incapacitated", OnPlayerIncappedOrDeath);
+	HookEvent("player_death", OnPlayerIncappedOrDeath);
 	HookEvent("player_disconnect", PlayerDisconnect_Event, EventHookMode_Pre);
 	RegConsoleCmd("sm_join", AFKTurnClientToSurvivors);
 	RegConsoleCmd("sm_jg", AFKTurnClientToSurvivors);
@@ -90,6 +92,15 @@ void GetCvars()
 	}
 }
 
+public OnPlayerIncappedOrDeath(Handle event, char[] name, bool dontBroadcast) {
+	int client = GetClientOfUserId(GetEventInt(event,"userid"));
+	if(IsClientConnected(client) && IsClientInGame(client) && (GetClientTeam(client) !=2))
+		return;
+	if(IsTeamImmobilised())
+	{
+		SlaySurvivors();
+	}
+}
 
 
 ////////////////////////////////////
@@ -151,6 +162,30 @@ public Action:SetBot(client, args)
 				else	
 					KickClient(GetRandomSurvivor(-1,1));
 			}
+		}
+	}
+}
+
+/**
+ * @return: true if all survivors are either incapacitated or pinned
+**/
+bool IsTeamImmobilised() {
+	bool bIsTeamImmobilised = true;
+	for (new client = 1; client < MaxClients; client++) {
+		if (IsSurvivor(client) && IsPlayerAlive(client)) {
+			if (!L4D_IsPlayerIncapacitated(client) ) {		
+				bIsTeamImmobilised = false;				
+				break;
+			} 
+		} 
+	}
+	return bIsTeamImmobilised;
+}
+
+void SlaySurvivors() { //incap everyone
+	for (new client = 1; client < (MAXPLAYERS + 1); client++) {
+		if (IsSurvivor(client) && IsPlayerAlive(client)) {
+			ForcePlayerSuicide(client);
 		}
 	}
 }
@@ -475,7 +510,7 @@ public OnClientConnected(client)
 		PrintToChatAll("\x04 %N \x05正在爬进服务器",client);
 	}
 }
-
+/*
 // 玩家离开游戏 
 public OnClientDisconnect(client)
 {
@@ -485,6 +520,7 @@ public OnClientDisconnect(client)
 		PrintToChatAll("\x04 %N \x05离开服务器",client);
 	}
 }
+*/
 
 
 //秒妹回实血

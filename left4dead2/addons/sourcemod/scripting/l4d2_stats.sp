@@ -385,12 +385,12 @@ public void Event_PlayerDeath(Event hEvent, const char[] sEventName, bool bDontB
 				int assist_shots = g_iShotsDealt[victim][assisters[0][0]];
 				
 				// Construct assisters string
-				Format(assister_string, sizeof(assister_string), "%N (%d/%d shot%s)", \
-														assisters[0][0], assisters[0][1], g_iShotsDealt[victim][assisters[0][0]], assist_shots == 1 ? "" : "s");
+				Format(assister_string, sizeof(assister_string), "%N (%d/%d 枪)", \
+														assisters[0][0], assisters[0][1], g_iShotsDealt[victim][assisters[0][0]]);
 			
 				for (i = 1; i < assister_count; i++) {
 					assist_shots = g_iShotsDealt[victim][assisters[i][0]];
-					Format(buf, sizeof(buf), ", %N (%d/%d shot%s)", assisters[i][0], assisters[i][1], assist_shots, assist_shots == 1 ? "" : "s");
+					Format(buf, sizeof(buf), ", %N (%d/%d 枪)", assisters[i][0], assisters[i][1], assist_shots);
 					
 					StrCat(assister_string, sizeof(assister_string), buf);
 				}
@@ -486,7 +486,7 @@ public Action Timer_BoomerKilledCheck(Handle hTimer)
 				Format(sRank, sizeof(sRank), "★");
 			}
 			
-			CPrintToChatAll("{green}%s {olive}%N {default}于Boomer生成后 {blue}%0.1fs 秒杀了 {olive}%s{default}的 Boomer ", sRank, g_iBoomerKiller, BoomerKillTime, Boomer);
+			CPrintToChatAll("{green}%s {olive}%N {blue}瞬杀了 {default}在 {blue}%0.1f 秒前生成的{olive}%s [%s]Boomer ", sRank, g_iBoomerKiller, BoomerKillTime, Boomer);
 		}
 	}
 	////

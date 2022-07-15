@@ -510,7 +510,7 @@ public OnPluginStart()
     
     // cvars: config
     
-    g_hCvarReport = CreateConVar(           "sm_skill_report_enable" ,      "0", "Whether to report in chat (see sm_skill_report_flags).", FCVAR_NONE, true, 0.0, true, 1.0 );
+    g_hCvarReport = CreateConVar(           "sm_skill_report_enable" ,      "1", "Whether to report in chat (see sm_skill_report_flags).", FCVAR_NONE, true, 0.0, true, 1.0 );
     
     g_hCvarAllowMelee = CreateConVar(       "sm_skill_skeet_allowmelee",    "1", "Whether to count/forward melee skeets.", FCVAR_NONE, true, 0.0, true, 1.0 );
     g_hCvarAllowSniper = CreateConVar(      "sm_skill_skeet_allowsniper",   "1", "Whether to count/forward sniper/magnum headshots as skeets.", FCVAR_NONE, true, 0.0, true, 1.0 );
@@ -2716,7 +2716,7 @@ HandleTongueCut( attacker, victim )
         }
         else if ( IS_VALID_INGAME(attacker) )
         {
-            CPrintToChatAll( "{green}★★ {olive}%N {blue}砍断 {default}smoker的舌头", attacker );
+            CPrintToChatAll( "{green}★★ {olive}%N {blue}砍断 {olive}smoker{default}的舌头", attacker );
         }
     }
     
@@ -2734,12 +2734,12 @@ HandleSmokerSelfClear( attacker, victim, bool:withShove = false )
     {
         if ( IS_VALID_INGAME(attacker) && IS_VALID_INGAME(victim) && !IsFakeClient(victim) )
         {
-        	CPrintToChatAll( "{green}★★ {olive}%N {blue}成功{default}从 {olive}%N{default}的舌头下%s {blue}自救", attacker, victim, (withShove) ? " 用推" : "" );
+        	CPrintToChatAll( "{green}★★ {olive}%N {blue}成功{default}从 {olive}%N{default}的舌头下{blue} %s自救", attacker, victim, (withShove) ? " 用推" : "" );
             //CPrintToChatAll( "{green}★★ {olive}%N {blue}self-cleared {default}from {olive}%N{default}'s tongue{blue}%s", attacker, victim, (withShove) ? " by shoving" : "" );
         }
         else if ( IS_VALID_INGAME(attacker) )
         {
-        	CPrintToChatAll( "{green}★★ {olive}%N {blue}成功{default}从 {olive}smoker{default}的舌头下%s {blue}自救", attacker, (withShove) ? " 用推" : "" );
+        	CPrintToChatAll( "{green}★★ {olive}%N {blue}成功{default}从 {olive}smoker{default}的舌头下{blue} %s自救", attacker, (withShove) ? " 用推" : "" );
             //CPrintToChatAll( "{green}★★ {olive}%N {blue}self-cleared {default}from a smoker tongue{blue}%s", attacker, (withShove) ? " by shoving" : "" );
         }
     }
@@ -2910,13 +2910,13 @@ stock HandleClear( attacker, victim, pinVictim, zombieClass, Float:clearTimeA, F
             {
                 if ( IS_VALID_INGAME(pinVictim) )
                 {
-                    CPrintToChatAll( "{green}★ {olive}%N {blue}瞬间将 {olive}%N {default}从 %s 手中救下({blue}%.2f {default}秒)",
+                    CPrintToChatAll( "{green}★ {olive}%N {blue}瞬间将 {olive}%N {default}从 {olive}%s {default}手中救下({blue}%.2f {default}秒)",
                             attacker, pinVictim,
                             g_csSIClassName[zombieClass],
                             fClearTime
                         );
                 } else {
-                    CPrintToChatAll( "{green}★ {olive}%N {blue}瞬间将 {olive}队友 {default}从 %s 手中救下({blue}%.2f {default}秒)",
+                    CPrintToChatAll( "{green}★ {olive}%N {blue}瞬间将 {olive}队友 {default}从 {olive}%s {default}手中救下({blue}%.2f {default}秒)",
                             attacker,
                             g_csSIClassName[zombieClass],
                             fClearTime
