@@ -5,6 +5,8 @@
 #include <sourcemod>
 #include <sdktools>
 #include <left4dhooks>
+#undef REQUIRE_PLUGIN
+#include <ai_smoker_new>
 //#include <l4d2_saferoom_detect>
 
 #define CVAR_FLAG FCVAR_NOTIFY
@@ -1047,6 +1049,13 @@ public void SDK_UpdateThink(int client)
 {
 	if (IsInfectedBot(client) && IsPlayerAlive(client))
 	{
+		if(IsAiSmoker(client) && !IsSmokerCanUseAbility(client))
+		{
+			//减去3s拉失败时间
+			g_iTeleCount[client] = 2;
+			SDKUnhook(client, SDKHook_PostThinkPost, SDK_UpdateThink);
+			return;
+		}
 		g_iTeleCount[client] = 0;
 		HardTeleMode(client);
 			
@@ -1162,7 +1171,7 @@ public Action ResetTougueRange(Handle timer,int client)
 {
 	SetConVarInt(FindConVar("tongue_range"),750);
 }
-
+*/
 stock bool IsAiSmoker(int client)
 {
 	if (client && client <= MaxClients && IsClientInGame(client) && IsPlayerAlive(client) && IsFakeClient(client) && GetClientTeam(client) == TEAM_INFECTED && GetEntProp(client, Prop_Send, "m_zombieClass") == 1 && GetEntProp(client, Prop_Send, "m_isGhost") != 1)
@@ -1174,7 +1183,7 @@ stock bool IsAiSmoker(int client)
 		return false;
 	}
 }
-*/
+
 stock bool IsGhost(int client)
 {
     return (IsValidClient(client) && view_as<bool>(GetEntProp(client, Prop_Send, "m_isGhost")));

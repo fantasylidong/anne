@@ -118,7 +118,7 @@ public void OnPluginStart()
 
 	g_hItemHintCoolDown		= CreateConVar("l4d2_item_hint_cooldown_time", "1.0", "Cold Down Time in seconds a player can use 'Look' Item Hint again.", FCVAR_NOTIFY, true, 0.0);
 	g_hItemUseHintRange		= CreateConVar("l4d2_item_hint_use_range", "150", "How close can a player use 'Look' item hint.", FCVAR_NOTIFY, true, 1.0);
-	g_hItemUseSound			= CreateConVar("l4d2_item_hint_use_sound", "buttons/blip1.wav", "Item Hint Sound. (relative to to sound/, Empty = OFF)", FCVAR_NOTIFY);
+	g_hItemUseSound			= CreateConVar("l4d2_item_hint_use_sound", "", "Item Hint Sound. (relative to to sound/, Empty = OFF)", FCVAR_NOTIFY);
 	g_hItemAnnounceType		= CreateConVar("l4d2_item_hint_announce_type", "0", "Changes how Item Hint displays. (0: Disable, 1:In chat, 2: In Hint Box, 3: In center text)", FCVAR_NOTIFY, true, 0.0, true, 3.0);
 	g_hItemGlowTimer		= CreateConVar("l4d2_item_hint_glow_timer", "30.0", "Item Glow Time.", FCVAR_NOTIFY, true, 0.0);
 	g_hItemGlowRange		= CreateConVar("l4d2_item_hint_glow_range", "800", "Item Glow Range.", FCVAR_NOTIFY, true, 0.0);

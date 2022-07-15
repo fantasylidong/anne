@@ -198,7 +198,7 @@ public OnPluginStart()
     // Cvars
     hCountTankDamage =  CreateConVar("sm_skeetstat_counttank",    "0",  "Damage on tank counts towards totals if enabled.", FCVAR_NONE, true, 0.0, true, 1.0);
     hCountWitchDamage = CreateConVar("sm_skeetstat_countwitch",   "0",  "Damage on witch counts towards totals if enabled.", FCVAR_NONE, true, 0.0, true, 1.0);
-    hBrevityFlags =     CreateConVar("sm_skeetstat_brevity",     "32",  "Flags for setting brevity of the report (hide 1:SI, 2:CI, 4:Accuracy, 8:Skeets/Deadstops, 32: melee acc, 64: damage count).", FCVAR_NONE, true, 0.0);
+    hBrevityFlags =     CreateConVar("sm_skeetstat_brevity",     "64",  "Flags for setting brevity of the report (hide 1:SI, 2:CI, 4:Accuracy, 8:Skeets/Deadstops, 32: melee acc, 64: damage count).", FCVAR_NONE, true, 0.0);
     
     bCountTankDamage =  GetConVarBool(hCountTankDamage);
     bCountWitchDamage = GetConVarBool(hCountWitchDamage);
@@ -757,15 +757,15 @@ String: PrintSkeetStats(toClient)
     {
         if (!(iBrevityFlags & BREV_DMG)) {
             if (!(iBrevityFlags & BREV_CI)) {
-                Format(tmpBuffer, sizeof(tmpBuffer), "1v1数据 - Kills: (\x05%4d \x01伤害,\x05 %3d \x01击杀)  (\x05%3d \x01丧尸)\n", iDidDamageAll[iClientPlaying], iGotKills[iClientPlaying], iGotCommon[iClientPlaying]);
+                Format(tmpBuffer, sizeof(tmpBuffer), "1v1数据 - 击杀数: (\x05%4d \x01伤害,\x05 %3d \x01击杀)  (\x05%3d \x01丧尸)\n", iDidDamageAll[iClientPlaying], iGotKills[iClientPlaying], iGotCommon[iClientPlaying]);
             } else {
-                Format(tmpBuffer, sizeof(tmpBuffer), "1v1数据 - Kills: (\x05%4d \x01伤害,\x05 %3d \x01击杀)\n", iDidDamageAll[iClientPlaying], iGotKills[iClientPlaying]);
+                Format(tmpBuffer, sizeof(tmpBuffer), "1v1数据 - 击杀数: (\x05%4d \x01伤害,\x05 %3d \x01击杀)\n", iDidDamageAll[iClientPlaying], iGotKills[iClientPlaying]);
             }
         } else {
             if (!(iBrevityFlags & BREV_CI)) {
-                Format(tmpBuffer, sizeof(tmpBuffer), "1v1数据 - Kills: (\x05%4d \x01击杀, \x05 %3d \x01丧尸)\n", iGotKills[iClientPlaying], iGotCommon[iClientPlaying]);
+                Format(tmpBuffer, sizeof(tmpBuffer), "1v1数据 - 击杀数: (\x05%4d \x01特感, \x05 %3d \x01丧尸)\n", iGotKills[iClientPlaying], iGotCommon[iClientPlaying]);
             } else {
-                Format(tmpBuffer, sizeof(tmpBuffer), "1v1数据 - Kills: (\x05%4d \x01击杀)\n", iGotKills[iClientPlaying]);
+                Format(tmpBuffer, sizeof(tmpBuffer), "1v1数据 - 击杀数: (\x05%4d \x01特感)\n", iGotKills[iClientPlaying]);
             }
         }
         StrCat(printBuffer, sizeof(printBuffer), tmpBuffer);
@@ -780,7 +780,7 @@ String: PrintSkeetStats(toClient)
     
     if (!(iBrevityFlags & BREV_SKEET))
     {
-        Format(tmpBuffer, sizeof(tmpBuffer), "1v1数据 - Skeet: (\x05%4d \x01normal,\x05 %3d \x01hurt)   (\x05%3d \x01deadstops)\n", iHuntSkeets[iClientPlaying], iHuntSkeetsInj[iClientPlaying], iDeadStops[iClientPlaying]);
+        Format(tmpBuffer, sizeof(tmpBuffer), "1v1数据 - 空爆数: (\x05%4d 满血\x01,\x05 %3d \x01残血)   (\x05%3d \x01推停)\n", iHuntSkeets[iClientPlaying], iHuntSkeetsInj[iClientPlaying], iDeadStops[iClientPlaying]);
         StrCat(printBuffer, sizeof(printBuffer), tmpBuffer);
         
         if (!toClient) {

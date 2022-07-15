@@ -7,7 +7,6 @@
 #define L4D2UTIL_STOCKS_ONLY
 #include <l4d2util_rounds>
 #undef REQUIRE_PLUGIN
-#include <readyup>
 #include <l4d2_boss_percents>
 #include <witch_and_tankifier>
 
@@ -53,27 +52,22 @@ bool RunVoteChecks(int client)
 {
 	if (IsDarkCarniRemix())
 	{
-		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} Boss voting is not available on this map.");
-		return false;
-	}
-	if (!IsInReady())
-	{
-		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} Boss voting is only available during ready up.");
+		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} 这张图不允许手动设置Boss进度.");
 		return false;
 	}
 	if (InSecondHalfOfRound())
 	{
-		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} Boss voting is only available during the first round of a map.");
+		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} boss投票只允许在第一回合使用.");
 		return false;
 	}
 	if (GetClientTeam(client) == 1)
 	{
-		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} Boss voting is not available for spectators.");
+		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} 旁观者无法设置Boss进度.");
 		return false;
 	}
 	if (!IsNewBuiltinVoteAllowed())
 	{
-		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} Boss Vote cannot be called right now...");
+		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} Boss投票暂时不允许使用...");
 		return false;
 	}
 	return true;
@@ -91,8 +85,8 @@ public Action VoteBossCmd(int client, int args)
 
 	if (args != 2)
 	{
-		CReplyToCommand(client, "{blue}<{green}BossVote{blue}>{default} Usage: !voteboss {olive}<{default}tank{olive}> <{default}witch{olive}>{default}.");
-		CReplyToCommand(client, "{blue}<{green}BossVote{blue}>{default} Use {default}\"{blue}0{default}\" for {olive}No Spawn{default}, \"{blue}-1{default}\" for {olive}Ignorance.");
+		CReplyToCommand(client, "{blue}<{green}BossVote{blue}>{default} 用法: !voteboss {olive}<{default}tank{olive}> <{default}witch{olive}>{default}.");
+		CReplyToCommand(client, "{blue}<{green}BossVote{blue}>{default} 用 {default}\"{blue}0{default}\" 表示 {olive}不生成{default}, \"{blue}-1{default}\" 表示 {olive}随机.");
 		return Plugin_Handled;
 	}
 	
@@ -120,7 +114,7 @@ public Action VoteBossCmd(int client, int args)
 	// Make sure the args are actual numbers
 	if (!IsInteger(bv_sTank) || !IsInteger(bv_sWitch))
 	{
-		CReplyToCommand(client, "{blue}<{green}BossVote{blue}>{default} Percentages are {olive}invalid{default}.");
+		CReplyToCommand(client, "{blue}<{green}BossVote{blue}>{default} 这个进度 {olive}无效{default}.");
 		return Plugin_Handled;
 	}
 	
@@ -132,7 +126,7 @@ public Action VoteBossCmd(int client, int args)
 	else
 	{
 		bv_bTank = false;
-		CReplyToCommand(client, "{blue}<{green}BossVote{blue}>{default} Tank spawn is static and can not be changed on this map.");
+		CReplyToCommand(client, "{blue}<{green}BossVote{blue}>{default} 这张图Tank位置是固定的，不允许设置.");
 	}
 	
 	if (!IsStaticWitchMap())
@@ -142,20 +136,20 @@ public Action VoteBossCmd(int client, int args)
 	else
 	{
 		bv_bWitch = false;
-		CReplyToCommand(client, "{blue}<{green}BossVote{blue}>{default} Witch spawn is static and can not be changed on this map.");
+		CReplyToCommand(client, "{blue}<{green}BossVote{blue}>{default} 这张图女巫位置是固定的，不允许设置.");
 	}
 	
 	// Check if percent is within limits
 	if (bv_bTank && !IsTankPercentValid(bv_iTank))
 	{
 		bv_bTank = false;
-		CReplyToCommand(client, "{blue}<{green}BossVote{blue}>{default} Tank percentage is {blue}banned{default}.");
+		CReplyToCommand(client, "{blue}<{green}BossVote{blue}>{default} 这个Tank进度在这张图 {blue}禁用了{default}.");
 	}
 	
 	if (bv_bWitch && !IsWitchPercentValid(bv_iWitch, true))
 	{
 		bv_bWitch = false;
-		CReplyToCommand(client, "{blue}<{green}BossVote{blue}>{default} Witch percentage is {blue}banned{default}.");
+		CReplyToCommand(client, "{blue}<{green}BossVote{blue}>{default} 这个Witch进度在这张图 {blue}禁用了{default}.");
 	}
 	
 	char bv_voteTitle[64];
@@ -163,43 +157,43 @@ public Action VoteBossCmd(int client, int args)
 	// Set vote title
 	if (bv_bTank && bv_bWitch)	// Both Tank and Witch can be changed 
 	{
-		Format(bv_voteTitle, 64, "Set Tank to: %s and Witch to: %s?", bv_sTank, bv_sWitch);
+		Format(bv_voteTitle, 64, "将Tank进度设为: %s ，Witch进度设为: %s?", bv_sTank, bv_sWitch);
 	}
 	else if (bv_bTank)	// Only Tank can be changed
 	{
 		if (bv_iWitch == 0)
 		{
-			Format(bv_voteTitle, 64, "Set Tank to: %s and Witch to: Disabled?", bv_sTank);
+			Format(bv_voteTitle, 64, "将Tank进度设为: %s ，将Witch： 禁用?", bv_sTank);
 		}
 		else
 		{
-			Format(bv_voteTitle, 64, "Set Tank to: %s?", bv_sTank);
+			Format(bv_voteTitle, 64, "将Tank进度设为: %s?", bv_sTank);
 		}
 	}
 	else if (bv_bWitch) // Only Witch can be changed
 	{
 		if (bv_iTank == 0)
 		{
-			Format(bv_voteTitle, 64, "Set Tank to: Disabled and Witch to: %s?", bv_sWitch);
+			Format(bv_voteTitle, 64, "将Tank设为： 禁用 并将Witch进度设为: %s?", bv_sWitch);
 		}
 		else
 		{
-			Format(bv_voteTitle, 64, "Set Witch to: %s?", bv_sWitch);
+			Format(bv_voteTitle, 64, "将Tank进度设为: %s?", bv_sWitch);
 		}
 	}
 	else // Neither can be changed... ok...
 	{
 		if (bv_iTank == 0 && bv_iWitch == 0)
 		{
-			Format(bv_voteTitle, 64, "Set Bosses to: Disabled?");
+			Format(bv_voteTitle, 64, "将所有Boss设为： 禁用?");
 		}
 		else if (bv_iTank == 0)
 		{
-			Format(bv_voteTitle, 64, "Set Tank to: Disabled?");
+			Format(bv_voteTitle, 64, "将Tank设为： 禁用?");
 		}
 		else if (bv_iWitch == 0)
 		{
-			Format(bv_voteTitle, 64, "Set Witch to: Disabled?");
+			Format(bv_voteTitle, 64, "将Wicth设为： 禁用?");
 		}
 		else // Probably not.
 		{
@@ -241,29 +235,22 @@ public void BossVoteResultHandler(Handle vote, int num_votes, int num_clients, c
 		{
 			if (item_info[i][BUILTINVOTEINFO_ITEM_VOTES] > (num_clients / 2))
 			{
-			
-				// One last ready-up check.
-				if (!IsInReady())  {
-					DisplayBuiltinVoteFail(vote, BuiltinVoteFail_Loses);
-					CPrintToChatAll("{blue}<{green}BossVote{blue}>{default} Spawns can only be set during ready up.");
-					return;
-				}
 				
 				if (bv_bTank && bv_bWitch)	// Both Tank and Witch can be changed 
 				{
-					DisplayBuiltinVotePass(vote, "Setting Boss Spawns...");
+					DisplayBuiltinVotePass(vote, "设置Bosses生成位置...");
 				}
 				else if (bv_bTank)	// Only Tank can be changed -- Witch must be static
 				{
-					DisplayBuiltinVotePass(vote, "Setting Tank Spawn...");
+					DisplayBuiltinVotePass(vote, "设置Tank生成位置...");
 				}
 				else if (bv_bWitch) // Only Witch can be changed -- Tank must be static
 				{
-					DisplayBuiltinVotePass(vote, "Setting Witch Spawn...");
+					DisplayBuiltinVotePass(vote, "设置Witch生成位置...");
 				}
 				else // Neither can be changed... ok...
 				{
-					DisplayBuiltinVotePass(vote, "Setting Boss Disabled...");
+					DisplayBuiltinVotePass(vote, "设置禁用Boss...");
 				}
 				
 				SetWitchPercent(bv_iWitch);
@@ -331,19 +318,13 @@ public Action ForceTankCommand(int client, int args)
 	
 	if (IsDarkCarniRemix())
 	{
-		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} Command not available on this map.");
+		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} 命令在本章节无效.");
 		return Plugin_Handled;
 	}
 	
 	if (IsStaticTankMap())
 	{
-		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} Tank spawn is static and can not be changed on this map.");
-		return Plugin_Handled;
-	}
-	
-	if (!IsInReady())
-	{
-		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} Command can only be used during ready up.");
+		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} 这章节Tank为固定刷新，无法进行设置.");
 		return Plugin_Handled;
 	}
 	
@@ -360,14 +341,14 @@ public Action ForceTankCommand(int client, int args)
 	
 	if (p_iRequestedPercent < 0)
 	{
-		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} Percentage is {blue}invalid{default}.");
+		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} 这个进度 {blue}无效{default}.");
 		return Plugin_Handled;
 	}
 	
 	// Check if percent is within limits
 	if (!IsTankPercentValid(p_iRequestedPercent))
 	{
-		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} Percentage is {blue}banned{default}.");
+		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} 这个进度 {blue}被禁用了{default}.");
 		return Plugin_Handled;
 	}
 	
@@ -377,7 +358,7 @@ public Action ForceTankCommand(int client, int args)
 	// Let everybody know
 	char clientName[32];
 	GetClientName(client, clientName, sizeof(clientName));
-	CPrintToChatAll("{blue}<{green}BossVote{blue}>{default} Tank spawn set to {olive}%i%%{default} by Admin {blue}%s{default}.", p_iRequestedPercent, clientName);
+	CPrintToChatAll("{blue}<{green}BossVote{blue}>{default} Tank位置被管理员{blue}%s{default}更改为 {olive}%i%%{default}.", clientName, p_iRequestedPercent);
 	
 	// Update our shiz yo
 	UpdateBossPercents();
@@ -399,21 +380,16 @@ public Action ForceWitchCommand(int client, int args)
 	
 	if (IsDarkCarniRemix())
 	{
-		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} Command not available on this map.");
+		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} 命令在这章节无效.");
 		return Plugin_Handled;
 	}
 	
 	if (IsStaticWitchMap())
 	{
-		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} Witch spawn is static and can not be changed on this map.");
+		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} 这章节的Witch是固定的，无法更改.");
 		return Plugin_Handled;
 	}
-	
-	if (!IsInReady())
-	{
-		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} Command can only be used during ready up.");
-		return Plugin_Handled;
-	}
+
 	
 	// Get Requested Witch Percent
 	char bv_sWitch[32];
@@ -428,14 +404,14 @@ public Action ForceWitchCommand(int client, int args)
 	
 	if (p_iRequestedPercent < 0)
 	{
-		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} Percentage is {blue}invalid{default}.");
+		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} 此进度 {blue}无效{default}.");
 		return Plugin_Handled;
 	}
 	
 	// Check if percent is within limits
 	if (!IsWitchPercentValid(p_iRequestedPercent))
 	{
-		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} Percentage is {olive}banned{default}.");
+		CPrintToChat(client, "{blue}<{green}BossVote{blue}>{default} 此进度 {olive}被禁用了{default}.");
 		return Plugin_Handled;
 	}
 	
@@ -445,7 +421,7 @@ public Action ForceWitchCommand(int client, int args)
 	// Let everybody know
 	char clientName[32];
 	GetClientName(client, clientName, sizeof(clientName));
-	CPrintToChatAll("{blue}<{green}BossVote{blue}>{default} Witch spawn set to {olive}%i%%{default} by Admin {blue}%s{default}.", p_iRequestedPercent, clientName);
+	CPrintToChatAll("{blue}<{green}BossVote{blue}>{default} Witch生成位置被管理员{blue}%s{default}设置为 {olive}%i%%{default}.", clientName, p_iRequestedPercent);
 	
 	// Update our shiz yo
 	UpdateBossPercents();

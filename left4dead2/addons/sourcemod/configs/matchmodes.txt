@@ -28,4 +28,11 @@
 			"name" "WitchParty模式"
 		}
 	}
+	"牛牛大冲刺模式"
+	{
+		"AllCharger"
+		{
+			"name" "牛牛大冲刺模式"
+		}
+	}
 }

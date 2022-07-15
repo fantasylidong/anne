@@ -25,6 +25,7 @@
 #include <sourcemod>
 #include <sdktools>
 #include <colors>
+#include <sdkhooks>
 #include <l4d2util_constants>
 
 enum SIClasses
@@ -124,7 +125,7 @@ public void Event_PlayerHurt(Event hEvent, const char[] sEventName, bool bDontBr
 	CPrintToChatAll("[{olive}伤害报告{default}] {red}%s{default} ({green}%s{default}) 还剩下 {olive}%d{default} 点血!", sName, L4D2_InfectedNames[iZclass], iRemainingHealth);
 	
 	ForcePlayerSuicide(iAttacker);
-	CancelGetup(iVictim);
+	SDKHook(iVictim, SDKHook_PostThinkPost, CancelGetup);
 	int maxHealth = GetSpecialInfectedHP(iZclass);
 	if (!maxHealth)
 		return;    

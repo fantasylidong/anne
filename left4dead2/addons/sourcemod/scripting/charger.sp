@@ -64,8 +64,8 @@ ArrayList aThreadHandle;
 public void OnPluginStart()
 {
 	// CreateConVar
-	g_hSpawnDistanceMin = CreateConVar("inf_SpawnDistanceMin", "350.0", "特感复活离生还者最近的距离限制", CVAR_FLAG, true, 0.0);
-	g_hSpawnDistanceMax = CreateConVar("inf_SpawnDistanceMax", "350.0", "特感复活离生还者最远的距离限制", CVAR_FLAG, true, g_hSpawnDistanceMin.FloatValue);
+	g_hSpawnDistanceMin = CreateConVar("inf_SpawnDistanceMin", "400.0", "特感复活离生还者最近的距离限制", CVAR_FLAG, true, 0.0);
+	g_hSpawnDistanceMax = CreateConVar("inf_SpawnDistanceMax", "400.0", "特感复活离生还者最远的距离限制", CVAR_FLAG, true, g_hSpawnDistanceMin.FloatValue);
 	g_hTeleportSi = CreateConVar("inf_TeleportSi", "1", "是否开启特感距离生还者一定距离将其传送至生还者周围", CVAR_FLAG, true, 0.0, true, 1.0);
 	g_hTeleportDistance = CreateConVar("inf_TeleportDistance", "800.0", "特感落后于最近的生还者超过这个距离则将它们传送", CVAR_FLAG, true, 0.0);
 	g_hSiLimit = CreateConVar("l4d_infected_limit", "6", "一次刷出多少特感", CVAR_FLAG, true, 0.0);

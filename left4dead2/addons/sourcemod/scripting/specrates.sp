@@ -46,8 +46,21 @@ public OnPluginStart()
     sv_maxrate = FindConVar("sv_maxrate");
     sv_client_min_interp_ratio = FindConVar("sv_client_min_interp_ratio");
     sv_client_max_interp_ratio = FindConVar("sv_client_max_interp_ratio");
-
+	RegConsoleCmd("sm_rates", SetRates, "当你分数大于30w可以手动输入这个指令来设置旁观100tick");
     HookEvent("player_team", OnTeamChange);
+}
+
+public Action SetRates(int client, int args)
+{ 
+	if(!IsValidClient(client))
+		return Plugin_Continue;
+	if(l4dstats_GetClientScore(client) < 300000)
+	{
+		PrintToChat(client, "你的分数小于30W，无法设置旁观速率");
+		return Plugin_Handled;
+	}
+	AdjustRates(client);
+	return Plugin_Continue;	
 }
 
 public OnPluginEnd()

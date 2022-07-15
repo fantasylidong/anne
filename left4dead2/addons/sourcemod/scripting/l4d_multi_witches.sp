@@ -70,9 +70,9 @@ public void OnPluginStart()
 	CreateConVar("l4d_multi_witches_version", PLUGIN_VERSION, "Plugin Version", CVAR_FLAGS | FCVAR_DONTRECORD);
 
 	g_hCvarCountWitchInRound 	= CreateConVar("l4d_witches_limit", 			"0", 		"Sets the limit for witches spawned. If 0, the plugin will not check count witches", CVAR_FLAGS);
-	g_hCvarCountAliveWitch 		= CreateConVar("l4d_witches_limit", 		"10", 		"Sets the limit alive witches. If 0, the plugin will not check count alive witches", CVAR_FLAGS);
-	g_hCvarWitchTimeMin 		= CreateConVar("l4d_witches_spawn_time_min", 	"10.0", 	"Sets the min spawn time for witches spawned by the plugin in seconds", CVAR_FLAGS);
-	g_hCvarWitchTimeMax 		= CreateConVar("l4d_witches_spawn_time_max", 	"20.0", 	"Sets the max spawn time for witches spawned by the plugin in seconds", CVAR_FLAGS);
+	g_hCvarCountAliveWitch 		= CreateConVar("l4d_witches_limit_alive", 		"10", 		"Sets the limit alive witches. If 0, the plugin will not check count alive witches", CVAR_FLAGS);
+	g_hCvarWitchTimeMin 		= CreateConVar("l4d_witches_spawn_time_min", 	"16.0", 	"Sets the min spawn time for witches spawned by the plugin in seconds", CVAR_FLAGS);
+	g_hCvarWitchTimeMax 		= CreateConVar("l4d_witches_spawn_time_max", 	"24.0", 	"Sets the max spawn time for witches spawned by the plugin in seconds", CVAR_FLAGS);
 	g_hCvarWitchDistance 		= CreateConVar("l4d_witches_distance", 			"1600.0", 	"The range from survivors that witch should be removed. If 0, the plugin will not remove witches", CVAR_FLAGS);
 	g_hCvarDirectorWitch 		= CreateConVar("l4d_witches_director_witch", 	"1", 		"If 1, enable director's witch. If 0, disable director's witch", CVAR_FLAGS);
 	
