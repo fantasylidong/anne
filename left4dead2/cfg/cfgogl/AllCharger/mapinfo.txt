@@ -77,7 +77,7 @@
 		"max_distance"		"800"
 		"ItemLimits"
 		{
-			"pain_pills"	"0"
+			"pain_pills"	"4"
 		}
 		"horde_tank"		"1"
 	}
@@ -189,7 +189,7 @@
 		}
 		"ItemLimits"
 		{
-			"pain_pills"	"0"
+			"pain_pills"	"4"
 		}
 	}
 	"c3m1_plankcountry"
@@ -243,7 +243,7 @@
 		"end_dist"			"200.000000"
 		"ItemLimits"
 		{
-			"pain_pills"	"0"
+			"pain_pills"	"4"
 		}
 	}
 	"c4m1_milltown_a"
@@ -340,7 +340,7 @@
 		"max_distance"		"400"
 		"ItemLimits"
 		{
-			"pain_pills"	"0"
+			"pain_pills"	"4"
 		}
 	}
 	"c5m1_waterfront"
@@ -481,7 +481,7 @@
 		"end_dist"			"50.000000"
 		"ItemLimits"
 		{
-			"pain_pills"	"0"
+			"pain_pills"	"4"
 		}
 	}
 	"c7m1_docks"
@@ -519,7 +519,7 @@
 		"max_distance"		"700"
 		"ItemLimits"
 		{
-			"pain_pills"	"0"
+			"pain_pills"	"4"
 		}
 	}
 	"c8m1_apartment"
@@ -601,7 +601,7 @@
 		"end_dist"			"100.000000"
 		"ItemLimits"
 		{
-			"pain_pills"	"0"
+			"pain_pills"	"4"
 		}
 		"tank_ban_flow"
 		{
@@ -631,7 +631,7 @@
 		"max_distance"		"800"
 		"ItemLimits"
 		{
-			"pain_pills"	"0"
+			"pain_pills"	"4"
 		}
 	}
 	"c10m1_caves"
@@ -692,7 +692,7 @@
 		"end_dist"			"795.922058"
 		"ItemLimits"
 		{
-			"pain_pills"	"0"
+			"pain_pills"	"4"
 		}
 	}
 	"c11m1_greenhouse"
@@ -746,7 +746,7 @@
 		"end_dist"			"538.437988"
 		"ItemLimits"
 		{
-			"pain_pills"	"0"
+			"pain_pills"	"4"
 		}
 	}
 	"c12m1_hilltop"
@@ -820,7 +820,7 @@
 		"end_dist"			"183.031281"
 		"ItemLimits"
 		{
-			"pain_pills"	"0"
+			"pain_pills"	"4"
 		}
 		"tank_ban_flow"
 		{
@@ -907,7 +907,7 @@
 		"end_dist"			"500.000000"
 		"ItemLimits"
 		{
-			"pain_pills"	"0"
+			"pain_pills"	"4"
 		}
 		"tank_ban_flow"
 		{
@@ -1105,7 +1105,7 @@
 		"start_extra_dist"	"194.090973"
 		"ItemLimits"
 		{
-			"pain_pills"	"0"
+			"pain_pills"	"4"
 		}
 	}
 	"l4d_ihm01_forest"
@@ -1150,7 +1150,7 @@
 		"end_dist"			"540.438049"
 		"ItemLimits"
 		{
-			"pain_pills"	"0"
+			"pain_pills"	"4"
 		}
 	}
 	"bloodtracks_01"
@@ -1186,7 +1186,7 @@
 		"end_dist"			"1521.507202"
 		"ItemLimits"
 		{
-			"pain_pills"	"0"
+			"pain_pills"	"4"
 		}
 	}
 	"cwm1_intro"
@@ -1435,7 +1435,7 @@
 		"end_dist"			"2195.812500"
 		"ItemLimits"
 		{
-			"pain_pills"	"0"
+			"pain_pills"	"4"
 		}
 	}
 	"l4d2_bts01_forest"
@@ -1586,7 +1586,7 @@
 		"end_dist"			"1227.881958"
 		"ItemLimits"
 		{
-			"pain_pills"	"0"
+			"pain_pills"	"4"
 		}
 	}
 	"uf1_boulevard"
@@ -1694,7 +1694,7 @@
 		"end_dist"			"1143.486694"
 		"ItemLimits"
 		{
-			"pain_pills"	"0"
+			"pain_pills"	"4"
 		}
 	}
 	"eu01_residential_b16"
@@ -1746,7 +1746,7 @@
 		"end_dist"			"1371.141602"
 		"ItemLimits"
 		{
-			"pain_pills"	"0"
+			"pain_pills"	"4"
 		}
 	}
 	"srocchurch"
@@ -2267,7 +2267,7 @@
 		"end_dist"          "150.000000"
 		"ItemLimits"
 		{
-			"pain_pills"    "0"
+			"pain_pills"    "4"
 		}
 	}
 	"uz_crash"
@@ -2504,7 +2504,7 @@
 		}
 		"ItemLimits"
 		{
-			"pain_pills"    "0"
+			"pain_pills"    "4"
 		}
 	}
 
@@ -2705,7 +2705,7 @@
 		"end_dist"          "150"
 		"ItemLimits"
 		{
-			"pain_pills"    "0"
+			"pain_pills"    "4"
 		}
 	}
 }
