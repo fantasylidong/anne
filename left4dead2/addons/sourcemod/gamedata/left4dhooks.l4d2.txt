@@ -4142,17 +4142,6 @@
 				/* 53 8B ? 83 ? ? 83 ? ? 83 ? ? 55 8B ? ? 89 ? ? ? 8B ? 83 ? ? A1 ? ? ? ? 33 ? 56 89 */ // Found by "SilverShot".
 				/* Search: "NavAreaBuildPath". Should be first sub. */
 			}
-			/*
-			 * CNavMesh::ScriptNavAreaBuildPath(int a1, int a2, int a3, int a4, int a5_flMaxPathLength, int a6_TeamID, unsigned __int8 a7_ignoreNavBlockers)
-			 */
-			// "CNavMesh::ScriptNavAreaBuildPath"
-			// {
-				// "library"	"server"
-				// "linux"		"@_Z13GetScriptDescI13TerrorNavAreaEP17ScriptClassDesc_tPT_"
-				// "windows"	"\x55\x8B\x2A\x53\x56\x8B\x2A\x2A\x57\x85\x2A\x74\x2A\x83\x2A\x2A\x74\x2A\xA1\x2A\x2A\x2A\x2A\x8B\x2A\x6A\x2A\xE8\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x2A\x8B"
-				/* 55 8B ? 53 56 8B ? ? 57 85 ? 74 ? 83 ? ? 74 ? A1 ? ? ? ? 8B ? 6A ? E8 ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? ? 8B */ // Found by "SilverShot".
-				/* Search: "ScriptNavAreaBuildPath". 2nd call below is our target. Long signature almost identical to another function. */
-			// }
 
 
 
