@@ -301,7 +301,7 @@
 			"message" "牛牛冲刺大逃亡"
 		}
 	}
-	"开关回血"
+	"商店选项开关"
 	{
 		"sm_cvar ReturnBlood 1"
 		{
@@ -310,6 +310,14 @@
 		"sm_cvar ReturnBlood 0"
 		{
 			"message" "关闭回血"
+		}
+		"sm_cvar rpg_allow_biggun 1"
+		{
+			"message" "开启大枪购买"
+		}
+		"sm_cvar rpg_allow_biggun 0"
+		{
+			"message" "关闭大枪购买"
 		}
 	}
 	"开关Mod"
