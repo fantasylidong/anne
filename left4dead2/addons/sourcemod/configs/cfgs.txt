@@ -290,6 +290,29 @@
 			"message" "700单位"
 		}
 	}
+	"模式选择"
+	{
+		"sm_fm AnneHappy"
+		{
+			"message" "普通药役模式"
+		}
+		"sm_fm Hunters"
+		{
+			"message" "1vHunter模式"
+		}
+		"sm_fm Alone"
+		{
+			"message" "单人装B模式"
+		}
+		"sm_fm WitchParty"
+		{
+			"message" "WitchParty模式"
+		}
+		"sm_fm AllCharger"
+		{
+			"message" "牛牛冲刺大逃亡"
+		}
+	}
 	"杂项"
 	{
 		"exec vote/hard_on.cfg"
@@ -323,29 +346,6 @@
 		"exec vote/tank_off.cfg"
 		{
 			"message" "关闭Tank大致血量显示"
-		}
-	}
-	"模式选择"
-	{
-		"sm_fm AnneHappy"
-		{
-			"message" "普通药役模式"
-		}
-		"sm_fm Hunters"
-		{
-			"message" "1vHunter模式"
-		}
-		"sm_fm Alone"
-		{
-			"message" "单人装B模式"
-		}
-		"sm_fm WitchParty"
-		{
-			"message" "WitchParty模式"
-		}
-		"sm_fm AllCharger"
-		{
-			"message" "牛牛冲刺大逃亡"
 		}
 	}
 	"商店选项开关"
