@@ -247,6 +247,49 @@
 			"message" "20秒"
 		}
 	}
+	"特感最低生成距离"
+	{
+		"exec vote/mindist/250.cfg"
+		{
+			"message" "250单位"
+		}
+		"exec vote/mindist/300.cfg"
+		{
+			"message" "300单位"
+		}
+		"exec vote/mindist/350.cfg"
+		{
+			"message" "350单位"
+		}
+		"exec vote/mindist/400.cfg"
+		{
+			"message" "400单位"
+		}
+		"exec vote/mindist/450.cfg"
+		{
+			"message" "450单位"
+		}
+		"exec vote/mindist/500.cfg"
+		{
+			"message" "500单位"
+		}
+		"exec vote/mindist/550.cfg"
+		{
+			"message" "550单位"
+		}
+		"exec vote/mindist/600.cfg"
+		{
+			"message" "600单位"
+		}
+		"exec vote/mindist/650.cfg"
+		{
+			"message" "650单位"
+		}
+		"exec vote/mindist/700.cfg"
+		{
+			"message" "700单位"
+		}
+	}
 	"杂项"
 	{
 		"exec vote/hard_on.cfg"
