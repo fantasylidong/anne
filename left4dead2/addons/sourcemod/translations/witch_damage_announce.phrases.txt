@@ -51,14 +51,14 @@
 	{
 		"#format"	"{1:d}{2:d}"
 		"en"		"{red}[{default}{1}{red}] ({default}{2}%%{red}) {red}Infected {olive} ☆"
-		"chi"		"{red}[{default}{1}{red}] ({default}{2}%%{red}) {red}Infected {olive} ☆"
+		"chi"		"{red}[{default}{1}{red}] ({default}{2}%%{red}) {red}感染者 {olive} ☆"
 	}
 
 	"AssistanceInfWitchCrown"
 	{
 		"#format"	"{1:d}{2:d}"
 		"en"		"{red}[{default}{1}{red}] ({default}{2}%%{red}) {red}Infected"
-		"chi"		"{red}[{default}{1}{red}] ({default}{2}%%{red}) {red}Infected"
+		"chi"		"{red}[{default}{1}{red}] ({default}{2}%%{red}) {red}感染者"
 	}
 
 	"FinalShotTankWitchCrown"
