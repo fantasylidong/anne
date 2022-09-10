@@ -399,7 +399,7 @@
 			"Sewer and parking lot"
 			{
 				"min"		"50"
-				"max"		"75"
+				"max"		"80"
 			}
 		}
 		"witch_ban_flow"
