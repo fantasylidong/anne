@@ -398,7 +398,7 @@
 		{
 			"Sewer and parking lot"
 			{
-				"min"		"50"
+				"min"		"47"
 				"max"		"80"
 			}
 		}
