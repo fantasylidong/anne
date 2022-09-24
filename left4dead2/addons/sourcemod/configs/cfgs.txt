@@ -319,6 +319,10 @@
 	}
 	"杂项"
 	{
+		"sm_kicktank"
+		{
+			"message" "踢出超过上限tank"
+		}
 		"exec vote/hard_on.cfg"
 		{
 			"message" "开启特感属性增强"
@@ -425,6 +429,14 @@
 		"exec vote/Consume_off.cfg"
 		{
 			"message" "关闭消耗克[22-7版本起有效]"
+		}
+		"sm_cvar l4d_multislots_autokicktank 1"
+		{
+			"message" "开启坦克自动踢出系统[上限:1]"
+		}
+		"sm_cvar l4d_multislots_autokicktank 0"
+		{
+			"message" "关闭坦克自动踢出系统"
 		}
 	}
 	"地图选择"
