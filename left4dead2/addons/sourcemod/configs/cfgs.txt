@@ -450,6 +450,21 @@
 			"message" "AnneHappy原版"
 		}
 	}
+	"同步率切换[默认0.014]"
+	{
+		"nb_update_frequency 0.01"
+		{
+			"message" "0.01[高]"
+		}
+		"nb_update_frequency 0.014"
+		{
+			"message" "0.014[中]"
+		}
+		"nb_update_frequency 0.03"
+		{
+			"message" "0.03[低]"
+		}
+	}
 	"开关死门"
 	{
 		"sm_cvar coopmode 1"
