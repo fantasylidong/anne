@@ -374,6 +374,14 @@
 		{
 			"message" "关闭大枪购买"
 		}
+		"sm_cvar l4d2_replace_magnum_incap 1"
+		{
+			"message" "打开倒地马格南"
+		}
+		"sm_cvar l4d2_replace_magnum_incap 0"
+		{
+			"message" "关闭倒地马格南"
+		}
 	}
 	"开关Mod"
 	{
