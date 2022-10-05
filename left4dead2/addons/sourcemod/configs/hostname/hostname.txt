@@ -51,5 +51,9 @@
 	"2342"
 	{
 		"servername"	"Anne电信12服"
-	}	
+	}
+	"2361"
+	{
+		"servername"	"Anne电信测试服"
+	}		
 }
