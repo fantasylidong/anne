@@ -52,7 +52,7 @@
 	{
 		"servername"	"Anne电信12服"
 	}
-	"2361"
+	"2353"
 	{
 		"servername"	"Anne电信测试服"
 	}		
