@@ -325,7 +325,7 @@
 		}
 		"exec vote/hard_on.cfg"
 		{
-			"message" "开启特感属性增强"
+			"message" "开启特感属性增强[极牢]"
 		}
 		"exec vote/hard_off.cfg"
 		{
