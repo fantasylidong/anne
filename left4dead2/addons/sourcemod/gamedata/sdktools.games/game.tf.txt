@@ -16,11 +16,17 @@
 	{
 		"Offsets"
 		{
+			"SetOwnerEntity"
+			{
+				"windows"	"17"
+				"linux"		"18"
+				"mac"		"18"
+			}
 			"GiveNamedItem"
 			{
-				"windows"	"408"
-				"linux"		"409"
-				"mac"		"409"
+				"windows"	"409"
+				"linux"		"410"
+				"mac"		"410"
 			}
 			"RemovePlayerItem"
 			{
@@ -54,9 +60,9 @@
 			}
 			"CommitSuicide"
 			{
-				"windows"	"449"
-				"linux"		"449"
-				"mac"		"449"
+				"windows"	"450"
+				"linux"		"450"
+				"mac"		"450"
 			}
 			"GetVelocity"
 			{
@@ -96,15 +102,21 @@
 			}
 			"PlayerRunCmd"
 			{
-				"windows"	"426"
-				"linux"		"427"
-				"mac"		"427"
+				"windows"	"427"
+				"linux"		"428"
+				"mac"		"428"
 			}
 			"GiveAmmo"
 			{
 				"windows"	"259"
 				"linux"		"260"
 				"mac"		"260"
+			}
+			"GetAttachment"
+			{
+				"windows"	"212"
+				"linux"		"213"
+				"mac"		"213"
 			}
 		}
 		
@@ -127,11 +139,20 @@
 				"linux"		"@_ZN17CBaseEntityOutput10FireOutputE9variant_tP11CBaseEntityS2_f"
 				"mac"		"@_ZN17CBaseEntityOutput10FireOutputE9variant_tP11CBaseEntityS2_f"
 			}
-			"SetCollisionGroup"
+		}
+	}
+	
+	/* CBaseAnimating::LookupAttachment */
+	"#default"
+	{
+		"Signatures"
+		{
+			"LookupAttachment"
 			{
-				"library" 	"server"
-				"windows" 	"\x55\x8B\xEC\x53\x8B\x5D\x08\x56\x57\x8B\xF9\x39\x9F\xF0\x01\x00\x00"
-				"linux" 	"@_ZN11CBaseEntity17SetCollisionGroupEi"
+				"library"	"server"
+				"windows"	"\x55\x8B\xEC\x56\x8B\xF1\x80\xBE\x41\x03\x00\x00\x00\x75\x2A\x83\xBE\x6C\x04\x00\x00\x00\x75\x2A\xE8\x2A\x2A\x2A\x2A\x85\xC0\x74\x2A\x8B\xCE\xE8\x2A\x2A\x2A\x2A\x8B\x86\x6C\x04\x00\x00\x85\xC0\x74\x2A\x83\x38\x00\x74\x2A\xFF\x75\x08\x50\xE8\x2A\x2A\x2A\x2A\x83\xC4\x08\x40"
+				"linux"		"@_ZN14CBaseAnimating16LookupAttachmentEPKc"
+				"mac"		"@_ZN14CBaseAnimating16LookupAttachmentEPKc"
 			}
 		}
 	}
