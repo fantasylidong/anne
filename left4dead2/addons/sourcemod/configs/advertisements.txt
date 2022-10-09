@@ -23,7 +23,7 @@
 	"5"
 	{
 		"type"		"S"
-		"text"		"{LIGHTGREEN}!zs自杀 !tank查看boss !rpg购物商店 !xx模式查询"
+		"text"		"{LIGHTGREEN}!zs自杀 !tank查看boss !rpg购物商店 !xx模式查询 !ip查看电信服ip !web电信服网页"
 	}
 	"6"
 	{
