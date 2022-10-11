@@ -21,6 +21,10 @@
 		{
 			"message" "最新版本"
 		}
+		"exec vote/Anne/Anne22-10.cfg"
+		{
+			"message" "22-10月版本[射线检测最后版]"
+		}
 		"exec vote/Anne/Anne22-9.cfg"
 		{
 			"message" "22-9月版本"
@@ -43,7 +47,7 @@
 		}
 		"exec vote/Anne/Anne10-10.cfg"
 		{
-			"message" "21-10-10号版本"
+			"message" "21-10-10号版本[射线检测开始版]"
 		}
 		"exec vote/Anne/Anne7-7.cfg"
 		{
