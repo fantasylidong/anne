@@ -255,6 +255,29 @@
 			"message" "20秒"
 		}
 	}
+	"模式选择"
+	{
+		"sm_fm AnneHappy"
+		{
+			"message" "普通药役模式"
+		}
+		"sm_fm Hunters"
+		{
+			"message" "1vHunter模式"
+		}
+		"sm_fm Alone"
+		{
+			"message" "单人装B模式"
+		}
+		"sm_fm WitchParty"
+		{
+			"message" "WitchParty模式"
+		}
+		"sm_fm AllCharger"
+		{
+			"message" "牛牛冲刺大逃亡"
+		}
+	}
 	"特感最低生成距离"
 	{
 		"exec vote/mindist/250.cfg"
@@ -298,27 +321,39 @@
 			"message" "700单位"
 		}
 	}
-	"模式选择"
+	"特感传送检测秒数"
 	{
-		"sm_fm AnneHappy"
+		"sm_cvar inf_TeleportCheckTime 1"
 		{
-			"message" "普通药役模式"
+			"message" "1秒"
 		}
-		"sm_fm Hunters"
+		"sm_cvar inf_TeleportCheckTime 2"
 		{
-			"message" "1vHunter模式"
+			"message" "2秒"
 		}
-		"sm_fm Alone"
+		"sm_cvar inf_TeleportCheckTime 3"
 		{
-			"message" "单人装B模式"
+			"message" "3秒"
 		}
-		"sm_fm WitchParty"
+		"sm_cvar inf_TeleportCheckTime 4"
 		{
-			"message" "WitchParty模式"
+			"message" "4秒"
 		}
-		"sm_fm AllCharger"
+		"sm_cvar inf_TeleportCheckTime 5"
 		{
-			"message" "牛牛冲刺大逃亡"
+			"message" "5秒"
+		}
+		"sm_cvar inf_TeleportCheckTime 6"
+		{
+			"message" "6秒"
+		}
+		"sm_cvar inf_TeleportCheckTime 7"
+		{
+			"message" "7秒"
+		}
+		"sm_cvar inf_TeleportCheckTime 8"
+		{
+			"message" "8秒"
 		}
 	}
 	"杂项"
