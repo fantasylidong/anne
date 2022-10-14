@@ -42,15 +42,15 @@
 	}
 	"2340"
 	{
-		"servername"	"Anne电信10服"
+		"servername"	"Anne电信新手服"
 	}
 	"2341"
 	{
-		"servername"	"Anne电信11服"
+		"servername"	"Anne电信萌新服"
 	}
 	"2342"
 	{
-		"servername"	"Anne电信12服"
+		"servername"	"Anne电信猛新服"
 	}
 	"2353"
 	{
