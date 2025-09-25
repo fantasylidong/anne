@@ -1,0 +1,18 @@
+"UnlitGeneric"
+{
+	"$baseTexture" "Overlays/kill4"
+	"$REFRACTTINT" "{128 128 128}"
+	"$additive" "1"
+	//"$translucent" 1
+	
+Proxies
+{
+AnimatedTexture
+{
+animatedTextureVar $basetexture
+animatedTextureFrameNumVar $frame
+animatedTextureFrameRate 31
+}
+}
+
+}
