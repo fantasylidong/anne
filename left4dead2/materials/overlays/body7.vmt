@@ -1,0 +1,7 @@
+
+"UnlitGeneric"
+{
+	"$baseTexture" "overlays/body7"
+	//"$refracttint" "{255 255 255}"
+	"$additive" "1"
+}
