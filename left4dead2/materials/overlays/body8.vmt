@@ -1,6 +1,6 @@
 "UnlitGeneric"
 {
-	"$baseTexture" "Overlays/body8"
+	"$baseTexture" "overlays/body8"
 	"$REFRACTTINT" "{128 128 128}"
 	"$additive" "1"
 	//"$translucent" 1

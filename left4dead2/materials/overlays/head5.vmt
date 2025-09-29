@@ -1,5 +1,5 @@
 "UnlitGeneric"
 {
-	"$baseTexture" "Overlays/head5"
+	"$baseTexture" "overlays/head5"
 	"$additive" "1"
 }
